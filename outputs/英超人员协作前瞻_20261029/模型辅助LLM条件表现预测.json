@@ -1,0 +1,561 @@
+{
+  "generated_at_utc": "2026-10-29T12:07:49.467523+00:00",
+  "input_packet": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\模型辅助LLM条件表现输入.json",
+  "model_id": "session_inherited_model_identity_not_exposed",
+  "forecast_type": "model_assisted_llm",
+  "exposure": {
+    "current_statistical_probabilities": false,
+    "historical_model_estimates": true,
+    "market": false,
+    "other_llm": false,
+    "target_results": false
+  },
+  "method": {
+    "estimation": "依据指定输入包的一次主观模型辅助LLM判断；非独立LLM，非已校准模型。",
+    "combination": "无数值合并：没有读取当前目标统计概率，没有对当前模型概率或其他预测加权、平均、拟合或校准。",
+    "evidence_use": "原描述表现与严格较早历史条件期待一并解释；残差仅相对各队自身基准，不能直接排绝对实力。原始xG、对应残差及重叠比赛不重复计权，不由最近一场机械决定。",
+    "personnel": "官方报道仅在其日期及范围内使用；恢复训练、旧伤停、FPL状态及百分比不自动转换为本轮阵容或数值惩罚。",
+    "limits": "五场样本小，15场可跨季且未完全作对手调整；历史来源首次发布时间与修订时点未完全重建。",
+    "gain_claim": "无已证实增益：本次没有准确率比较，未证实条件上下文或人员信息提高预测准确率。"
+  },
+  "records": [
+    {
+      "fixture_id": "epl-2026-27-r9-1",
+      "source_fixture_id": 84,
+      "home": "Chelsea",
+      "away": "Manchester United",
+      "probabilities": {
+        "home_win": 0.39,
+        "draw": 0.3,
+        "away_win": 0.31
+      },
+      "preferred_single_outcome": "home_win",
+      "confidence": "低",
+      "reasoning": "给切尔西轻微主场优势，但两队近期进攻都不足以支持强势单选。切尔西近五场场均进球1.8不能掩盖仅1.107的xG；其进攻低于自身较早条件期待，防守大致符合该期待。曼联相应的进攻也低于自身期待、允许机会更多，但15场的机会收支仍为正，保留客胜空间。Pedro多周伤停及Lacroix新伤限制主队优势；Palmer周末无该次杯赛禁赛限制只是有限利好。Mainoo恢复训练不当作确定回归。原始xG与残差只作为同一批比赛的描述和条件解释使用一次。",
+      "counterarguments": [
+        "曼联15场场均xG为1.782、xGA为1.571，较长观察窗口不支持把近五场低迷直接等同持续弱势；该窗口跨季且未完全作对手调整。",
+        "切尔西进球产出高于近期机会量，Pedro多周伤停与Lacroix待评估又增加进攻或防线的不确定性。",
+        "两队的负残差各自相对不同的较早基准，不能靠比较残差大小得出本场实力排序；主胜优势因此保持很小。"
+      ],
+      "cited_facts": [
+        {
+          "pointer": "/records/0/descriptive_performance/home/window_5/measurements",
+          "value": {
+            "goals_for": 1.8,
+            "goals_against": 1.6,
+            "xg_for": 1.1069034,
+            "xg_against": 1.501684,
+            "npxg_for": 1.1069034,
+            "npxg_against": 1.501684,
+            "deep_for": 7.8,
+            "deep_against": 4.8,
+            "ppda_att": 250.2,
+            "ppda_def": 21.0,
+            "ppda_allowed_att": 257.4,
+            "ppda_allowed_def": 18.8,
+            "ppda_ratio": 11.914285714285715,
+            "ppda_allowed_ratio": 13.691489361702128
+          },
+          "role": "支持与反证：切尔西近期进球高于机会量，净机会仍为负，不能只读进球表现。"
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/away/window_15/measurements",
+          "value": {
+            "goals_for": 1.5333333333333334,
+            "goals_against": 1.3333333333333333,
+            "xg_for": 1.7822748,
+            "xg_against": 1.5714412,
+            "npxg_for": 1.7315301333333333,
+            "npxg_against": 1.5714412,
+            "deep_for": 8.733333333333333,
+            "deep_against": 6.6,
+            "ppda_att": 255.73333333333332,
+            "ppda_def": 20.933333333333334,
+            "ppda_allowed_att": 256.6,
+            "ppda_allowed_def": 23.0,
+            "ppda_ratio": 12.21656050955414,
+            "ppda_allowed_ratio": 11.156521739130435
+          },
+          "role": "反证：曼联较长窗口的机会收支仍为正，削弱主胜信心；窗口跨季。"
+        },
+        {
+          "pointer": "/records/0/historical_conditioned_performance/home/means",
+          "value": {
+            "actual_xg_for": 1.1069034,
+            "actual_xg_against": 1.501684,
+            "earlier_expected_xg_for": 1.8548599273000477,
+            "earlier_expected_xg_against": 1.5164230202612918,
+            "attack_xg_residual": -0.7479565273000478,
+            "defense_xga_residual": -0.014739020261291858,
+            "net_xg_residual": -0.733217507038756
+          },
+          "role": "条件解释：切尔西进攻低于自身较早期待，防守近于自身期待；不另增一票或跨队排名。"
+        },
+        {
+          "pointer": "/records/0/historical_conditioned_performance/away/means",
+          "value": {
+            "actual_xg_for": 1.1721646,
+            "actual_xg_against": 1.773032,
+            "earlier_expected_xg_for": 1.7249100594868618,
+            "earlier_expected_xg_against": 1.4734528415555281,
+            "attack_xg_residual": -0.5527454594868618,
+            "defense_xga_residual": 0.29957915844447186,
+            "net_xg_residual": -0.8523246179313336
+          },
+          "role": "条件解释：曼联进攻及防守均有相对自身期待的不利偏差；与原始xG是同一观测。"
+        },
+        {
+          "pointer": "/records/0/official_claims/0",
+          "value": {
+            "id": "CFC_PEDRO_WEEKS",
+            "fixture_id": "epl-2026-27-r9-1",
+            "team": "Chelsea",
+            "player": "Joao Pedro",
+            "source_id": "CFC_20261027_TEAM",
+            "statement": "阿隆索确认大腿伤将使其缺席数周，并明确近期几场不能准备好。",
+            "source_excerpt": "he will not be ready for the next games",
+            "known_vs_uncertain": {
+              "known": "教练明确多周伤停。",
+              "uncertain": "未检得较新的康复逆转或10/31最终名单；不能推算精确复出日。"
+            }
+          },
+          "role": "反证及人员限制：Pedro明确多周伤停，但不能推算精确复出日。"
+        },
+        {
+          "pointer": "/records/0/official_claims/2",
+          "value": {
+            "id": "CFC_LACROIX_HAMSTRING",
+            "fixture_id": "epl-2026-27-r9-1",
+            "team": "Chelsea",
+            "player": "Maxence Lacroix",
+            "source_id": "CFC_20261028_INJURY",
+            "statement": "10/28因腿后肌不适被换下；严重程度要再等几天评估。",
+            "source_excerpt": "felt something in his hamstring",
+            "known_vs_uncertain": {
+              "known": "有新的伤情且需评估。",
+              "uncertain": "10/31能否出场、具体严重程度未确认。"
+            }
+          },
+          "role": "反证及人员限制：Lacroix杯赛新伤需评估，未硬编码为本场缺阵。"
+        },
+        {
+          "pointer": "/records/0/official_claims/6",
+          "value": {
+            "id": "CFC_PALMER_AVAILABLE",
+            "fixture_id": "epl-2026-27-r9-1",
+            "team": "Chelsea",
+            "player": "Cole Palmer",
+            "source_id": "MU_20261028_MAINOO",
+            "statement": "曼联官方前瞻说明Palmer禁赛适用于杯赛，周末可用。",
+            "source_excerpt": "available for the weekend",
+            "known_vs_uncertain": {
+              "known": "官方对手前瞻认为周末无该次禁赛限制。",
+              "uncertain": "这不是切尔西最终阵容确认；有无新增伤病另待确认。"
+            }
+          },
+          "role": "有限支持及限制：Palmer无该次杯赛禁赛限制，不等于最终阵容确认。"
+        },
+        {
+          "pointer": "/records/0/official_claims/5",
+          "value": {
+            "id": "MU_MAINOO_TRAINING",
+            "fixture_id": "epl-2026-27-r9-1",
+            "team": "Manchester United",
+            "player": "Kobbie Mainoo",
+            "source_id": "MU_20261028_MAINOO",
+            "statement": "10/28参与训练，此前因伤缺阵。",
+            "source_excerpt": "He did take part in the latest workout though",
+            "known_vs_uncertain": {
+              "known": "恢复训练是官网明确事实。",
+              "uncertain": "是否进入10/31名单、上场分钟和首发均未确认。"
+            }
+          },
+          "role": "客队潜在反证及限制：Mainoo已训练，未确认本场名单、首发或分钟。"
+        },
+        {
+          "pointer": "/official_unknowns/0/items",
+          "value": [
+            "Dorgu/Rashford/Sesko/Shaw当前医疗和上场状态需14:00GMT发布会或更晚更新。",
+            "Mainoo完整比赛负荷及首发未确认。"
+          ],
+          "role": "不确定性：曼联多名球员仍需发布会或更晚的可用性更新。"
+        }
+      ],
+      "unknowns": [
+        "Dorgu/Rashford/Sesko/Shaw当前医疗和上场状态需14:00GMT发布会或更晚更新。",
+        "Mainoo完整比赛负荷及首发未确认。",
+        "Lacroix严重程度及Caicedo/Gusto在10/31的最终可用性。",
+        "Martinez/James未检得比10/28曼联对手前瞻更明确的新医疗确认。",
+        "本次没有完整最终球队名单，不能从未被点名受伤推断所有其他球员健康。",
+        "所有伤情只按报道当天成立；不把有望、恢复训练或旧缺阵状态硬编码为10/31确定可用或不可用。",
+        "五场样本较小；条件期待未控制红牌、比分状态、战术、完整跨赛事负荷或所有人员变化。"
+      ]
+    },
+    {
+      "fixture_id": "epl-2026-27-r9-2",
+      "source_fixture_id": 82,
+      "home": "AFC Bournemouth",
+      "away": "Leeds United",
+      "probabilities": {
+        "home_win": 0.55,
+        "draw": 0.27,
+        "away_win": 0.18
+      },
+      "preferred_single_outcome": "home_win",
+      "confidence": "中",
+      "reasoning": "倾向伯恩茅斯主胜：近五场机会创造与限制对手机会均较积极，15场描述表现也有正净机会。条件上下文进一步说明，这五场防守每场都比自身较早期待少让出机会，进攻均值亦超过自身期待；这只是同一批xG的解释。利兹防守也优于自己的较早期待，低失球和防守韧性给平局保留较大空间。伯恩茅斯进攻均值受对Sunderland一场显著拉动，不能机械外推。Kroupi进入过替补席仅表示恢复进展；Calvert-Lewin在10/25已可首发，不能沿用旧疑问把利兹三人全算缺阵。",
+      "counterarguments": [
+        "利兹近五场场均失球0.8，xGA为1.270，条件防守残差均值为负；主队面对的可能是较难击穿的防守。",
+        "伯恩茅斯对Sunderland一场创造4.386 xG，明显抬高五场进攻均值；对Liverpool一场的条件净残差则为负。",
+        "利兹Calvert-Lewin已在10/25获准首发，其他球员最新负荷未知；伯恩茅斯旧伤停也不能一律视作10/31仍缺阵。"
+      ],
+      "cited_facts": [
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_5/measurements",
+          "value": {
+            "goals_for": 1.6,
+            "goals_against": 1.6,
+            "xg_for": 2.4235572000000003,
+            "xg_against": 0.87933188,
+            "npxg_for": 2.4235572000000003,
+            "npxg_against": 0.87933188,
+            "deep_for": 8.8,
+            "deep_against": 5.4,
+            "ppda_att": 244.0,
+            "ppda_def": 27.0,
+            "ppda_allowed_att": 226.4,
+            "ppda_allowed_def": 19.6,
+            "ppda_ratio": 9.037037037037036,
+            "ppda_allowed_ratio": 11.551020408163266
+          },
+          "role": "支持与限制：主队近五场机会收支积极，但实际进失球均为1.6，胜率并非机会优势的直接换算。"
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/away/window_5/measurements",
+          "value": {
+            "goals_for": 1.2,
+            "goals_against": 0.8,
+            "xg_for": 1.409886,
+            "xg_against": 1.269549,
+            "npxg_for": 1.409886,
+            "npxg_against": 1.269549,
+            "deep_for": 4.0,
+            "deep_against": 5.8,
+            "ppda_att": 202.8,
+            "ppda_def": 25.2,
+            "ppda_allowed_att": 258.4,
+            "ppda_allowed_def": 20.0,
+            "ppda_ratio": 8.047619047619047,
+            "ppda_allowed_ratio": 12.92
+          },
+          "role": "反证：利兹低失球及较温和的xGA支持平局或客队守住比赛。"
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_15/measurements",
+          "value": {
+            "goals_for": 1.6,
+            "goals_against": 1.2666666666666666,
+            "xg_for": 1.9828673333333335,
+            "xg_against": 1.3697836266666668,
+            "npxg_for": 1.9321226666666669,
+            "npxg_against": 1.31903896,
+            "deep_for": 7.333333333333333,
+            "deep_against": 7.0,
+            "ppda_att": 243.6,
+            "ppda_def": 24.8,
+            "ppda_allowed_att": 215.0,
+            "ppda_allowed_def": 20.0,
+            "ppda_ratio": 9.82258064516129,
+            "ppda_allowed_ratio": 10.75
+          },
+          "role": "支持及限制：较长窗口仍有正净机会，但跨季且不是完全对手调整结果。"
+        },
+        {
+          "pointer": "/records/1/historical_conditioned_performance/home/means",
+          "value": {
+            "actual_xg_for": 2.4235572000000003,
+            "actual_xg_against": 0.87933188,
+            "earlier_expected_xg_for": 1.7695665365716429,
+            "earlier_expected_xg_against": 1.5810809759191904,
+            "attack_xg_residual": 0.653990663428357,
+            "defense_xga_residual": -0.7017490959191905,
+            "net_xg_residual": 1.3557397593475475
+          },
+          "role": "条件解释：主队攻防较自身早期条件期待有所改善；不与原始xG重复计权。"
+        },
+        {
+          "pointer": "/records/1/historical_conditioned_performance/away/means",
+          "value": {
+            "actual_xg_for": 1.409886,
+            "actual_xg_against": 1.269549,
+            "earlier_expected_xg_for": 1.537642406178919,
+            "earlier_expected_xg_against": 1.5373107642060466,
+            "attack_xg_residual": -0.12775640617891895,
+            "defense_xga_residual": -0.2677617642060466,
+            "net_xg_residual": 0.14000535802712763
+          },
+          "role": "反证的条件解释：利兹防守也优于自己的较早期待，不能按两队净残差直接排名。"
+        },
+        {
+          "pointer": "/records/1/historical_conditioned_performance/home/observations/3",
+          "value": {
+            "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+            "understat_id": "31246",
+            "date": "2026-10-18",
+            "team": "football-data:E0:Bournemouth",
+            "opponent": "football-data:E0:Sunderland",
+            "is_home": true,
+            "actual_goals_for": 2,
+            "actual_goals_against": 0,
+            "actual_xg_for": 4.386,
+            "actual_xg_against": 0.0943414,
+            "earlier_expected_xg_for": 1.902054056410885,
+            "earlier_expected_xg_against": 1.2030375403595956,
+            "attack_xg_residual": 2.483945943589115,
+            "defense_xga_residual": -1.1086961403595956,
+            "net_xg_residual": 3.5926420839487108,
+            "past_fit_before_date": "2026-10-18",
+            "past_training_n": 2345,
+            "past_training_max_date": "2026-10-17",
+            "own_prior_current_season_matches": 6,
+            "opponent_prior_current_season_matches": 6,
+            "unknown_teams_in_earlier_fit": [],
+            "missing_reason": null,
+            "source_url": "https://understat.com/match/31246"
+          },
+          "role": "反证：Sunderland单场进攻残差和xG突出，限制五场均值的外推力度。"
+        },
+        {
+          "pointer": "/records/1/official_claims/1",
+          "value": {
+            "id": "AFCB_KROUPI_BENCH",
+            "fixture_id": "epl-2026-27-r9-2",
+            "team": "AFC Bournemouth",
+            "player": "Junior Kroupi",
+            "source_id": "AFCB_20261025_KROUPI",
+            "statement": "10/25官方赛前名单确认其康复后进入替补席。",
+            "source_excerpt": "takes his place among the Cherries substitutes",
+            "known_vs_uncertain": {
+              "known": "已在10/25进入正式比赛名单。",
+              "uncertain": "当前负荷、10/28后状态及10/31名单未确认。"
+            }
+          },
+          "role": "人员进展及限制：Kroupi曾进入替补席，未确定本轮首发负荷。"
+        },
+        {
+          "pointer": "/records/1/official_claims/6",
+          "value": {
+            "id": "LUFC_OCT25_AVAILABILITY",
+            "fixture_id": "epl-2026-27-r9-2",
+            "team": "Leeds United",
+            "player": "Dominic Calvert-Lewin; Anton Stach; Noah Okafor",
+            "source_id": "LUFC_20261025_FARKE",
+            "statement": "10/25官方人员段落说明三人此前训练受限，其中仅Calvert-Lewin可首发。",
+            "source_excerpt": "only Calvert-Lewin was passed fit to start",
+            "known_vs_uncertain": {
+              "known": "此前缺训未完全阻止Calvert-Lewin首发。",
+              "uncertain": "Okafor/Stach在10/31是否恢复到首发负荷未知。"
+            }
+          },
+          "role": "反证及人员限制：Calvert-Lewin已可在10/25首发，其他旧疑问未变成本轮确定缺阵。"
+        },
+        {
+          "pointer": "/official_unknowns/3/items",
+          "value": [
+            "10/29发布会已排期但本次未见正文，具体时刻亦未由节目单给出。",
+            "Rodon/Elvedi/Stach/Okafor最新状态及10/31首发负荷未知。"
+          ],
+          "role": "人员限制：利兹最新发布会正文及若干球员最终状态未知。"
+        }
+      ],
+      "unknowns": [
+        "未见本轮Leeds赛前新鲜官方发布会正文；Scott/Araujo等10/21状态不能直接当10/31确定伤停。",
+        "Kroupi已在10/25名单，但10/28杯赛后是否新增伤病、可首发负荷未知。",
+        "Toth近期情况未在本次已读官方来源核实；不采用二手传闻作为事实。",
+        "10/29发布会已排期但本次未见正文，具体时刻亦未由节目单给出。",
+        "Rodon/Elvedi/Stach/Okafor最新状态及10/31首发负荷未知。",
+        "本次没有完整最终球队名单，不能从未被点名受伤推断所有其他球员健康。",
+        "所有伤情只按报道当天成立；不把有望、恢复训练或旧缺阵状态硬编码为10/31确定可用或不可用。",
+        "五场样本较小；条件期待未控制红牌、比分状态、战术、完整跨赛事负荷或所有人员变化。"
+      ]
+    },
+    {
+      "fixture_id": "epl-2026-27-r9-3",
+      "source_fixture_id": 83,
+      "home": "Brentford",
+      "away": "Nottingham Forest",
+      "probabilities": {
+        "home_win": 0.29,
+        "draw": 0.28,
+        "away_win": 0.43
+      },
+      "preferred_single_outcome": "away_win",
+      "confidence": "低",
+      "reasoning": "森林客胜略先：其近五场机会收支积极，15场也保持正净机会；布伦特近五场的进球优势则未反映在机会收支上。条件上下文显示，森林攻防分别优于自身较早期待，且五场净残差均为正；布伦特的问题主要是近期进攻低于自身期待。该信息不构成跨队残差实力排名，也未与原始xG重复加权。布伦特主场及Damsgaard杯赛前可用的消息构成反向支撑，森林近期仅0.8个场均进球也令机会兑现存疑。Henry近五场本已零分钟，不把多周伤停再当成一次全新的实力扣分；Neco和Savona上草地不等于可出场。",
+      "counterarguments": [
+        "森林近五场场均只进0.8球，机会优势并未稳定兑现；客场单场仍可能受终结波动影响。",
+        "布伦特近五场场均进球1.8、失球1.4，且在主场；Damsgaard于10/27被教练称可用，仍有进攻应对空间。",
+        "布伦特防守条件残差均值仅略偏不利，不支持把其防线形容为全面崩溃。森林边路人员最终可用性亦未确认。"
+      ],
+      "cited_facts": [
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_5/measurements",
+          "value": {
+            "goals_for": 1.8,
+            "goals_against": 1.4,
+            "xg_for": 1.4241322,
+            "xg_against": 1.7519681999999999,
+            "npxg_for": 1.4241322,
+            "npxg_against": 1.5997341999999999,
+            "deep_for": 7.2,
+            "deep_against": 11.0,
+            "ppda_att": 208.6,
+            "ppda_def": 25.6,
+            "ppda_allowed_att": 194.6,
+            "ppda_allowed_def": 23.6,
+            "ppda_ratio": 8.1484375,
+            "ppda_allowed_ratio": 8.245762711864407
+          },
+          "role": "反证与支持：布伦特有实际进球优势，但同一窗口机会收支偏负。"
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_5/measurements",
+          "value": {
+            "goals_for": 0.8,
+            "goals_against": 1.4,
+            "xg_for": 2.275824,
+            "xg_against": 1.1603284,
+            "npxg_for": 2.275824,
+            "npxg_against": 1.1603284,
+            "deep_for": 7.8,
+            "deep_against": 6.0,
+            "ppda_att": 242.2,
+            "ppda_def": 18.6,
+            "ppda_allowed_att": 218.8,
+            "ppda_allowed_def": 19.0,
+            "ppda_ratio": 13.021505376344086,
+            "ppda_allowed_ratio": 11.51578947368421
+          },
+          "role": "支持与反证：森林机会量占优，实际进球偏低，对机会兑现保持疑问。"
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_15/measurements",
+          "value": {
+            "goals_for": 1.5333333333333334,
+            "goals_against": 1.2,
+            "xg_for": 1.8172748666666665,
+            "xg_against": 1.403628,
+            "npxg_for": 1.7157855333333332,
+            "npxg_against": 1.3528833333333334,
+            "deep_for": 6.6,
+            "deep_against": 7.066666666666666,
+            "ppda_att": 259.8666666666667,
+            "ppda_def": 19.533333333333335,
+            "ppda_allowed_att": 205.13333333333333,
+            "ppda_allowed_def": 23.466666666666665,
+            "ppda_ratio": 13.303754266211604,
+            "ppda_allowed_ratio": 8.741477272727273
+          },
+          "role": "支持及限制：较长窗口仍有正净机会，跨季样本只作背景。"
+        },
+        {
+          "pointer": "/records/2/historical_conditioned_performance/home/means",
+          "value": {
+            "actual_xg_for": 1.4241322,
+            "actual_xg_against": 1.7519681999999999,
+            "earlier_expected_xg_for": 1.7270100183956127,
+            "earlier_expected_xg_against": 1.674916766130569,
+            "attack_xg_residual": -0.3028778183956128,
+            "defense_xga_residual": 0.07705143386943077,
+            "net_xg_residual": -0.3799292522650436
+          },
+          "role": "条件解释及反证：布伦特进攻低于自身期待，防守平均偏差很小，未推断防线崩溃。"
+        },
+        {
+          "pointer": "/records/2/historical_conditioned_performance/away/means",
+          "value": {
+            "actual_xg_for": 2.275824,
+            "actual_xg_against": 1.1603284,
+            "earlier_expected_xg_for": 1.4269558227547752,
+            "earlier_expected_xg_against": 1.5770895247003125,
+            "attack_xg_residual": 0.8488681772452248,
+            "defense_xga_residual": -0.41676112470031257,
+            "net_xg_residual": 1.2656293019455371
+          },
+          "role": "条件解释：森林攻防优于自身较早期待；不是跨队绝对排名或新增独立证据。"
+        },
+        {
+          "pointer": "/records/2/official_claims/0",
+          "value": {
+            "id": "BFC_HENRY_WEEKS",
+            "fixture_id": "epl-2026-27-r9-3",
+            "team": "Brentford",
+            "player": "Rico Henry",
+            "source_id": "BFC_20261027_TEAM",
+            "statement": "教练确认髋和股四头肌伤，预计缺数周，可能到国际比赛日之后。",
+            "source_excerpt": "period of weeks",
+            "known_vs_uncertain": {
+              "known": "教练明确多周伤停。",
+              "uncertain": "无法据此计算精确复出日；10/31最终名单尚未公布。"
+            }
+          },
+          "role": "人员事实及限制：Henry多周伤停，没有精确复出日或最终名单确认。"
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/0/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 0,
+            "starts_sum": 0,
+            "missing_is_zero": false
+          },
+          "role": "反证：Henry近五场已为零分钟且记录完整，避免把缺阵重复当新增打击。"
+        },
+        {
+          "pointer": "/records/2/official_claims/1",
+          "value": {
+            "id": "BFC_DAMSGAARD",
+            "fixture_id": "epl-2026-27-r9-3",
+            "team": "Brentford",
+            "player": "Mikkel Damsgaard",
+            "source_id": "BFC_20261027_TEAM",
+            "statement": "此前右脚疼痛、训练和接触受控，教练称目前好转且可用。",
+            "source_excerpt": "good to go",
+            "known_vs_uncertain": {
+              "known": "10/27教练称可用。",
+              "uncertain": "不保证10/31首发或全场负荷；此后新伤未由该源覆盖。"
+            }
+          },
+          "role": "反证及人员限制：Damsgaard杯赛前被称可用，未保证本轮首发或全场负荷。"
+        },
+        {
+          "pointer": "/records/2/official_claims/7",
+          "value": {
+            "id": "NFFC_SAVONA_NECO_GRASS",
+            "fixture_id": "epl-2026-27-r9-3",
+            "team": "Nottingham Forest",
+            "player": "Nicolo Savona; Neco Williams",
+            "source_id": "NFFC_20261028_PRESS",
+            "statement": "10/28官方报道两人均在草地上被拍到参与活动。",
+            "source_excerpt": "both pictured on the grass",
+            "known_vs_uncertain": {
+              "known": "在训练场草地出现。",
+              "uncertain": "不证明通过医学评估、完整训练或10/31可出场。"
+            }
+          },
+          "role": "人员限制：Neco与Savona在草地出现不证明医学许可或本轮可用。"
+        }
+      ],
+      "unknowns": [
+        "10/27杯赛前来源不覆盖10/28后新增伤病或10/31最终名单。",
+        "Milambo/Dasilva训练恢复不能等同可首发。",
+        "14:00GMT发布会尚未举行；Neco/Savona/Dominguez赛前最终可用性未知。",
+        "本次没有完整最终球队名单，不能从未被点名受伤推断所有其他球员健康。",
+        "所有伤情只按报道当天成立；不把有望、恢复训练或旧缺阵状态硬编码为10/31确定可用或不可用。",
+        "五场样本较小；条件期待未控制红牌、比分状态、战术、完整跨赛事负荷或所有人员变化。"
+      ]
+    }
+  ]
+}

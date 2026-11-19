@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-10-29T12:08:19.212475+00:00",
+  "independent_context_review_status": "passed",
+  "original_three_fact_records_unchanged": true,
+  "original_forecast_tracks_unchanged": true,
+  "historical_model_exposure_disclosed": true,
+  "all_cited_values_resolved": 27,
+  "same_ten_fixture_ids": true,
+  "new_unique_fixtures": 0,
+  "results_queried": 0,
+  "new_probability_pools": 0,
+  "parameter_searches": 0
+}

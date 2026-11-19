@@ -1,0 +1,603 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-29T11:53:13.372894+00:00",
+  "scope": "one finite independent source/identity/date/model/arithmetic/explanation audit",
+  "input_packet_generated_at_utc": "2026-10-29T11:49:22.801024+00:00",
+  "history_count": 2360,
+  "current_season_source_rows_crosschecked": 80,
+  "team_count": 6,
+  "side_count": 30,
+  "unique_past_matches": 25,
+  "date_model_count": 13,
+  "known_residual_side_count": 30,
+  "unknown_residual_side_count": 0,
+  "maximum_manual_reconstruction_absolute_error": 2.220446049250313e-16,
+  "strict_earlier_date_and_exact_training_ids": true,
+  "original_window5_all_thirty_side_rows_retained": true,
+  "home_away_and_opponent_indices_checked": true,
+  "actual_minus_expected_attack_minus_defense_and_means_checked": true,
+  "unknowns_not_zero_or_selected_out": true,
+  "semantic_checks": {
+    "reconstructed_now_not_published_then": true,
+    "source_first_publication_and_revision_unknown": true,
+    "not_complete_injury_card_tactics_control": true,
+    "positive_defense_is_worse": true,
+    "net_not_win_probability_increment": true,
+    "no_accuracy_comparison": true,
+    "own_baseline_not_absolute_cross_team_strength": true,
+    "same_xg_observation_not_independent_evidence": true
+  },
+  "findings": [],
+  "review_execution": {
+    "model_fits": 0,
+    "network_requests": 0,
+    "parameter_searches": 0,
+    "accuracy_comparisons": 0,
+    "target_probabilities_accessed": false,
+    "target_outcomes_accessed": false
+  },
+  "fit_audit": [
+    {
+      "before_date": "2026-09-12",
+      "training_n": 2310,
+      "training_max_date": "2026-09-06",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-09-13",
+      "training_n": 2317,
+      "training_max_date": "2026-09-12",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-09-14",
+      "training_n": 2319,
+      "training_max_date": "2026-09-13",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-09-18",
+      "training_n": 2320,
+      "training_max_date": "2026-09-14",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-09-19",
+      "training_n": 2321,
+      "training_max_date": "2026-09-18",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-09-20",
+      "training_n": 2326,
+      "training_max_date": "2026-09-19",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-10",
+      "training_n": 2330,
+      "training_max_date": "2026-09-20",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-11",
+      "training_n": 2336,
+      "training_max_date": "2026-10-10",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-17",
+      "training_n": 2340,
+      "training_max_date": "2026-10-12",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-18",
+      "training_n": 2345,
+      "training_max_date": "2026-10-17",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-23",
+      "training_n": 2350,
+      "training_max_date": "2026-10-19",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-24",
+      "training_n": 2351,
+      "training_max_date": "2026-10-23",
+      "own_or_later_date_training_id_count": 0
+    },
+    {
+      "before_date": "2026-10-25",
+      "training_n": 2355,
+      "training_max_date": "2026-10-24",
+      "own_or_later_date_training_id_count": 0
+    }
+  ],
+  "team_audit": [
+    {
+      "team": "football-data:E0:Chelsea",
+      "original_reference_count": 5,
+      "available_residual_count": 5,
+      "means": {
+        "actual_xg_for": 1.1069034,
+        "actual_xg_against": 1.501684,
+        "earlier_expected_xg_for": 1.8548599273000477,
+        "earlier_expected_xg_against": 1.5164230202612918,
+        "attack_xg_residual": -0.7479565273000478,
+        "defense_xga_residual": -0.014739020261291858,
+        "net_xg_residual": -0.733217507038756
+      }
+    },
+    {
+      "team": "football-data:E0:Man United",
+      "original_reference_count": 5,
+      "available_residual_count": 5,
+      "means": {
+        "actual_xg_for": 1.1721646,
+        "actual_xg_against": 1.773032,
+        "earlier_expected_xg_for": 1.7249100594868618,
+        "earlier_expected_xg_against": 1.4734528415555281,
+        "attack_xg_residual": -0.5527454594868618,
+        "defense_xga_residual": 0.29957915844447186,
+        "net_xg_residual": -0.8523246179313336
+      }
+    },
+    {
+      "team": "football-data:E0:Bournemouth",
+      "original_reference_count": 5,
+      "available_residual_count": 5,
+      "means": {
+        "actual_xg_for": 2.4235572000000003,
+        "actual_xg_against": 0.87933188,
+        "earlier_expected_xg_for": 1.7695665365716429,
+        "earlier_expected_xg_against": 1.5810809759191904,
+        "attack_xg_residual": 0.653990663428357,
+        "defense_xga_residual": -0.7017490959191905,
+        "net_xg_residual": 1.3557397593475475
+      }
+    },
+    {
+      "team": "football-data:E0:Leeds",
+      "original_reference_count": 5,
+      "available_residual_count": 5,
+      "means": {
+        "actual_xg_for": 1.409886,
+        "actual_xg_against": 1.269549,
+        "earlier_expected_xg_for": 1.537642406178919,
+        "earlier_expected_xg_against": 1.5373107642060466,
+        "attack_xg_residual": -0.12775640617891895,
+        "defense_xga_residual": -0.2677617642060466,
+        "net_xg_residual": 0.14000535802712763
+      }
+    },
+    {
+      "team": "football-data:E0:Brentford",
+      "original_reference_count": 5,
+      "available_residual_count": 5,
+      "means": {
+        "actual_xg_for": 1.4241322,
+        "actual_xg_against": 1.7519681999999999,
+        "earlier_expected_xg_for": 1.7270100183956127,
+        "earlier_expected_xg_against": 1.674916766130569,
+        "attack_xg_residual": -0.3028778183956128,
+        "defense_xga_residual": 0.07705143386943077,
+        "net_xg_residual": -0.3799292522650436
+      }
+    },
+    {
+      "team": "football-data:E0:Nott'm Forest",
+      "original_reference_count": 5,
+      "available_residual_count": 5,
+      "means": {
+        "actual_xg_for": 2.275824,
+        "actual_xg_against": 1.1603284,
+        "earlier_expected_xg_for": 1.4269558227547752,
+        "earlier_expected_xg_against": 1.5770895247003125,
+        "attack_xg_residual": 0.8488681772452248,
+        "defense_xga_residual": -0.41676112470031257,
+        "net_xg_residual": 1.2656293019455371
+      }
+    }
+  ],
+  "side_audit": [
+    {
+      "team": "football-data:E0:Chelsea",
+      "match_id": "football-data:E0:2026/27:Chelsea|Hull",
+      "date": "2026-09-12",
+      "is_home": true,
+      "opponent": "football-data:E0:Hull",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 2.1050894984413584,
+      "earlier_expected_xg_against": 1.1318369797851366,
+      "attack_xg_residual": -0.8913494984413584,
+      "defense_xga_residual": 0.6717930202148634,
+      "net_xg_residual": -1.5631425186562218
+    },
+    {
+      "team": "football-data:E0:Chelsea",
+      "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+      "date": "2026-09-18",
+      "is_home": false,
+      "opponent": "football-data:E0:Brentford",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7470867668492827,
+      "earlier_expected_xg_against": 1.9582293879236208,
+      "attack_xg_residual": -0.8619757668492827,
+      "defense_xga_residual": 0.5211206120763794,
+      "net_xg_residual": -1.383096378925662
+    },
+    {
+      "team": "football-data:E0:Chelsea",
+      "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+      "date": "2026-10-10",
+      "is_home": true,
+      "opponent": "football-data:E0:Bournemouth",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.873694698274581,
+      "earlier_expected_xg_against": 1.6271204971530773,
+      "attack_xg_residual": -0.500494698274581,
+      "defense_xga_residual": 0.047929502846922656,
+      "net_xg_residual": -0.5484242011215037
+    },
+    {
+      "team": "football-data:E0:Chelsea",
+      "match_id": "football-data:E0:2026/27:Everton|Chelsea",
+      "date": "2026-10-17",
+      "is_home": false,
+      "opponent": "football-data:E0:Everton",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.614095668330029,
+      "earlier_expected_xg_against": 1.6049589551429315,
+      "attack_xg_residual": -0.012095668330028841,
+      "defense_xga_residual": -1.0342099551429316,
+      "net_xg_residual": 1.0221142868129027
+    },
+    {
+      "team": "football-data:E0:Chelsea",
+      "match_id": "football-data:E0:2026/27:Chelsea|Tottenham",
+      "date": "2026-10-24",
+      "is_home": true,
+      "opponent": "football-data:E0:Tottenham",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.9343330046049882,
+      "earlier_expected_xg_against": 1.2599692813016932,
+      "attack_xg_residual": -1.4738670046049882,
+      "defense_xga_residual": -0.2803282813016932,
+      "net_xg_residual": -1.193538723303295
+    },
+    {
+      "team": "football-data:E0:Man United",
+      "match_id": "football-data:E0:2026/27:Man United|Man City",
+      "date": "2026-09-13",
+      "is_home": true,
+      "opponent": "football-data:E0:Man City",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.6445894547994218,
+      "earlier_expected_xg_against": 1.711632227353938,
+      "attack_xg_residual": -0.7011834547994218,
+      "defense_xga_residual": -0.5709022273539379,
+      "net_xg_residual": -0.13028122744548387
+    },
+    {
+      "team": "football-data:E0:Man United",
+      "match_id": "football-data:E0:2026/27:Fulham|Man United",
+      "date": "2026-09-20",
+      "is_home": false,
+      "opponent": "football-data:E0:Fulham",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.6961711430667374,
+      "earlier_expected_xg_against": 1.3985055801441644,
+      "attack_xg_residual": 0.4283588569332626,
+      "defense_xga_residual": 0.3186844198558356,
+      "net_xg_residual": 0.10967443707742697
+    },
+    {
+      "team": "football-data:E0:Man United",
+      "match_id": "football-data:E0:2026/27:Man United|Tottenham",
+      "date": "2026-10-10",
+      "is_home": true,
+      "opponent": "football-data:E0:Tottenham",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 2.02738283965086,
+      "earlier_expected_xg_against": 1.1162809028849427,
+      "attack_xg_residual": -1.1595658396508601,
+      "defense_xga_residual": 0.9180790971150572,
+      "net_xg_residual": -2.0776449367659175
+    },
+    {
+      "team": "football-data:E0:Man United",
+      "match_id": "football-data:E0:2026/27:Leeds|Man United",
+      "date": "2026-10-18",
+      "is_home": false,
+      "opponent": "football-data:E0:Leeds",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.5352362182643755,
+      "earlier_expected_xg_against": 1.575121000107608,
+      "attack_xg_residual": -0.4538862182643755,
+      "defense_xga_residual": -0.164781000107608,
+      "net_xg_residual": -0.2891052181567675
+    },
+    {
+      "team": "football-data:E0:Man United",
+      "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+      "date": "2026-10-25",
+      "is_home": true,
+      "opponent": "football-data:E0:Bournemouth",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7211706416529142,
+      "earlier_expected_xg_against": 1.5657244972869875,
+      "attack_xg_residual": -0.8774506416529142,
+      "defense_xga_residual": 0.9968155027130123,
+      "net_xg_residual": -1.8742661443659265
+    },
+    {
+      "team": "football-data:E0:Bournemouth",
+      "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+      "date": "2026-09-12",
+      "is_home": true,
+      "opponent": "football-data:E0:Brentford",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.9577774911207755,
+      "earlier_expected_xg_against": 1.544869006767893,
+      "attack_xg_residual": 0.5917125088792246,
+      "defense_xga_residual": -0.750631006767893,
+      "net_xg_residual": 1.3423435156471175
+    },
+    {
+      "team": "football-data:E0:Bournemouth",
+      "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+      "date": "2026-09-20",
+      "is_home": true,
+      "opponent": "football-data:E0:Liverpool",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7951561408864898,
+      "earlier_expected_xg_against": 1.5626329925409685,
+      "attack_xg_residual": -0.8504501408864897,
+      "defense_xga_residual": -0.27147299254096846,
+      "net_xg_residual": -0.5789771483455213
+    },
+    {
+      "team": "football-data:E0:Bournemouth",
+      "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+      "date": "2026-10-10",
+      "is_home": false,
+      "opponent": "football-data:E0:Chelsea",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.6271204971530773,
+      "earlier_expected_xg_against": 1.873694698274581,
+      "attack_xg_residual": 0.047929502846922656,
+      "defense_xga_residual": -0.500494698274581,
+      "net_xg_residual": 0.5484242011215037
+    },
+    {
+      "team": "football-data:E0:Bournemouth",
+      "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+      "date": "2026-10-18",
+      "is_home": true,
+      "opponent": "football-data:E0:Sunderland",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.902054056410885,
+      "earlier_expected_xg_against": 1.2030375403595956,
+      "attack_xg_residual": 2.483945943589115,
+      "defense_xga_residual": -1.1086961403595956,
+      "net_xg_residual": 3.5926420839487108
+    },
+    {
+      "team": "football-data:E0:Bournemouth",
+      "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+      "date": "2026-10-25",
+      "is_home": false,
+      "opponent": "football-data:E0:Man United",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.5657244972869875,
+      "earlier_expected_xg_against": 1.7211706416529142,
+      "attack_xg_residual": 0.9968155027130123,
+      "defense_xga_residual": -0.8774506416529142,
+      "net_xg_residual": 1.8742661443659265
+    },
+    {
+      "team": "football-data:E0:Leeds",
+      "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+      "date": "2026-09-14",
+      "is_home": true,
+      "opponent": "football-data:E0:Newcastle",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7374294467293332,
+      "earlier_expected_xg_against": 1.4155547566168647,
+      "attack_xg_residual": 0.5527705532706668,
+      "defense_xga_residual": -0.6223897566168647,
+      "net_xg_residual": 1.1751603098875316
+    },
+    {
+      "team": "football-data:E0:Leeds",
+      "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+      "date": "2026-09-20",
+      "is_home": true,
+      "opponent": "football-data:E0:Crystal Palace",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.875163676284087,
+      "earlier_expected_xg_against": 1.3854013257565805,
+      "attack_xg_residual": -0.789643676284087,
+      "defense_xga_residual": -0.2563513257565804,
+      "net_xg_residual": -0.5332923505275067
+    },
+    {
+      "team": "football-data:E0:Leeds",
+      "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+      "date": "2026-10-10",
+      "is_home": false,
+      "opponent": "football-data:E0:Arsenal",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 0.9547990998851218,
+      "earlier_expected_xg_against": 1.974041208282872,
+      "attack_xg_residual": 0.2434609001148783,
+      "defense_xga_residual": 0.34656879171712784,
+      "net_xg_residual": -0.10310789160224954
+    },
+    {
+      "team": "football-data:E0:Leeds",
+      "match_id": "football-data:E0:2026/27:Leeds|Man United",
+      "date": "2026-10-18",
+      "is_home": true,
+      "opponent": "football-data:E0:Man United",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.575121000107608,
+      "earlier_expected_xg_against": 1.5352362182643755,
+      "attack_xg_residual": -0.164781000107608,
+      "defense_xga_residual": -0.4538862182643755,
+      "net_xg_residual": 0.2891052181567675
+    },
+    {
+      "team": "football-data:E0:Leeds",
+      "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+      "date": "2026-10-25",
+      "is_home": false,
+      "opponent": "football-data:E0:Sunderland",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.5456988078884448,
+      "earlier_expected_xg_against": 1.3763203121095402,
+      "attack_xg_residual": -0.4805888078884448,
+      "defense_xga_residual": -0.3527503121095401,
+      "net_xg_residual": -0.12783849577890471
+    },
+    {
+      "team": "football-data:E0:Brentford",
+      "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+      "date": "2026-09-12",
+      "is_home": false,
+      "opponent": "football-data:E0:Bournemouth",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.544869006767893,
+      "earlier_expected_xg_against": 1.9577774911207755,
+      "attack_xg_residual": -0.750631006767893,
+      "defense_xga_residual": 0.5917125088792246,
+      "net_xg_residual": -1.3423435156471175
+    },
+    {
+      "team": "football-data:E0:Brentford",
+      "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+      "date": "2026-09-18",
+      "is_home": true,
+      "opponent": "football-data:E0:Chelsea",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.9582293879236208,
+      "earlier_expected_xg_against": 1.7470867668492827,
+      "attack_xg_residual": 0.5211206120763794,
+      "defense_xga_residual": -0.8619757668492827,
+      "net_xg_residual": 1.383096378925662
+    },
+    {
+      "team": "football-data:E0:Brentford",
+      "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+      "date": "2026-10-10",
+      "is_home": false,
+      "opponent": "football-data:E0:Aston Villa",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.6406951237007712,
+      "earlier_expected_xg_against": 1.671138927770232,
+      "attack_xg_residual": -0.3594151237007712,
+      "defense_xga_residual": 0.16728107222976796,
+      "net_xg_residual": -0.5266961959305392
+    },
+    {
+      "team": "football-data:E0:Brentford",
+      "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+      "date": "2026-10-17",
+      "is_home": true,
+      "opponent": "football-data:E0:Liverpool",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7118591433071308,
+      "earlier_expected_xg_against": 1.657232852111285,
+      "attack_xg_residual": -0.8531261433071309,
+      "defense_xga_residual": -0.10790285211128481,
+      "net_xg_residual": -0.7452232911958461
+    },
+    {
+      "team": "football-data:E0:Brentford",
+      "match_id": "football-data:E0:2026/27:Hull|Brentford",
+      "date": "2026-10-25",
+      "is_home": false,
+      "opponent": "football-data:E0:Hull",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7793974302786484,
+      "earlier_expected_xg_against": 1.3413477928012711,
+      "attack_xg_residual": -0.07233743027864836,
+      "defense_xga_residual": 0.5961422071987288,
+      "net_xg_residual": -0.6684796374773772
+    },
+    {
+      "team": "football-data:E0:Nott'm Forest",
+      "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+      "date": "2026-09-12",
+      "is_home": false,
+      "opponent": "football-data:E0:Aston Villa",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.2209429814967052,
+      "earlier_expected_xg_against": 1.6844462227704933,
+      "attack_xg_residual": 1.5735670185032946,
+      "defense_xga_residual": -0.5965862227704932,
+      "net_xg_residual": 2.1701532412737876
+    },
+    {
+      "team": "football-data:E0:Nott'm Forest",
+      "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+      "date": "2026-09-19",
+      "is_home": true,
+      "opponent": "football-data:E0:Coventry",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.6131430777189777,
+      "earlier_expected_xg_against": 1.2472135266195956,
+      "attack_xg_residual": -0.2946230777189778,
+      "defense_xga_residual": -0.5534635266195956,
+      "net_xg_residual": 0.25884044890061786
+    },
+    {
+      "team": "football-data:E0:Nott'm Forest",
+      "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+      "date": "2026-10-11",
+      "is_home": false,
+      "opponent": "football-data:E0:Crystal Palace",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.3801422000389105,
+      "earlier_expected_xg_against": 1.7254359765639993,
+      "attack_xg_residual": 2.3836477999610897,
+      "defense_xga_residual": 0.5226340234360005,
+      "net_xg_residual": 1.8610137765250891
+    },
+    {
+      "team": "football-data:E0:Nott'm Forest",
+      "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+      "date": "2026-10-18",
+      "is_home": true,
+      "opponent": "football-data:E0:Arsenal",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.12133430765268,
+      "earlier_expected_xg_against": 1.7923743261215253,
+      "attack_xg_residual": -0.37412430765268,
+      "defense_xga_residual": -0.8772743261215252,
+      "net_xg_residual": 0.5031500184688452
+    },
+    {
+      "team": "football-data:E0:Nott'm Forest",
+      "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+      "date": "2026-10-23",
+      "is_home": false,
+      "opponent": "football-data:E0:Ipswich",
+      "unknown_teams": [],
+      "earlier_expected_xg_for": 1.7992165468666026,
+      "earlier_expected_xg_against": 1.435977571425949,
+      "attack_xg_residual": 0.9558734531333974,
+      "defense_xga_residual": -0.579115571425949,
+      "net_xg_residual": 1.5349890245593465
+    }
+  ],
+  "interpretation": [
+    "残差描述球队相对自己在历史对手和主客条件下较早模型基准的偏差；不同球队残差不构成可直接比较的绝对实力尺度。",
+    "原xG与进攻、防守、净残差均由同一观测导出，不能按新增独立观测重复计权。",
+    "历史期待由现在存档数据重建，并非当时已发布；来源首次发布和修订时点未知。",
+    "未完全控制伤停、红牌、战术、比分状态和人员变化；此审查不评估是否提高预测准确率。"
+  ]
+}

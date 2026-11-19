@@ -1,0 +1,3581 @@
+{
+  "as_of": "2026-10-29T11:11:36.434588+00:00",
+  "generated_at": "2026-10-29T11:11:47.176237+00:00",
+  "feature_before_date": "2026-10-29",
+  "records": [
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-1",
+        "source_fixture_id": 84,
+        "home": "Chelsea",
+        "away": "Manchester United",
+        "home_model_label": "Chelsea",
+        "away_model_label": "Man United",
+        "kickoff": "2026-10-31T12:30:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27",
+          "https://www.chelseafc.com/en/news/article/premier-league-ticket-news-manchester-united-at-home-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 6,
+        "away_source_team_id": 16
+      },
+      "home_model_identity": "football-data:E0:Chelsea",
+      "away_model_identity": "football-data:E0:Man United",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Chelsea",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.8,
+              "goals_against": 1.6,
+              "xg_for": 1.1069034,
+              "xg_against": 1.501684,
+              "npxg_for": 1.1069034,
+              "npxg_against": 1.501684,
+              "deep_for": 7.8,
+              "deep_against": 4.8,
+              "ppda_att": 250.2,
+              "ppda_def": 21.0,
+              "ppda_allowed_att": 257.4,
+              "ppda_allowed_def": 18.8,
+              "ppda_ratio": 11.914285714285715,
+              "ppda_allowed_ratio": 13.691489361702128
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Hull",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+                "date": "2026-09-18",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Chelsea",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Tottenham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.4666666666666666,
+              "goals_against": 1.9333333333333333,
+              "xg_for": 1.3306539333333334,
+              "xg_against": 1.7534522666666668,
+              "npxg_for": 1.2799092666666667,
+              "npxg_against": 1.7027076,
+              "deep_for": 7.266666666666667,
+              "deep_against": 7.066666666666666,
+              "ppda_att": 275.4,
+              "ppda_def": 20.266666666666666,
+              "ppda_allowed_att": 256.6666666666667,
+              "ppda_allowed_def": 22.066666666666666,
+              "ppda_ratio": 13.588815789473685,
+              "ppda_allowed_ratio": 11.63141993957704
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Man City",
+                "date": "2026-04-12",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Man United",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brighton|Chelsea",
+                "date": "2026-04-21",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Nott'm Forest",
+                "date": "2026-05-04",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Chelsea",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Tottenham",
+                "date": "2026-05-19",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Chelsea",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Chelsea",
+                "date": "2026-08-24",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Brighton",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Chelsea",
+                "date": "2026-09-06",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Hull",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+                "date": "2026-09-18",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Chelsea",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Tottenham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Man United",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 0.6,
+              "goals_against": 1.4,
+              "xg_for": 1.1721646,
+              "xg_against": 1.773032,
+              "npxg_for": 1.1721646,
+              "npxg_against": 1.773032,
+              "deep_for": 9.0,
+              "deep_against": 4.6,
+              "ppda_att": 260.8,
+              "ppda_def": 24.4,
+              "ppda_allowed_att": 253.0,
+              "ppda_allowed_def": 26.2,
+              "ppda_ratio": 10.688524590163935,
+              "ppda_allowed_ratio": 9.65648854961832
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Man City",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Man United",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Tottenham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Man United",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.5333333333333334,
+              "goals_against": 1.3333333333333333,
+              "xg_for": 1.7822748,
+              "xg_against": 1.5714412,
+              "npxg_for": 1.7315301333333333,
+              "npxg_against": 1.5714412,
+              "deep_for": 8.733333333333333,
+              "deep_against": 6.6,
+              "ppda_att": 255.73333333333332,
+              "ppda_def": 20.933333333333334,
+              "ppda_allowed_att": 256.6,
+              "ppda_allowed_def": 23.0,
+              "ppda_ratio": 12.21656050955414,
+              "ppda_allowed_ratio": 11.156521739130435
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Leeds",
+                "date": "2026-04-13",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Man United",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Brentford",
+                "date": "2026-04-27",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Liverpool",
+                "date": "2026-05-03",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Man United",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Nott'm Forest",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brighton|Man United",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Man United",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Hull",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Ipswich",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Man United",
+                "date": "2026-09-06",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Man City",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Man United",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Tottenham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Man United",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-2",
+        "source_fixture_id": 82,
+        "home": "AFC Bournemouth",
+        "away": "Leeds United",
+        "home_model_label": "Bournemouth",
+        "away_model_label": "Leeds",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27",
+          "https://www.leedsunited.com/en/news/ticket-information-for-bournemouth-trip"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 3,
+        "away_source_team_id": 13
+      },
+      "home_model_identity": "football-data:E0:Bournemouth",
+      "away_model_identity": "football-data:E0:Leeds",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Bournemouth",
+          "history_count": 160,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.6,
+              "goals_against": 1.6,
+              "xg_for": 2.4235572000000003,
+              "xg_against": 0.87933188,
+              "npxg_for": 2.4235572000000003,
+              "npxg_against": 0.87933188,
+              "deep_for": 8.8,
+              "deep_against": 5.4,
+              "ppda_att": 244.0,
+              "ppda_def": 27.0,
+              "ppda_allowed_att": 226.4,
+              "ppda_allowed_def": 19.6,
+              "ppda_ratio": 9.037037037037036,
+              "ppda_allowed_ratio": 11.551020408163266
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.6,
+              "goals_against": 1.2666666666666666,
+              "xg_for": 1.9828673333333335,
+              "xg_against": 1.3697836266666668,
+              "npxg_for": 1.9321226666666669,
+              "npxg_against": 1.31903896,
+              "deep_for": 7.333333333333333,
+              "deep_against": 7.0,
+              "ppda_att": 243.6,
+              "ppda_def": 24.8,
+              "ppda_allowed_att": 215.0,
+              "ppda_allowed_def": 20.0,
+              "ppda_ratio": 9.82258064516129,
+              "ppda_allowed_ratio": 10.75
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Bournemouth",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Newcastle|Bournemouth",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Bournemouth|Leeds",
+                "date": "2026-04-22",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Bournemouth|Crystal Palace",
+                "date": "2026-05-03",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Fulham|Bournemouth",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Bournemouth|Man City",
+                "date": "2026-05-19",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Bournemouth",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Bournemouth",
+                "date": "2026-08-23",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Everton",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Bournemouth",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Leeds",
+          "history_count": 160,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.2,
+              "goals_against": 0.8,
+              "xg_for": 1.409886,
+              "xg_against": 1.269549,
+              "npxg_for": 1.409886,
+              "npxg_against": 1.269549,
+              "deep_for": 4.0,
+              "deep_against": 5.8,
+              "ppda_att": 202.8,
+              "ppda_def": 25.2,
+              "ppda_allowed_att": 258.4,
+              "ppda_allowed_def": 20.0,
+              "ppda_ratio": 8.047619047619047,
+              "ppda_allowed_ratio": 12.92
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+                "date": "2026-09-14",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Man United",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.4,
+              "goals_against": 0.9333333333333333,
+              "xg_for": 1.6858382,
+              "xg_against": 1.4383026666666665,
+              "npxg_for": 1.5843515333333333,
+              "npxg_against": 1.4383026666666665,
+              "deep_for": 4.533333333333333,
+              "deep_against": 6.866666666666666,
+              "ppda_att": 224.53333333333333,
+              "ppda_def": 23.466666666666665,
+              "ppda_allowed_att": 220.46666666666667,
+              "ppda_allowed_def": 21.333333333333332,
+              "ppda_ratio": 9.568181818181818,
+              "ppda_allowed_ratio": 10.334375
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Leeds",
+                "date": "2026-04-13",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Leeds|Wolves",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Wolves",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Bournemouth|Leeds",
+                "date": "2026-04-22",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Leeds|Burnley",
+                "date": "2026-05-01",
+                "opponent": "football-data:E0:Burnley",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Tottenham|Leeds",
+                "date": "2026-05-11",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Leeds|Brighton",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:West Ham|Leeds",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Leeds",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Brentford",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Leeds",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+                "date": "2026-09-14",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Man United",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-3",
+        "source_fixture_id": 83,
+        "home": "Brentford",
+        "away": "Nottingham Forest",
+        "home_model_label": "Brentford",
+        "away_model_label": "Nott'm Forest",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 4,
+        "away_source_team_id": 18
+      },
+      "home_model_identity": "football-data:E0:Brentford",
+      "away_model_identity": "football-data:E0:Nott'm Forest",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Brentford",
+          "history_count": 198,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.8,
+              "goals_against": 1.4,
+              "xg_for": 1.4241322,
+              "xg_against": 1.7519681999999999,
+              "npxg_for": 1.4241322,
+              "npxg_against": 1.5997341999999999,
+              "deep_for": 7.2,
+              "deep_against": 11.0,
+              "ppda_att": 208.6,
+              "ppda_def": 25.6,
+              "ppda_allowed_att": 194.6,
+              "ppda_allowed_def": 23.6,
+              "ppda_ratio": 8.1484375,
+              "ppda_allowed_ratio": 8.245762711864407
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+                "date": "2026-09-18",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Brentford",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Hull",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.5333333333333334,
+              "goals_against": 1.2666666666666666,
+              "xg_for": 1.7476066000000001,
+              "xg_against": 1.7983698,
+              "npxg_for": 1.5953726000000001,
+              "npxg_against": 1.6461364666666667,
+              "deep_for": 6.8,
+              "deep_against": 9.6,
+              "ppda_att": 208.13333333333333,
+              "ppda_def": 23.066666666666666,
+              "ppda_allowed_att": 209.73333333333332,
+              "ppda_allowed_def": 21.2,
+              "ppda_ratio": 9.023121387283236,
+              "ppda_allowed_ratio": 9.89308176100629
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|Everton",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|Fulham",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Brentford",
+                "date": "2026-04-27",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|West Ham",
+                "date": "2026-05-02",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Brentford",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|Crystal Palace",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Brentford",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Tottenham",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Brentford",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Sunderland",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+                "date": "2026-09-18",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Brentford",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Hull",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Nott'm Forest",
+          "history_count": 160,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 0.8,
+              "goals_against": 1.4,
+              "xg_for": 2.275824,
+              "xg_against": 1.1603284,
+              "npxg_for": 2.275824,
+              "npxg_against": 1.1603284,
+              "deep_for": 7.8,
+              "deep_against": 6.0,
+              "ppda_att": 242.2,
+              "ppda_def": 18.6,
+              "ppda_allowed_att": 218.8,
+              "ppda_allowed_def": 19.0,
+              "ppda_ratio": 13.021505376344086,
+              "ppda_allowed_ratio": 11.51578947368421
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+                "date": "2026-10-23",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.5333333333333334,
+              "goals_against": 1.2,
+              "xg_for": 1.8172748666666665,
+              "xg_against": 1.403628,
+              "npxg_for": 1.7157855333333332,
+              "npxg_against": 1.3528833333333334,
+              "deep_for": 6.6,
+              "deep_against": 7.066666666666666,
+              "ppda_att": 259.8666666666667,
+              "ppda_def": 19.533333333333335,
+              "ppda_allowed_att": 205.13333333333333,
+              "ppda_allowed_def": 23.466666666666665,
+              "ppda_ratio": 13.303754266211604,
+              "ppda_allowed_ratio": 8.741477272727273
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Aston Villa",
+                "date": "2026-04-12",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Burnley",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Burnley",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Nott'm Forest",
+                "date": "2026-04-24",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Nott'm Forest",
+                "date": "2026-05-04",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Newcastle",
+                "date": "2026-05-10",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Nott'm Forest",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Bournemouth",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Leeds",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Nott'm Forest",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Tottenham",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+                "date": "2026-10-23",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-4",
+        "source_fixture_id": 85,
+        "home": "Coventry City",
+        "away": "Sunderland",
+        "home_model_label": "Coventry",
+        "away_model_label": "Sunderland",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 7,
+        "away_source_team_id": 20
+      },
+      "home_model_identity": "football-data:E0:Coventry",
+      "away_model_identity": "football-data:E0:Sunderland",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Coventry",
+          "history_count": 8,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.2,
+              "goals_against": 2.0,
+              "xg_for": 0.9905054,
+              "xg_against": 1.5693842,
+              "npxg_for": 0.8382721999999999,
+              "npxg_against": 1.4171502,
+              "deep_for": 4.6,
+              "deep_against": 5.6,
+              "ppda_att": 321.2,
+              "ppda_def": 14.8,
+              "ppda_allowed_att": 146.2,
+              "ppda_allowed_def": 18.8,
+              "ppda_ratio": 21.7027027027027,
+              "ppda_allowed_ratio": 7.776595744680851
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Brighton",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Newcastle",
+                "date": "2026-10-12",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Coventry",
+                "date": "2026-10-19",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Fulham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 8,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 0.75,
+              "goals_against": 1.875,
+              "xg_for": 1.023281625,
+              "xg_against": 1.543908375,
+              "npxg_for": 0.928135875,
+              "npxg_against": 1.448762125,
+              "deep_for": 3.875,
+              "deep_against": 6.875,
+              "ppda_att": 318.875,
+              "ppda_def": 16.375,
+              "ppda_allowed_att": 166.25,
+              "ppda_allowed_def": 18.5,
+              "ppda_ratio": 19.47328244274809,
+              "ppda_allowed_ratio": 8.986486486486486
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Coventry",
+                "date": "2026-08-21",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Hull",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Coventry",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Brighton",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Newcastle",
+                "date": "2026-10-12",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Coventry",
+                "date": "2026-10-19",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Fulham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Sunderland",
+          "history_count": 46,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 0.6,
+              "goals_against": 2.2,
+              "xg_for": 1.43292488,
+              "xg_against": 2.350068,
+              "npxg_for": 1.28069088,
+              "npxg_against": 2.197834,
+              "deep_for": 4.6,
+              "deep_against": 7.6,
+              "ppda_att": 213.4,
+              "ppda_def": 18.2,
+              "ppda_allowed_att": 180.6,
+              "ppda_allowed_def": 20.0,
+              "ppda_ratio": 11.725274725274724,
+              "ppda_allowed_ratio": 9.03
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Arsenal",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Sunderland",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Brighton",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.0666666666666667,
+              "goals_against": 1.7333333333333334,
+              "xg_for": 1.4523967599999998,
+              "xg_against": 1.8096684,
+              "npxg_for": 1.3509080933333335,
+              "npxg_against": 1.7589237333333334,
+              "deep_for": 6.866666666666666,
+              "deep_against": 6.2,
+              "ppda_att": 216.46666666666667,
+              "ppda_def": 21.133333333333333,
+              "ppda_allowed_att": 211.46666666666667,
+              "ppda_allowed_def": 20.2,
+              "ppda_ratio": 10.242902208201892,
+              "ppda_allowed_ratio": 10.468646864686468
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Tottenham",
+                "date": "2026-04-12",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Aston Villa|Sunderland",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Nott'm Forest",
+                "date": "2026-04-24",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Wolves|Sunderland",
+                "date": "2026-05-02",
+                "opponent": "football-data:E0:Wolves",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Man United",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Everton|Sunderland",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Chelsea",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Sunderland",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Fulham",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Sunderland",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Arsenal",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Sunderland",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Brighton",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-5",
+        "source_fixture_id": 86,
+        "home": "Hull City",
+        "away": "Ipswich Town",
+        "home_model_label": "Hull",
+        "away_model_label": "Ipswich",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 11,
+        "away_source_team_id": 12
+      },
+      "home_model_identity": "football-data:E0:Hull",
+      "away_model_identity": "football-data:E0:Ipswich",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Hull",
+          "history_count": 8,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.2,
+              "goals_against": 1.6,
+              "xg_for": 1.3126738,
+              "xg_against": 1.87323,
+              "npxg_for": 1.1604398,
+              "npxg_against": 1.7209966,
+              "deep_for": 5.2,
+              "deep_against": 10.6,
+              "ppda_att": 324.4,
+              "ppda_def": 22.8,
+              "ppda_allowed_att": 146.6,
+              "ppda_allowed_def": 20.0,
+              "ppda_ratio": 14.228070175438596,
+              "ppda_allowed_ratio": 7.33
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Hull",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Hull",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Everton",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Hull",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Brentford",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 8,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.125,
+              "goals_against": 1.0,
+              "xg_for": 1.16646875,
+              "xg_against": 1.74531,
+              "npxg_for": 1.0713225,
+              "npxg_against": 1.650164125,
+              "deep_for": 4.125,
+              "deep_against": 9.375,
+              "ppda_att": 323.625,
+              "ppda_def": 20.5,
+              "ppda_allowed_att": 140.5,
+              "ppda_allowed_def": 17.5,
+              "ppda_ratio": 15.786585365853659,
+              "ppda_allowed_ratio": 8.028571428571428
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Man United",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Hull",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Aston Villa",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Hull",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Hull",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Everton",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Hull",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Brentford",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Ipswich",
+          "history_count": 46,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.6,
+              "goals_against": 1.6,
+              "xg_for": 1.3247184,
+              "xg_against": 2.4124216,
+              "npxg_for": 1.1724842,
+              "npxg_against": 2.4124216,
+              "deep_for": 5.4,
+              "deep_against": 7.8,
+              "ppda_att": 289.6,
+              "ppda_def": 24.8,
+              "ppda_allowed_att": 243.2,
+              "ppda_allowed_def": 18.6,
+              "ppda_ratio": 11.67741935483871,
+              "ppda_allowed_ratio": 13.075268817204302
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Ipswich",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Ipswich",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Fulham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Ipswich",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+                "date": "2026-10-23",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.1333333333333333,
+              "goals_against": 2.2,
+              "xg_for": 1.1105509333333332,
+              "xg_against": 2.1714374,
+              "npxg_for": 1.0598062,
+              "npxg_against": 2.0699487333333333,
+              "deep_for": 4.0,
+              "deep_against": 10.266666666666667,
+              "ppda_att": 290.6666666666667,
+              "ppda_def": 20.4,
+              "ppda_allowed_att": 212.0,
+              "ppda_allowed_def": 21.333333333333332,
+              "ppda_ratio": 14.248366013071895,
+              "ppda_allowed_ratio": 9.9375
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2024/25:Chelsea|Ipswich",
+                "date": "2025-04-13",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2024/25:Ipswich|Arsenal",
+                "date": "2025-04-20",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2024/25:Newcastle|Ipswich",
+                "date": "2025-04-26",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2024/25:Everton|Ipswich",
+                "date": "2025-05-03",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2024/25:Ipswich|Brentford",
+                "date": "2025-05-10",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2024/25:Leicester|Ipswich",
+                "date": "2025-05-18",
+                "opponent": "football-data:E0:Leicester",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2024/25:Ipswich|West Ham",
+                "date": "2025-05-25",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Sunderland",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Ipswich",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Liverpool",
+                "date": "2026-09-04",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Ipswich",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Ipswich",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Fulham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Ipswich",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+                "date": "2026-10-23",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-6",
+        "source_fixture_id": 88,
+        "home": "Manchester City",
+        "away": "Brighton & Hove Albion",
+        "home_model_label": "Man City",
+        "away_model_label": "Brighton",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 15,
+        "away_source_team_id": 5
+      },
+      "home_model_identity": "football-data:E0:Man City",
+      "away_model_identity": "football-data:E0:Brighton",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Man City",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 2.6,
+              "goals_against": 1.4,
+              "xg_for": 2.337892,
+              "xg_against": 1.3653359999999999,
+              "npxg_for": 2.337892,
+              "npxg_against": 1.2131018,
+              "deep_for": 9.6,
+              "deep_against": 6.0,
+              "ppda_att": 199.6,
+              "ppda_def": 20.4,
+              "ppda_allowed_att": 291.0,
+              "ppda_allowed_def": 29.8,
+              "ppda_ratio": 9.784313725490197,
+              "ppda_allowed_ratio": 9.765100671140939
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Man City",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Sunderland",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Man City",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Ipswich",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Man City",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 2.2666666666666666,
+              "goals_against": 1.0666666666666667,
+              "xg_for": 2.356214666666667,
+              "xg_against": 1.3437574,
+              "npxg_for": 2.356214666666667,
+              "npxg_against": 1.2930126666666666,
+              "deep_for": 12.2,
+              "deep_against": 4.2,
+              "ppda_att": 194.53333333333333,
+              "ppda_def": 20.0,
+              "ppda_allowed_att": 310.06666666666666,
+              "ppda_allowed_def": 24.0,
+              "ppda_ratio": 9.726666666666667,
+              "ppda_allowed_ratio": 12.919444444444444
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Arsenal",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Burnley|Man City",
+                "date": "2026-04-22",
+                "opponent": "football-data:E0:Burnley",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Everton|Man City",
+                "date": "2026-05-04",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Brentford",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Crystal Palace",
+                "date": "2026-05-13",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Bournemouth|Man City",
+                "date": "2026-05-19",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Aston Villa",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Bournemouth",
+                "date": "2026-08-23",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Man City",
+                "date": "2026-08-28",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Coventry",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Man City",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Sunderland",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Man City",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man City|Ipswich",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Man City",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Brighton",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 3.0,
+              "goals_against": 0.4,
+              "xg_for": 2.01704,
+              "xg_against": 1.0134004,
+              "npxg_for": 1.8648060000000002,
+              "npxg_against": 1.0134004,
+              "deep_for": 6.6,
+              "deep_against": 7.0,
+              "ppda_att": 207.6,
+              "ppda_def": 25.4,
+              "ppda_allowed_att": 261.6,
+              "ppda_allowed_def": 14.8,
+              "ppda_ratio": 8.173228346456693,
+              "ppda_allowed_ratio": 17.675675675675677
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Brighton",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Arsenal",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Brighton",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Crystal Palace",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Brighton",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 2.2666666666666666,
+              "goals_against": 1.0666666666666667,
+              "xg_for": 1.9905058666666666,
+              "xg_against": 1.3864698666666666,
+              "npxg_for": 1.9397612,
+              "npxg_against": 1.3864698666666666,
+              "deep_for": 8.533333333333333,
+              "deep_against": 5.8,
+              "ppda_att": 179.86666666666667,
+              "ppda_def": 26.266666666666666,
+              "ppda_allowed_att": 289.1333333333333,
+              "ppda_allowed_def": 15.066666666666666,
+              "ppda_ratio": 6.847715736040609,
+              "ppda_allowed_ratio": 19.190265486725664
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Burnley|Brighton",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Burnley",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Tottenham|Brighton",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brighton|Chelsea",
+                "date": "2026-04-21",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Newcastle|Brighton",
+                "date": "2026-05-02",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brighton|Wolves",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Wolves",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Leeds|Brighton",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brighton|Man United",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Aston Villa",
+                "date": "2026-08-23",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Brighton",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Leeds",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Brighton",
+                "date": "2026-09-13",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Arsenal",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Brighton",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Crystal Palace",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Brighton",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-7",
+        "source_fixture_id": 90,
+        "home": "Tottenham Hotspur",
+        "away": "Crystal Palace",
+        "home_model_label": "Tottenham",
+        "away_model_label": "Crystal Palace",
+        "kickoff": "2026-10-31T17:30:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 19,
+        "away_source_team_id": 8
+      },
+      "home_model_identity": "football-data:E0:Tottenham",
+      "away_model_identity": "football-data:E0:Crystal Palace",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Tottenham",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.6,
+              "goals_against": 1.0,
+              "xg_for": 1.2888904,
+              "xg_against": 1.1563886,
+              "npxg_for": 1.2888904,
+              "npxg_against": 1.1563886,
+              "deep_for": 7.8,
+              "deep_against": 7.6,
+              "ppda_att": 200.6,
+              "ppda_def": 28.8,
+              "ppda_allowed_att": 324.2,
+              "ppda_allowed_def": 23.4,
+              "ppda_ratio": 6.965277777777778,
+              "ppda_allowed_ratio": 13.854700854700855
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Everton",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Aston Villa",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Tottenham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Coventry",
+                "date": "2026-10-19",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Tottenham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.0666666666666667,
+              "goals_against": 1.1333333333333333,
+              "xg_for": 1.3077964,
+              "xg_against": 1.2787234,
+              "npxg_for": 1.3077964,
+              "npxg_against": 1.1772340666666667,
+              "deep_for": 5.866666666666666,
+              "deep_against": 5.933333333333334,
+              "ppda_att": 205.33333333333334,
+              "ppda_def": 25.8,
+              "ppda_allowed_att": 276.3333333333333,
+              "ppda_allowed_def": 26.0,
+              "ppda_ratio": 7.958656330749354,
+              "ppda_allowed_ratio": 10.628205128205128
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Sunderland|Tottenham",
+                "date": "2026-04-12",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Tottenham|Brighton",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Wolves|Tottenham",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Wolves",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Aston Villa|Tottenham",
+                "date": "2026-05-03",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Tottenham|Leeds",
+                "date": "2026-05-11",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Chelsea|Tottenham",
+                "date": "2026-05-19",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Tottenham|Everton",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Tottenham",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Newcastle",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Tottenham",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Everton",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Aston Villa",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Man United|Tottenham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Coventry",
+                "date": "2026-10-19",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Chelsea|Tottenham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Crystal Palace",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.0,
+              "goals_against": 2.2,
+              "xg_for": 1.3943134000000001,
+              "xg_against": 2.086658,
+              "npxg_for": 1.3943134000000001,
+              "npxg_against": 2.086658,
+              "deep_for": 6.6,
+              "deep_against": 6.4,
+              "ppda_att": 250.0,
+              "ppda_def": 18.0,
+              "ppda_allowed_att": 208.6,
+              "ppda_allowed_def": 24.4,
+              "ppda_ratio": 13.88888888888889,
+              "ppda_allowed_ratio": 8.549180327868852
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Ipswich",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Crystal Palace",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Newcastle",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.0,
+              "goals_against": 2.2666666666666666,
+              "xg_for": 1.5096416,
+              "xg_against": 2.080963,
+              "npxg_for": 1.4588969333333333,
+              "npxg_against": 2.0302183333333335,
+              "deep_for": 6.333333333333333,
+              "deep_against": 9.133333333333333,
+              "ppda_att": 270.2,
+              "ppda_def": 18.0,
+              "ppda_allowed_att": 217.46666666666667,
+              "ppda_allowed_def": 20.533333333333335,
+              "ppda_ratio": 15.011111111111111,
+              "ppda_allowed_ratio": 10.590909090909092
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Crystal Palace|West Ham",
+                "date": "2026-04-20",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Crystal Palace",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Bournemouth|Crystal Palace",
+                "date": "2026-05-03",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Crystal Palace|Everton",
+                "date": "2026-05-10",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Crystal Palace",
+                "date": "2026-05-13",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|Crystal Palace",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Crystal Palace|Arsenal",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Crystal Palace",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Man City",
+                "date": "2026-08-28",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Crystal Palace",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Ipswich",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Crystal Palace",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Newcastle",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-8",
+        "source_fixture_id": 81,
+        "home": "Aston Villa",
+        "away": "Fulham",
+        "home_model_label": "Aston Villa",
+        "away_model_label": "Fulham",
+        "kickoff": "2026-10-31T20:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 2,
+        "away_source_team_id": 10
+      },
+      "home_model_identity": "football-data:E0:Aston Villa",
+      "away_model_identity": "football-data:E0:Fulham",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Aston Villa",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.8,
+              "goals_against": 1.4,
+              "xg_for": 1.4727288,
+              "xg_against": 1.8006325999999997,
+              "npxg_for": 1.4727288,
+              "npxg_against": 1.8006325999999997,
+              "deep_for": 7.8,
+              "deep_against": 9.6,
+              "ppda_att": 231.2,
+              "ppda_def": 19.2,
+              "ppda_allowed_att": 211.4,
+              "ppda_allowed_def": 30.4,
+              "ppda_ratio": 12.041666666666666,
+              "ppda_allowed_ratio": 6.953947368421052
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Aston Villa",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Aston Villa",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Man City",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.5333333333333334,
+              "goals_against": 1.6,
+              "xg_for": 1.5371172,
+              "xg_against": 1.6506772,
+              "npxg_for": 1.5371172,
+              "npxg_against": 1.6506772,
+              "deep_for": 5.6,
+              "deep_against": 7.8,
+              "ppda_att": 222.53333333333333,
+              "ppda_def": 17.266666666666666,
+              "ppda_allowed_att": 241.66666666666666,
+              "ppda_allowed_def": 25.533333333333335,
+              "ppda_ratio": 12.888030888030888,
+              "ppda_allowed_ratio": 9.464751958224543
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Aston Villa",
+                "date": "2026-04-12",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Aston Villa|Sunderland",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Fulham|Aston Villa",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Aston Villa|Tottenham",
+                "date": "2026-05-03",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Burnley|Aston Villa",
+                "date": "2026-05-10",
+                "opponent": "football-data:E0:Burnley",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Aston Villa|Liverpool",
+                "date": "2026-05-15",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Aston Villa",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Aston Villa",
+                "date": "2026-08-23",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Arsenal",
+                "date": "2026-08-31",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Aston Villa",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Hull",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Aston Villa",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Aston Villa",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Man City",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Fulham",
+          "history_count": 198,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 0.8,
+              "goals_against": 0.6,
+              "xg_for": 1.4530417999999998,
+              "xg_against": 1.1430972000000001,
+              "npxg_for": 1.4530417999999998,
+              "npxg_against": 1.1430972000000001,
+              "deep_for": 8.8,
+              "deep_against": 5.6,
+              "ppda_att": 209.0,
+              "ppda_def": 17.8,
+              "ppda_allowed_att": 328.8,
+              "ppda_allowed_def": 21.6,
+              "ppda_ratio": 11.741573033707866,
+              "ppda_allowed_ratio": 15.222222222222221
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Fulham",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Man United",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Fulham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Hull",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Fulham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 0.8,
+              "goals_against": 1.1333333333333333,
+              "xg_for": 1.4129106666666666,
+              "xg_against": 1.6204303333333334,
+              "npxg_for": 1.3621663333333334,
+              "npxg_against": 1.6204303333333334,
+              "deep_for": 9.533333333333333,
+              "deep_against": 6.933333333333334,
+              "ppda_att": 232.06666666666666,
+              "ppda_def": 21.133333333333333,
+              "ppda_allowed_att": 300.2,
+              "ppda_allowed_def": 20.533333333333335,
+              "ppda_ratio": 10.981072555205047,
+              "ppda_allowed_ratio": 14.62012987012987
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Fulham",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|Fulham",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Fulham|Aston Villa",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Fulham",
+                "date": "2026-05-02",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Fulham|Bournemouth",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Wolves|Fulham",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Wolves",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Fulham|Newcastle",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Chelsea",
+                "date": "2026-08-24",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Fulham",
+                "date": "2026-08-30",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Crystal Palace",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Fulham",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Man United",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Fulham",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Fulham|Hull",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Fulham",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-9",
+        "source_fixture_id": 87,
+        "home": "Liverpool",
+        "away": "Arsenal",
+        "home_model_label": "Liverpool",
+        "away_model_label": "Arsenal",
+        "kickoff": "2026-11-01T16:30:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 14,
+        "away_source_team_id": 1
+      },
+      "home_model_identity": "football-data:E0:Liverpool",
+      "away_model_identity": "football-data:E0:Arsenal",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Liverpool",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.0,
+              "goals_against": 0.8,
+              "xg_for": 1.335956,
+              "xg_against": 1.1252884,
+              "npxg_for": 1.335956,
+              "npxg_against": 1.1252884,
+              "deep_for": 7.8,
+              "deep_against": 10.6,
+              "ppda_att": 241.0,
+              "ppda_def": 24.4,
+              "ppda_allowed_att": 201.0,
+              "ppda_allowed_def": 20.2,
+              "ppda_ratio": 9.87704918032787,
+              "ppda_allowed_ratio": 9.950495049504951
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Fulham",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Man City",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Brighton",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.6,
+              "goals_against": 1.2666666666666666,
+              "xg_for": 1.5252806666666667,
+              "xg_against": 1.5290345333333333,
+              "npxg_for": 1.474536,
+              "npxg_against": 1.4782898666666666,
+              "deep_for": 7.866666666666666,
+              "deep_against": 7.6,
+              "ppda_att": 224.13333333333333,
+              "ppda_def": 22.933333333333334,
+              "ppda_allowed_att": 249.06666666666666,
+              "ppda_allowed_def": 20.666666666666668,
+              "ppda_ratio": 9.773255813953488,
+              "ppda_allowed_ratio": 12.051612903225806
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Fulham",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Everton|Liverpool",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Everton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Crystal Palace",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man United|Liverpool",
+                "date": "2026-05-03",
+                "opponent": "football-data:E0:Man United",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Chelsea",
+                "date": "2026-05-09",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Aston Villa|Liverpool",
+                "date": "2026-05-15",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Liverpool|Brentford",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Liverpool",
+                "date": "2026-08-23",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Nott'm Forest",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Ipswich|Liverpool",
+                "date": "2026-09-04",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Fulham",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+                "date": "2026-09-20",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Man City",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Liverpool|Brighton",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Arsenal",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.4,
+              "goals_against": 0.8,
+              "xg_for": 1.750144,
+              "xg_against": 1.370059,
+              "npxg_for": 1.59791,
+              "npxg_against": 1.217825,
+              "deep_for": 10.8,
+              "deep_against": 4.4,
+              "ppda_att": 172.8,
+              "ppda_def": 18.4,
+              "ppda_allowed_att": 268.0,
+              "ppda_allowed_def": 23.8,
+              "ppda_ratio": 9.391304347826088,
+              "ppda_allowed_ratio": 11.260504201680673
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Arsenal",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Arsenal",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Everton",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.5333333333333334,
+              "goals_against": 0.6666666666666666,
+              "xg_for": 2.1120619333333335,
+              "xg_against": 1.0810986,
+              "npxg_for": 2.0105726,
+              "npxg_against": 1.0303539333333334,
+              "deep_for": 11.066666666666666,
+              "deep_against": 5.066666666666666,
+              "ppda_att": 188.86666666666667,
+              "ppda_def": 18.933333333333334,
+              "ppda_allowed_att": 252.46666666666667,
+              "ppda_allowed_def": 19.8,
+              "ppda_ratio": 9.975352112676056,
+              "ppda_allowed_ratio": 12.75084175084175
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Bournemouth",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Man City|Arsenal",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Man City",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Newcastle",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Newcastle",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Fulham",
+                "date": "2026-05-02",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:West Ham|Arsenal",
+                "date": "2026-05-10",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Burnley",
+                "date": "2026-05-18",
+                "opponent": "football-data:E0:Burnley",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Crystal Palace|Arsenal",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Coventry",
+                "date": "2026-08-21",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Aston Villa|Arsenal",
+                "date": "2026-08-31",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Chelsea",
+                "date": "2026-09-06",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Sunderland|Arsenal",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Brighton|Arsenal",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+                "date": "2026-10-10",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+                "date": "2026-10-18",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Everton",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Everton",
+                "is_home": true
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    },
+    {
+      "fixture": {
+        "fixture_id": "epl-2026-27-r9-10",
+        "source_fixture_id": 89,
+        "home": "Newcastle United",
+        "away": "Everton",
+        "home_model_label": "Newcastle",
+        "away_model_label": "Everton",
+        "kickoff": "2026-11-02T20:00:00+00:00",
+        "sourceURLs": [
+          "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27"
+        ],
+        "observed_at": "2026-10-29T11:05:23.440828+00:00",
+        "status": "scheduled_unstarted",
+        "home_source_team_id": 17,
+        "away_source_team_id": 9
+      },
+      "home_model_identity": "football-data:E0:Newcastle",
+      "away_model_identity": "football-data:E0:Everton",
+      "feature_before_date": "2026-10-29",
+      "sides": {
+        "home": {
+          "team": "football-data:E0:Newcastle",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "home",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 1.2,
+              "goals_against": 2.0,
+              "xg_for": 1.3209516,
+              "xg_against": 1.8449079999999998,
+              "npxg_for": 1.1687182,
+              "npxg_against": 1.6926748,
+              "deep_for": 6.4,
+              "deep_against": 7.0,
+              "ppda_att": 195.2,
+              "ppda_def": 23.6,
+              "ppda_allowed_att": 239.4,
+              "ppda_allowed_def": 18.8,
+              "ppda_ratio": 8.271186440677965,
+              "ppda_allowed_ratio": 12.73404255319149
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+                "date": "2026-09-14",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Hull",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Newcastle",
+                "date": "2026-10-12",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Aston Villa",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Newcastle",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.4,
+              "goals_against": 1.6,
+              "xg_for": 1.3926694,
+              "xg_against": 1.8854866666666665,
+              "npxg_for": 1.3419249333333334,
+              "npxg_against": 1.7332529333333333,
+              "deep_for": 7.2,
+              "deep_against": 7.2,
+              "ppda_att": 203.93333333333334,
+              "ppda_def": 21.0,
+              "ppda_allowed_att": 240.46666666666667,
+              "ppda_allowed_def": 21.733333333333334,
+              "ppda_ratio": 9.71111111111111,
+              "ppda_allowed_ratio": 11.06441717791411
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Crystal Palace|Newcastle",
+                "date": "2026-04-12",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Newcastle|Bournemouth",
+                "date": "2026-04-18",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Arsenal|Newcastle",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Newcastle|Brighton",
+                "date": "2026-05-02",
+                "opponent": "football-data:E0:Brighton",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Nott'm Forest|Newcastle",
+                "date": "2026-05-10",
+                "opponent": "football-data:E0:Nott'm Forest",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Newcastle|West Ham",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Fulham|Newcastle",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Fulham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Liverpool",
+                "date": "2026-08-23",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Newcastle",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Bournemouth",
+                "date": "2026-09-05",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+                "date": "2026-09-14",
+                "opponent": "football-data:E0:Leeds",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Hull",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Hull",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Coventry|Newcastle",
+                "date": "2026-10-12",
+                "opponent": "football-data:E0:Coventry",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Newcastle|Aston Villa",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Aston Villa",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Crystal Palace|Newcastle",
+                "date": "2026-10-25",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        },
+        "away": {
+          "team": "football-data:E0:Everton",
+          "history_count": 236,
+          "identity_status": "source_joined",
+          "relevant_venue": "away",
+          "window_5": {
+            "n": 5,
+            "requested_n": 5,
+            "measurements": {
+              "goals_for": 0.6,
+              "goals_against": 1.2,
+              "xg_for": 1.6543708,
+              "xg_against": 1.4518532,
+              "npxg_for": 1.6543708,
+              "npxg_against": 1.4518532,
+              "deep_for": 6.0,
+              "deep_against": 9.2,
+              "ppda_att": 246.0,
+              "ppda_def": 17.6,
+              "ppda_allowed_att": 251.0,
+              "ppda_allowed_def": 24.2,
+              "ppda_ratio": 13.977272727272727,
+              "ppda_allowed_ratio": 10.37190082644628
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Everton",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Ipswich",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Everton",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Hull",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Chelsea",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Everton",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              }
+            ]
+          },
+          "window_15": {
+            "n": 15,
+            "requested_n": 15,
+            "measurements": {
+              "goals_for": 1.2,
+              "goals_against": 1.6,
+              "xg_for": 1.4656106666666666,
+              "xg_against": 1.6998360666666668,
+              "npxg_for": 1.4656106666666666,
+              "npxg_against": 1.6490913999999999,
+              "deep_for": 5.933333333333334,
+              "deep_against": 7.733333333333333,
+              "ppda_att": 257.46666666666664,
+              "ppda_def": 19.2,
+              "ppda_allowed_att": 206.53333333333333,
+              "ppda_allowed_def": 21.933333333333334,
+              "ppda_ratio": 13.409722222222221,
+              "ppda_allowed_ratio": 9.416413373860182
+            },
+            "history": [
+              {
+                "match_id": "football-data:E0:2025/26:Brentford|Everton",
+                "date": "2026-04-11",
+                "opponent": "football-data:E0:Brentford",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Everton|Liverpool",
+                "date": "2026-04-19",
+                "opponent": "football-data:E0:Liverpool",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:West Ham|Everton",
+                "date": "2026-04-25",
+                "opponent": "football-data:E0:West Ham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Everton|Man City",
+                "date": "2026-05-04",
+                "opponent": "football-data:E0:Man City",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Crystal Palace|Everton",
+                "date": "2026-05-10",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Everton|Sunderland",
+                "date": "2026-05-17",
+                "opponent": "football-data:E0:Sunderland",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2025/26:Tottenham|Everton",
+                "date": "2026-05-24",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Crystal Palace",
+                "date": "2026-08-22",
+                "opponent": "football-data:E0:Crystal Palace",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Bournemouth|Everton",
+                "date": "2026-08-29",
+                "opponent": "football-data:E0:Bournemouth",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Man United",
+                "date": "2026-09-06",
+                "opponent": "football-data:E0:Man United",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Tottenham|Everton",
+                "date": "2026-09-12",
+                "opponent": "football-data:E0:Tottenham",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Ipswich",
+                "date": "2026-09-19",
+                "opponent": "football-data:E0:Ipswich",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Hull|Everton",
+                "date": "2026-10-11",
+                "opponent": "football-data:E0:Hull",
+                "is_home": false
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Everton|Chelsea",
+                "date": "2026-10-17",
+                "opponent": "football-data:E0:Chelsea",
+                "is_home": true
+              },
+              {
+                "match_id": "football-data:E0:2026/27:Arsenal|Everton",
+                "date": "2026-10-24",
+                "opponent": "football-data:E0:Arsenal",
+                "is_home": false
+              }
+            ]
+          },
+          "measurement_scope": "observed league form; descriptive, not opponent-adjusted; missing stays null"
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Descriptive earlier observed league matches only, no odds, predictions, fitted rates, old LLM or target labels.",
+    "Each 5/15 window retains its original actual count, full IDs and dates; no older substitution for missing measurements.",
+    "Historical opponent strength and all-competition workload are not estimated by these raw means.",
+    "Source publication/revision timing is not reconstructed; current source receipts are recorded separately."
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "generated_at_utc": "2026-10-29T11:22:06.868258+00:00",
+  "input_packet": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入.json",
+  "input_assembled_at_utc": "2026-10-29T11:16:30.037563+00:00",
+  "model_id": "session_inherited_model_identity_not_exposed",
+  "exposure": {
+    "current_statistical_probabilities": false,
+    "historical_model_estimates": false,
+    "market": false,
+    "other_llm": false,
+    "target_results": false
+  },
+  "records": [
+    {
+      "fixture_id": "epl-2026-27-r9-1",
+      "source_fixture_id": 84,
+      "probabilities": {
+        "home_win": 0.34,
+        "draw": 0.29,
+        "away_win": 0.37
+      },
+      "cited_facts": [
+        {
+          "pointer": "/records/0/descriptive_performance/home/window_15/measurements/xg_for",
+          "value": 1.3306539333333334
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/home/window_15/measurements/xg_against",
+          "value": 1.7534522666666668
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/away/window_15/measurements/xg_for",
+          "value": 1.7822748
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/away/window_15/measurements/xg_against",
+          "value": 1.5714412
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/away/window_5/measurements/xg_for",
+          "value": 1.1721646
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/away/window_5/measurements/xg_against",
+          "value": 1.773032
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/home/window_5/measurements/goals_for",
+          "value": 1.8
+        },
+        {
+          "pointer": "/records/0/descriptive_performance/away/window_5/measurements/goals_for",
+          "value": 0.6
+        },
+        {
+          "pointer": "/records/0/official_claims/0/statement",
+          "value": "阿隆索确认大腿伤将使其缺席数周，并明确近期几场不能准备好。"
+        },
+        {
+          "pointer": "/records/0/official_claims/2/statement",
+          "value": "10/28因腿后肌不适被换下；严重程度要再等几天评估。"
+        },
+        {
+          "pointer": "/records/0/official_claims/5/statement",
+          "value": "10/28参与训练，此前因伤缺阵。"
+        },
+        {
+          "pointer": "/records/0/official_claims/6/statement",
+          "value": "曼联官方前瞻说明Palmer禁赛适用于杯赛，周末可用。"
+        },
+        {
+          "pointer": "/records/0/personnel/0/players_with_text_flags_or_observed_label_return/9/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 251,
+            "starts_sum": 3,
+            "missing_is_zero": false
+          }
+        },
+        {
+          "pointer": "/records/0/personnel/0/players_with_text_flags_or_observed_label_return/12/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 364,
+            "starts_sum": 4,
+            "missing_is_zero": false
+          }
+        },
+        {
+          "pointer": "/records/0/personnel/0/players_with_text_flags_or_observed_label_return/0/prior_same_team_participation/games/4/minutes",
+          "value": 0
+        },
+        {
+          "pointer": "/official_unknowns/0/items",
+          "value": [
+            "Dorgu/Rashford/Sesko/Shaw当前医疗和上场状态需14:00GMT发布会或更晚更新。",
+            "Mainoo完整比赛负荷及首发未确认。"
+          ]
+        },
+        {
+          "pointer": "/official_unknowns/1/items",
+          "value": [
+            "Lacroix严重程度及Caicedo/Gusto在10/31的最终可用性。",
+            "Martinez/James未检得比10/28曼联对手前瞻更明确的新医疗确认。"
+          ]
+        }
+      ],
+      "analysis": {
+        "supporting_evidence": "轻微偏客胜：曼联15场xG均值为1.782/1.571，切尔西为1.331/1.753，较长窗口给客队基础优势。Pedro新确认多周缺席、Lacroix在10/28新伤，增加主队阵容组织风险；其边际贡献并未测量。",
+        "counterargument": "切尔西主场；曼联近5场xG已降至1.172/1.773，切尔西同期实进1.8球高于曼联0.6球，客队低迷持续是偏客判断最强反证。Palmer周末无该次禁赛限制。",
+        "incremental_personnel_information": "Pedro近5场251分钟3首发、Lacroix364分钟4首发，仅证明近期参与。Mainoo恢复训练改善可用性预期，但不能视为首发、全负荷或直接加胜率。",
+        "possibly_already_reflected": "Pedro和Lacroix新消息发生在末场联赛之后，较可能提供增量；Martinez在末场已零分钟，部分旧缺阵条件已进入表现。5场包含于15场，进球与xG、重复新闻不作独立确认。",
+        "material_unknowns": "Caicedo/Gusto及曼联Dorgu/Rashford/Šeško/Shaw最终可用性，替补质量、实际首发和个体贡献未知。15场跨赛季且未调整对手和主客差异。",
+        "reconsider_if": "若切尔西后防齐整而曼联攻击人员继续受限，转向主队；若Lacroix/Caicedo缺席且曼联恢复者获准承担首发负荷，增强客胜倾向。需发布会医疗更新及正式名单。"
+      },
+      "confidence_note": "低置信、接近均势。仅为常规时间含补时的未校准主观概率，未把出场百分比或分钟换算成胜率。"
+    },
+    {
+      "fixture_id": "epl-2026-27-r9-2",
+      "source_fixture_id": 82,
+      "probabilities": {
+        "home_win": 0.54,
+        "draw": 0.26,
+        "away_win": 0.2
+      },
+      "cited_facts": [
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_5/measurements/xg_for",
+          "value": 2.4235572000000003
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_5/measurements/xg_against",
+          "value": 0.87933188
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_15/measurements/xg_for",
+          "value": 1.9828673333333335
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_15/measurements/xg_against",
+          "value": 1.3697836266666668
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/away/window_5/measurements/xg_for",
+          "value": 1.409886
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/away/window_5/measurements/xg_against",
+          "value": 1.269549
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/away/window_5/measurements/goals_against",
+          "value": 0.8
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_5/measurements/goals_against",
+          "value": 1.6
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/away/window_15/measurements/goals_against",
+          "value": 0.9333333333333333
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/home/window_5/history",
+          "value": [
+            {
+              "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+              "date": "2026-09-12",
+              "opponent": "football-data:E0:Brentford",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+              "date": "2026-09-20",
+              "opponent": "football-data:E0:Liverpool",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+              "date": "2026-10-10",
+              "opponent": "football-data:E0:Chelsea",
+              "is_home": false
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+              "date": "2026-10-18",
+              "opponent": "football-data:E0:Sunderland",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+              "date": "2026-10-25",
+              "opponent": "football-data:E0:Man United",
+              "is_home": false
+            }
+          ]
+        },
+        {
+          "pointer": "/records/1/descriptive_performance/away/window_5/history",
+          "value": [
+            {
+              "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+              "date": "2026-09-14",
+              "opponent": "football-data:E0:Newcastle",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+              "date": "2026-09-20",
+              "opponent": "football-data:E0:Crystal Palace",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+              "date": "2026-10-10",
+              "opponent": "football-data:E0:Arsenal",
+              "is_home": false
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Leeds|Man United",
+              "date": "2026-10-18",
+              "opponent": "football-data:E0:Man United",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+              "date": "2026-10-25",
+              "opponent": "football-data:E0:Sunderland",
+              "is_home": false
+            }
+          ]
+        },
+        {
+          "pointer": "/records/1/official_claims/1/statement",
+          "value": "10/25官方赛前名单确认其康复后进入替补席。"
+        },
+        {
+          "pointer": "/records/1/official_claims/6/statement",
+          "value": "10/25官方人员段落说明三人此前训练受限，其中仅Calvert-Lewin可首发。"
+        },
+        {
+          "pointer": "/records/1/official_claims/7/statement",
+          "value": "10/25教练称Rodon仍缺阵，Elvedi因一夜间生病离队。"
+        },
+        {
+          "pointer": "/records/1/personnel/1/players_with_text_flags_or_observed_label_return/7/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 355,
+            "starts_sum": 4,
+            "missing_is_zero": false
+          }
+        },
+        {
+          "pointer": "/official_unknowns/2/items",
+          "value": [
+            "未见本轮Leeds赛前新鲜官方发布会正文；Scott/Araujo等10/21状态不能直接当10/31确定伤停。",
+            "Kroupi已在10/25名单，但10/28杯赛后是否新增伤病、可首发负荷未知。",
+            "Toth近期情况未在本次已读官方来源核实；不采用二手传闻作为事实。"
+          ]
+        },
+        {
+          "pointer": "/official_unknowns/3/items",
+          "value": [
+            "10/29发布会已排期但本次未见正文，具体时刻亦未由节目单给出。",
+            "Rodon/Elvedi/Stach/Okafor最新状态及10/31首发负荷未知。"
+          ]
+        }
+      ],
+      "analysis": {
+        "supporting_evidence": "偏主胜：伯恩茅斯近5场xG为2.424/0.879，15场为1.983/1.370；利兹近5场为1.410/1.270。主队创造及限制机会的描述性表现更好，加上本场主场，但将短期优势向较长窗口收缩。",
+        "counterargument": "利兹近5场实失0.8球，主队1.6球，利兹15场也仅失0.933球。客队防守兑现持续或主队终结不足可令机会优势落空。两队近5场各3主2客、对手不同，综合均值不是本场主客专项。",
+        "incremental_personnel_information": "Kroupi在10/25进入替补席确认恢复进展。Elvedi近5场355分钟4首发，10/25因病缺席，若延续可能影响现有组合。Calvert-Lewin在10/25可首发，不能继续沿用此前疑问判定其缺阵。",
+        "possibly_already_reflected": "Scott/Araujo/Rodon旧伤与窗口重叠，不另逐人扣分；Kroupi回归已进入末场条件，不能全算新信号。5/15场和进失球/xG均非独立证据。",
+        "material_unknowns": "10/31首发、Kroupi负荷、利兹Stach/Okafor等恢复及10/28后新伤未明；替补质量和个人贡献未知。两队新鲜发布会信息不足。",
+        "reconsider_if": "若利兹后防及中前场均恢复而主队新增关键缺阵，下调主胜；若利兹病伤延续并由本轮官方医疗及名单确认，增强主胜倾向。"
+      },
+      "confidence_note": "三场中方向相对清楚，幅度仍仅低至中置信；常规时间含补时、未校准主观概率，保留实质平局与客胜可能。"
+    },
+    {
+      "fixture_id": "epl-2026-27-r9-3",
+      "source_fixture_id": 83,
+      "probabilities": {
+        "home_win": 0.33,
+        "draw": 0.28,
+        "away_win": 0.39
+      },
+      "cited_facts": [
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_5/measurements/xg_for",
+          "value": 1.4241322
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_5/measurements/xg_against",
+          "value": 1.7519681999999999
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_5/measurements/xg_for",
+          "value": 2.275824
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_5/measurements/xg_against",
+          "value": 1.1603284
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_15/measurements/xg_for",
+          "value": 1.7476066000000001
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_15/measurements/xg_against",
+          "value": 1.7983698
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_15/measurements/xg_for",
+          "value": 1.8172748666666665
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_15/measurements/xg_against",
+          "value": 1.403628
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_5/measurements/goals_for",
+          "value": 1.8
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_5/measurements/goals_for",
+          "value": 0.8
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/home/window_5/history",
+          "value": [
+            {
+              "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+              "date": "2026-09-12",
+              "opponent": "football-data:E0:Bournemouth",
+              "is_home": false
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+              "date": "2026-09-18",
+              "opponent": "football-data:E0:Chelsea",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+              "date": "2026-10-10",
+              "opponent": "football-data:E0:Aston Villa",
+              "is_home": false
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+              "date": "2026-10-17",
+              "opponent": "football-data:E0:Liverpool",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Hull|Brentford",
+              "date": "2026-10-25",
+              "opponent": "football-data:E0:Hull",
+              "is_home": false
+            }
+          ]
+        },
+        {
+          "pointer": "/records/2/descriptive_performance/away/window_5/history",
+          "value": [
+            {
+              "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+              "date": "2026-09-12",
+              "opponent": "football-data:E0:Aston Villa",
+              "is_home": false
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+              "date": "2026-09-19",
+              "opponent": "football-data:E0:Coventry",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+              "date": "2026-10-11",
+              "opponent": "football-data:E0:Crystal Palace",
+              "is_home": false
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+              "date": "2026-10-18",
+              "opponent": "football-data:E0:Arsenal",
+              "is_home": true
+            },
+            {
+              "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+              "date": "2026-10-23",
+              "opponent": "football-data:E0:Ipswich",
+              "is_home": false
+            }
+          ]
+        },
+        {
+          "pointer": "/records/2/official_claims/0/statement",
+          "value": "教练确认髋和股四头肌伤，预计缺数周，可能到国际比赛日之后。"
+        },
+        {
+          "pointer": "/records/2/official_claims/1/statement",
+          "value": "此前右脚疼痛、训练和接触受控，教练称目前好转且可用。"
+        },
+        {
+          "pointer": "/records/2/official_claims/7/statement",
+          "value": "10/28官方报道两人均在草地上被拍到参与活动。"
+        },
+        {
+          "pointer": "/records/2/official_claims/8/statement",
+          "value": "格拉斯纳赛前发布会安排10/29约14:00GMT，观测时尚未到该时间。"
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/0/earlier_source_version/status_changed",
+          "value": true
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/0/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 0,
+            "starts_sum": 0,
+            "missing_is_zero": false
+          }
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/2/news",
+          "value": "Suspended until 8 Nov"
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/2/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 245,
+            "starts_sum": 4,
+            "missing_is_zero": false
+          }
+        },
+        {
+          "pointer": "/records/2/personnel/1/players_with_text_flags_or_observed_label_return/0/prior_same_team_participation/previous_five_summary",
+          "value": {
+            "expected_fixture_count": 5,
+            "known_history_rows": 5,
+            "complete_five_rows_and_fields": true,
+            "minutes_sum": 443,
+            "starts_sum": 5,
+            "missing_is_zero": false
+          }
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/0/earlier_source_version/source_status",
+          "value": "a"
+        },
+        {
+          "pointer": "/records/2/personnel/0/players_with_text_flags_or_observed_label_return/0/source_status",
+          "value": "i"
+        }
+      ],
+      "analysis": {
+        "supporting_evidence": "微偏森林：近5场xG为2.276/1.160，15场为1.817/1.404，均优于布伦特福德的1.424/1.752及1.748/1.798。森林近期实际进球未充分兑现机会；条件是这种创造能力可延续，不假定自动回归。",
+        "counterargument": "布伦特福德主场且近5场实进1.8球、森林0.8球，终结差异继续是最强反证。双方近5场均2主3客但对手不同，森林含Coventry/Ipswich的样本未校正难度。Neco可用性亦可改变判断。",
+        "incremental_personnel_information": "Henry虽从a变i且确认多周缺席，近5场却零分钟，不能据标签变化认定新失主力。Yarmoliuk有停赛原文及4次首发记录。Neco近5场443分钟5首发，出现在草地只缓解担忧；Damsgaard在10/27可用不保证本轮首发。",
+        "possibly_already_reflected": "长期缺阵和已开始的停赛可能部分进入表现；5/15场重叠，重复报道不构成多次独立确认。历史分钟只说明参与，不给个人损失或胜率点数。",
+        "material_unknowns": "Neco/Dominguez最终医学结论、复出者负荷、两队首发与替补质量未知；14:00UTC发布会内容尚未取得，不能补写。",
+        "reconsider_if": "若Neco缺阵且森林其他恢复人员受限，调向均势；若边路正式获准首发而主队新增限制，增强客胜。需本轮医疗更新及正式阵容确认。"
+      },
+      "confidence_note": "低至中置信，客胜仅微倾向；常规时间含补时、未校准主观概率，未把新闻出场百分比用作胜率。"
+    }
+  ]
+}

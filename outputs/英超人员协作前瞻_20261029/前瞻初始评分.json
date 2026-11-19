@@ -1,0 +1,367 @@
+{
+  "n_records": 10,
+  "n_settled": 0,
+  "pending_fixture_ids": [
+    "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+    "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+    "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+    "prematch:premier-league:2026-10-31:coventry-city:sunderland",
+    "prematch:premier-league:2026-10-31:hull-city:ipswich-town",
+    "prematch:premier-league:2026-10-31:manchester-city:brighton-and-hove-albion",
+    "prematch:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+    "prematch:premier-league:2026-10-31:aston-villa:fulham",
+    "prematch:premier-league:2026-11-01:liverpool:arsenal",
+    "prematch:premier-league:2026-11-02:newcastle-united:everton"
+  ],
+  "coverage": {
+    "statistical": {
+      "available": 10,
+      "available_with_result": 0,
+      "missing": 0,
+      "abstained": 0,
+      "missing_reasons": {}
+    },
+    "llm_independent": {
+      "available": 3,
+      "available_with_result": 0,
+      "missing": 7,
+      "abstained": 0,
+      "missing_reasons": {
+        "This context policy was run on the earliest three fixtures only.": 7
+      },
+      "exposed_to_statistical_count": 0,
+      "exposed_to_market_count": 0,
+      "unexposed_to_statistical_and_market_count": 3
+    },
+    "market": {
+      "available": 0,
+      "available_with_result": 0,
+      "missing": 10,
+      "abstained": 0,
+      "missing_reasons": {
+        "No market observations in this personnel-context run.": 10
+      }
+    },
+    "llm_model_informed": {
+      "available": 0,
+      "available_with_result": 0,
+      "missing": 10,
+      "abstained": 0,
+      "missing_reasons": {
+        "Assistant synthesis is separate qualitative analysis, not a second numeric LLM forecast.": 10
+      },
+      "exposed_to_statistical_count": 0,
+      "exposed_to_market_count": 0,
+      "unexposed_to_statistical_and_market_count": 0
+    },
+    "joint_pool": {
+      "available": 0,
+      "available_with_result": 0,
+      "missing": 10,
+      "abstained": 0,
+      "missing_reasons": {
+        "New context input policy has no earlier paired result fit; qualitative synthesis does not create a numerical pool.": 10
+      }
+    }
+  },
+  "comparisons": {
+    "statistical_vs_llm_independent": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "statistical": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "llm_independent": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "statistical_vs_llm_model_informed": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "statistical": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "llm_model_informed": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "statistical_vs_joint_pool": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "statistical": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "joint_pool": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "market_vs_statistical": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "market": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "statistical": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "market_vs_llm_independent": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "market": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "llm_independent": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "market_vs_llm_model_informed": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "market": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "llm_model_informed": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "market_vs_joint_pool": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "market": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "joint_pool": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "llm_independent_vs_llm_model_informed": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "llm_independent": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "llm_model_informed": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "llm_independent_vs_joint_pool": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "llm_independent": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "joint_pool": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    },
+    "llm_model_informed_vs_joint_pool": {
+      "n": 0,
+      "fixture_ids": [],
+      "metrics": {
+        "llm_model_informed": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        },
+        "joint_pool": {
+          "n": 0,
+          "infinite_log_loss_count": 0,
+          "mean_log_loss_is_infinite": false,
+          "mean_log_loss": null,
+          "mean_brier": null,
+          "top1_accuracy": null,
+          "top1_tie_count": 0
+        }
+      }
+    }
+  },
+  "all_five_common": {
+    "n": 0,
+    "fixture_ids": [],
+    "metrics": {
+      "statistical": {
+        "n": 0,
+        "infinite_log_loss_count": 0,
+        "mean_log_loss_is_infinite": false,
+        "mean_log_loss": null,
+        "mean_brier": null,
+        "top1_accuracy": null,
+        "top1_tie_count": 0
+      },
+      "llm_independent": {
+        "n": 0,
+        "infinite_log_loss_count": 0,
+        "mean_log_loss_is_infinite": false,
+        "mean_log_loss": null,
+        "mean_brier": null,
+        "top1_accuracy": null,
+        "top1_tie_count": 0
+      },
+      "market": {
+        "n": 0,
+        "infinite_log_loss_count": 0,
+        "mean_log_loss_is_infinite": false,
+        "mean_log_loss": null,
+        "mean_brier": null,
+        "top1_accuracy": null,
+        "top1_tie_count": 0
+      },
+      "llm_model_informed": {
+        "n": 0,
+        "infinite_log_loss_count": 0,
+        "mean_log_loss_is_infinite": false,
+        "mean_log_loss": null,
+        "mean_brier": null,
+        "top1_accuracy": null,
+        "top1_tie_count": 0
+      },
+      "joint_pool": {
+        "n": 0,
+        "infinite_log_loss_count": 0,
+        "mean_log_loss_is_infinite": false,
+        "mean_log_loss": null,
+        "mean_brier": null,
+        "top1_accuracy": null,
+        "top1_tie_count": 0
+      }
+    }
+  },
+  "per_fixture": [],
+  "settlement": "regulation_including_stoppage",
+  "abstention_rule": "missing reasons prefixed 'abstained:' are counted as explicit abstentions",
+  "exposure_note": "Caller-declared; model-informed LLM and joint pool are dependent, not extra observations",
+  "scope": "observational paired subsets only; learned-weight provenance retained, no efficacy or profitability claim",
+  "brier_definition": "sum over three outcome classes, not divided by three",
+  "top1_tie_rule": "expected accuracy under uniform choice among exact maxima"
+}

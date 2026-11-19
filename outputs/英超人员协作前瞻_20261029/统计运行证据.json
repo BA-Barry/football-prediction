@@ -1,0 +1,65 @@
+{
+  "started_at": "2026-10-29T11:11:36.434588+00:00",
+  "finished_at": "2026-10-29T11:11:47.176237+00:00",
+  "source_receipts": [
+    {
+      "source_url": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+      "request_started_at": "2026-10-29T11:07:01.014177+00:00",
+      "certificate_verification": true,
+      "proxy_environment_used": true,
+      "received_at": "2026-10-29T11:07:04.254819+00:00",
+      "status": 200,
+      "response_url": "https://football-data.co.uk/mmz4281/2627/E0.csv",
+      "headers": {
+        "Content-Type": "text/csv",
+        "Content-Length": "39368",
+        "Connection": "keep-alive",
+        "X-WS-Origin": "available",
+        "X-WS-RateLimit-Limit": "1000",
+        "X-WS-RateLimit-Remaining": "999",
+        "Date": "Thu, 29 Oct 2026 11:07:04 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Mon, 26 Oct 2026 23:12:23 GMT",
+        "ETag": "\"99c8-65ec676670f45\"",
+        "Accept-Ranges": "bytes"
+      },
+      "bytes": 39368,
+      "raw_path": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\stat_sources\\E0.csv"
+    },
+    {
+      "source_url": "https://understat.com/getLeagueData/EPL/2026",
+      "request_started_at": "2026-10-29T11:07:01.014177+00:00",
+      "certificate_verification": true,
+      "proxy_environment_used": false,
+      "received_at": "2026-10-29T11:07:02.851159+00:00",
+      "status": 200,
+      "response_url": "https://understat.com/getLeagueData/EPL/2026",
+      "headers": {
+        "Date": "Thu, 29 Oct 2026 11:07:02 GMT",
+        "Server": "Apache/2.4.29 (Ubuntu)",
+        "Content-Encoding": "gzip",
+        "Keep-Alive": "timeout=5, max=100",
+        "Connection": "Keep-Alive",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/javascript;charset=UTF-8"
+      },
+      "bytes": 296425,
+      "raw_path": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\stat_sources\\EPL_2026_response.bin"
+    }
+  ],
+  "new_fits": {
+    "goal_simple": 1,
+    "independent_xg": 1,
+    "rich_121": 0
+  },
+  "new_unique_fixture_count": 0,
+  "model_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\本次英超统计模型.joblib",
+  "saved_base_models_reproduce": true,
+  "training_date_max": {
+    "goal": "2026-10-25",
+    "xg": "2026-10-25"
+  },
+  "all_windows_strictly_earlier": true,
+  "target_training_overlap": [],
+  "old_prediction_values_or_labels_read_for_analysis": false
+}

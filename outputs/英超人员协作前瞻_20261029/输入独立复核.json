@@ -1,0 +1,668 @@
+{
+  "audit_completed_at_utc": "2026-10-29T11:27:07.909500+00:00",
+  "scope": "Finite independent audit of current future-match personnel reading inputs; no training, previous prediction updates, new result lookup or settlement.",
+  "status": "passed_with_disclosed_source_time_limitation",
+  "checks": [
+    {
+      "check": "v1_v2_fact_identity",
+      "passed": true,
+      "detail": {
+        "changed_top_level_keys": [
+          "assembled_at_utc",
+          "official_observation_time_note"
+        ],
+        "v1_assembled_at_utc": "2026-10-29T11:16:30.037563+00:00",
+        "v2_assembled_at_utc": "2026-10-29T11:22:06.028181+00:00"
+      }
+    },
+    {
+      "check": "official_observation_limitation_retained",
+      "passed": true,
+      "detail": "v2 explicitly retains manual web-note finalization versus exact local receipt time; v1 did not."
+    },
+    {
+      "check": "future_fixtures_official_fpl_sides_times_statuses",
+      "passed": true,
+      "detail": {
+        "checked_round_fixtures": 10,
+        "selected": [
+          {
+            "fixture_id": "epl-2026-27-r9-1",
+            "fpl_fixture_id": 84,
+            "home": "Chelsea",
+            "away": "Manchester United",
+            "kickoff_utc": "2026-10-31T12:30:00+00:00",
+            "official_status": "scheduled_future_at_observation",
+            "packet_status": "scheduled_unstarted",
+            "fpl_started": false,
+            "fpl_finished": false
+          },
+          {
+            "fixture_id": "epl-2026-27-r9-2",
+            "fpl_fixture_id": 82,
+            "home": "AFC Bournemouth",
+            "away": "Leeds United",
+            "kickoff_utc": "2026-10-31T15:00:00+00:00",
+            "official_status": "scheduled_future_at_observation",
+            "packet_status": "scheduled_unstarted",
+            "fpl_started": false,
+            "fpl_finished": false
+          },
+          {
+            "fixture_id": "epl-2026-27-r9-3",
+            "fpl_fixture_id": 83,
+            "home": "Brentford",
+            "away": "Nottingham Forest",
+            "kickoff_utc": "2026-10-31T15:00:00+00:00",
+            "official_status": "scheduled_future_at_observation",
+            "packet_status": "scheduled_unstarted",
+            "fpl_started": false,
+            "fpl_finished": false
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "three_selected_records_preserve_order",
+      "passed": true,
+      "detail": {
+        "selection": [
+          "epl-2026-27-r9-1",
+          "epl-2026-27-r9-2",
+          "epl-2026-27-r9-3"
+        ],
+        "tie_limit": "Earliest kick-off first; among five simultaneous 15:00 matches, retain official article order. Selection of three does not imply the other 15:00 matches start later."
+      }
+    },
+    {
+      "check": "six_teams_52_players_source_identity_and_fields",
+      "passed": true,
+      "detail": {
+        "players": 52,
+        "teams": [
+          {
+            "team": "Chelsea",
+            "team_id": 6,
+            "team_code": 8,
+            "packet_players": 14,
+            "source_status_counts": {
+              "i": 5,
+              "a": 22,
+              "u": 7,
+              "d": 1
+            }
+          },
+          {
+            "team": "Manchester United",
+            "team_id": 16,
+            "team_code": 1,
+            "packet_players": 10,
+            "source_status_counts": {
+              "a": 24,
+              "u": 4,
+              "i": 5,
+              "d": 1
+            }
+          },
+          {
+            "team": "AFC Bournemouth",
+            "team_id": 3,
+            "team_code": 91,
+            "packet_players": 6,
+            "source_status_counts": {
+              "a": 23,
+              "u": 2,
+              "i": 4
+            }
+          },
+          {
+            "team": "Leeds United",
+            "team_id": 13,
+            "team_code": 2,
+            "packet_players": 8,
+            "source_status_counts": {
+              "a": 23,
+              "u": 5,
+              "i": 2,
+              "d": 1
+            }
+          },
+          {
+            "team": "Brentford",
+            "team_id": 4,
+            "team_code": 94,
+            "packet_players": 5,
+            "source_status_counts": {
+              "a": 24,
+              "i": 4,
+              "s": 1
+            }
+          },
+          {
+            "team": "Nottingham Forest",
+            "team_id": 18,
+            "team_code": 17,
+            "packet_players": 9,
+            "source_status_counts": {
+              "a": 21,
+              "d": 2,
+              "u": 5,
+              "i": 2
+            }
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "29_players_145_prior_records_raw_side_team_time_minutes",
+      "passed": true,
+      "detail": {
+        "players": 29,
+        "records": 145,
+        "observed_zero_minute_rows": 99,
+        "missing_or_ambiguous_rows": 0,
+        "failures": []
+      }
+    },
+    {
+      "check": "five_match_cross_provider_date_opponent_home_away_alignment",
+      "passed": true,
+      "detail": [
+        {
+          "team": "Chelsea",
+          "five_performance_matches": [
+            [
+              "2026-09-12",
+              "Hull",
+              true
+            ],
+            [
+              "2026-09-18",
+              "Brentford",
+              false
+            ],
+            [
+              "2026-10-10",
+              "Bournemouth",
+              true
+            ],
+            [
+              "2026-10-17",
+              "Everton",
+              false
+            ],
+            [
+              "2026-10-24",
+              "Tottenham",
+              true
+            ]
+          ],
+          "five_participation_matches": [
+            [
+              "2026-09-12",
+              "Hull",
+              true
+            ],
+            [
+              "2026-09-18",
+              "Brentford",
+              false
+            ],
+            [
+              "2026-10-10",
+              "Bournemouth",
+              true
+            ],
+            [
+              "2026-10-17",
+              "Everton",
+              false
+            ],
+            [
+              "2026-10-24",
+              "Tottenham",
+              true
+            ]
+          ],
+          "same": true
+        },
+        {
+          "team": "Manchester United",
+          "five_performance_matches": [
+            [
+              "2026-09-13",
+              "Man City",
+              true
+            ],
+            [
+              "2026-09-20",
+              "Fulham",
+              false
+            ],
+            [
+              "2026-10-10",
+              "Tottenham",
+              true
+            ],
+            [
+              "2026-10-18",
+              "Leeds",
+              false
+            ],
+            [
+              "2026-10-25",
+              "Bournemouth",
+              true
+            ]
+          ],
+          "five_participation_matches": [
+            [
+              "2026-09-13",
+              "Man City",
+              true
+            ],
+            [
+              "2026-09-20",
+              "Fulham",
+              false
+            ],
+            [
+              "2026-10-10",
+              "Tottenham",
+              true
+            ],
+            [
+              "2026-10-18",
+              "Leeds",
+              false
+            ],
+            [
+              "2026-10-25",
+              "Bournemouth",
+              true
+            ]
+          ],
+          "same": true
+        },
+        {
+          "team": "AFC Bournemouth",
+          "five_performance_matches": [
+            [
+              "2026-09-12",
+              "Brentford",
+              true
+            ],
+            [
+              "2026-09-20",
+              "Liverpool",
+              true
+            ],
+            [
+              "2026-10-10",
+              "Chelsea",
+              false
+            ],
+            [
+              "2026-10-18",
+              "Sunderland",
+              true
+            ],
+            [
+              "2026-10-25",
+              "Man United",
+              false
+            ]
+          ],
+          "five_participation_matches": [
+            [
+              "2026-09-12",
+              "Brentford",
+              true
+            ],
+            [
+              "2026-09-20",
+              "Liverpool",
+              true
+            ],
+            [
+              "2026-10-10",
+              "Chelsea",
+              false
+            ],
+            [
+              "2026-10-18",
+              "Sunderland",
+              true
+            ],
+            [
+              "2026-10-25",
+              "Man United",
+              false
+            ]
+          ],
+          "same": true
+        },
+        {
+          "team": "Leeds United",
+          "five_performance_matches": [
+            [
+              "2026-09-14",
+              "Newcastle",
+              true
+            ],
+            [
+              "2026-09-20",
+              "Crystal Palace",
+              true
+            ],
+            [
+              "2026-10-10",
+              "Arsenal",
+              false
+            ],
+            [
+              "2026-10-18",
+              "Man United",
+              true
+            ],
+            [
+              "2026-10-25",
+              "Sunderland",
+              false
+            ]
+          ],
+          "five_participation_matches": [
+            [
+              "2026-09-14",
+              "Newcastle",
+              true
+            ],
+            [
+              "2026-09-20",
+              "Crystal Palace",
+              true
+            ],
+            [
+              "2026-10-10",
+              "Arsenal",
+              false
+            ],
+            [
+              "2026-10-18",
+              "Man United",
+              true
+            ],
+            [
+              "2026-10-25",
+              "Sunderland",
+              false
+            ]
+          ],
+          "same": true
+        },
+        {
+          "team": "Brentford",
+          "five_performance_matches": [
+            [
+              "2026-09-12",
+              "Bournemouth",
+              false
+            ],
+            [
+              "2026-09-18",
+              "Chelsea",
+              true
+            ],
+            [
+              "2026-10-10",
+              "Aston Villa",
+              false
+            ],
+            [
+              "2026-10-17",
+              "Liverpool",
+              true
+            ],
+            [
+              "2026-10-25",
+              "Hull",
+              false
+            ]
+          ],
+          "five_participation_matches": [
+            [
+              "2026-09-12",
+              "Bournemouth",
+              false
+            ],
+            [
+              "2026-09-18",
+              "Chelsea",
+              true
+            ],
+            [
+              "2026-10-10",
+              "Aston Villa",
+              false
+            ],
+            [
+              "2026-10-17",
+              "Liverpool",
+              true
+            ],
+            [
+              "2026-10-25",
+              "Hull",
+              false
+            ]
+          ],
+          "same": true
+        },
+        {
+          "team": "Nottingham Forest",
+          "five_performance_matches": [
+            [
+              "2026-09-12",
+              "Aston Villa",
+              false
+            ],
+            [
+              "2026-09-19",
+              "Coventry",
+              true
+            ],
+            [
+              "2026-10-11",
+              "Crystal Palace",
+              false
+            ],
+            [
+              "2026-10-18",
+              "Arsenal",
+              true
+            ],
+            [
+              "2026-10-23",
+              "Ipswich",
+              false
+            ]
+          ],
+          "five_participation_matches": [
+            [
+              "2026-09-12",
+              "Aston Villa",
+              false
+            ],
+            [
+              "2026-09-19",
+              "Coventry",
+              true
+            ],
+            [
+              "2026-10-11",
+              "Crystal Palace",
+              false
+            ],
+            [
+              "2026-10-18",
+              "Arsenal",
+              true
+            ],
+            [
+              "2026-10-23",
+              "Ipswich",
+              false
+            ]
+          ],
+          "same": true
+        }
+      ]
+    },
+    {
+      "check": "selected_participation_only_and_exact_packet_projection",
+      "passed": true,
+      "detail": {
+        "with_prior_participation": 29,
+        "unobserved_prior_participation": 23,
+        "failures": []
+      }
+    },
+    {
+      "check": "missing_history_remains_unknown_in_existing_code",
+      "passed": true,
+      "detail": {
+        "synthetic_removed_fixture": 32,
+        "state": "missing",
+        "minutes": null,
+        "starts": null,
+        "summary": {
+          "expected_fixture_count": 5,
+          "known_history_rows": 4,
+          "complete_five_rows_and_fields": false,
+          "minutes_sum": null,
+          "starts_sum": null,
+          "missing_is_zero": false
+        }
+      }
+    },
+    {
+      "check": "reading_boundary_no_forecast_odds_target_labels_or_full_history_personnel_summaries",
+      "passed": true,
+      "detail": {
+        "forbidden_field_paths": [],
+        "performance_measurements_are_descriptive_only": true,
+        "exposure_declaration": {
+          "current_statistical_probabilities": false,
+          "historical_model_estimates": false,
+          "market": false,
+          "other_llm": false,
+          "target_results": false
+        },
+        "source_chance_fields": "Preserved as raw FPL fields; never used in arithmetic or diagnosis."
+      }
+    },
+    {
+      "check": "source_a_and_percentages_not_diagnoses_or_direct_win_adjustments",
+      "passed": true,
+      "detail": "Source-a, current labels, training, source chance and previous minutes retain separate meanings; no strength-loss coefficient is output."
+    },
+    {
+      "check": "declared_observations_precede_original_packet_and_claims_match",
+      "passed": true,
+      "detail": {
+        "source_count": 13,
+        "claim_count": 27,
+        "original_packet_time": "2026-10-29T11:16:30.037563+00:00",
+        "latest_declared_fact_time": "2026-10-29T11:11:47.176237+00:00"
+      }
+    }
+  ],
+  "failed_checks": [],
+  "official_read_only_subreview": {
+    "method": "Separate read-only review of official evidence and its explicit local raw files; no web result search.",
+    "packet_source_records_identical": 13,
+    "packet_claim_records_identical": 27,
+    "sources_with_exact_local_receipts": 6,
+    "claims_supported_by_local_page_text_and_context": 12,
+    "sources_with_original_publication_reproduced_from_local_html_cms_or_search": 8,
+    "web_note_sources_without_per_source_receipts": 7,
+    "manual_note_source_pointers": [
+      "/sources/1",
+      "/sources/5",
+      "/sources/6",
+      "/sources/7",
+      "/sources/8",
+      "/sources/9",
+      "/sources/10"
+    ],
+    "finding": "No substantive contradiction found in locally reproducible statements. Training, prior absence, cup squads and future press conferences retain their conditions and dates.",
+    "limitation": "Seven web-read source times are note-finalization declarations, not independently proved per-source precise HTTP observations. v2 now carries this limitation. Date-only publication evidence remains date-only."
+  },
+  "version_note": "v1 remains the original independently read forecast input. v2 adds the official observation-time limitation and a new assembly time only; no source fact, performance value, participation value or forecast probability was changed by this audit.",
+  "builder_code_review": "The reviewed builder reads the named form/personnel/participation/official sources and one earlier same-team roster version; it copies descriptive facts and selected participation fields. No model loading, forecast arithmetic, historical personnel frequency, latest-seen calculation or target-score access is present.",
+  "access_boundary": {
+    "read_files": [
+      "G:\\Codex\\football-prediction-2026-10-22\\work\\build_live_personnel_packets_20261029.py",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入_v2.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\已核实赛程.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\未来未开场赛程.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\当前球员新闻.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\较早参与记录.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\官方人员证据.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\给LLM的表现事实包.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\获取记录.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\current_rich_inputs\\run_20261026T025507813598Z\\coverage_report.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\bootstrap-static.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\fixtures.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\current_rich_inputs\\run_20261026T025507813598Z\\official-fpl\\bootstrap.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\63.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\65.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\69.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\76.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\89.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\99.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\102.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\103.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\107.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\28.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\142.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\158.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\165.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\170.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\200.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\583.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\329.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\349.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\598.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\415.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\423.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\429.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\432.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\433.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\439.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\469.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\475.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\487.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\491.json",
+      "G:\\Codex\\football-prediction-2026-10-22\\work\\attach_live_fpl_participation_20261029.py",
+      "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\raw\\element-summary\\63.json"
+    ],
+    "not_read": [
+      "statistical predictions or fitted model files",
+      "model rates",
+      "market odds",
+      "old or new LLM forecast probability outputs",
+      "target match scores or labels"
+    ],
+    "raw_handling": "Raw FPL payloads may contain historical labels; only explicit safe identity/date/flag/player participation projections enter computation or report."
+  },
+  "limits": [
+    "Official web-note times without per-source receipts cannot be independently established as exact per-source observation times.",
+    "This audit does not medically verify players, infer target lineups or calibrate source chance percentages.",
+    "No personnel frequency or historical latest-seen statistic is included in the packet.",
+    "No forecast output was read; parent task handles any post-forecast source-time disclosure separately."
+  ]
+}

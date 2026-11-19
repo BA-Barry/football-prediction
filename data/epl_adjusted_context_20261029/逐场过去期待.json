@@ -1,0 +1,452 @@
+[
+  {
+    "match_id": "football-data:E0:2026/27:Aston Villa|Nott'm Forest",
+    "date": "2026-09-12",
+    "home": "football-data:E0:Aston Villa",
+    "away": "football-data:E0:Nott'm Forest",
+    "actual_xg_home_away": [
+      1.08786,
+      2.79451
+    ],
+    "earlier_expected_xg_home_away": [
+      1.6844462227704933,
+      1.2209429814967052
+    ],
+    "fit_before_date": "2026-09-12",
+    "training_max_date": "2026-09-06",
+    "unknown_teams": [],
+    "understat_id": "31211"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Bournemouth|Brentford",
+    "date": "2026-09-12",
+    "home": "football-data:E0:Bournemouth",
+    "away": "football-data:E0:Brentford",
+    "actual_xg_home_away": [
+      2.54949,
+      0.794238
+    ],
+    "earlier_expected_xg_home_away": [
+      1.9577774911207755,
+      1.544869006767893
+    ],
+    "fit_before_date": "2026-09-12",
+    "training_max_date": "2026-09-06",
+    "unknown_teams": [],
+    "understat_id": "31210"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Chelsea|Hull",
+    "date": "2026-09-12",
+    "home": "football-data:E0:Chelsea",
+    "away": "football-data:E0:Hull",
+    "actual_xg_home_away": [
+      1.21374,
+      1.80363
+    ],
+    "earlier_expected_xg_home_away": [
+      2.1050894984413584,
+      1.1318369797851366
+    ],
+    "fit_before_date": "2026-09-12",
+    "training_max_date": "2026-09-06",
+    "unknown_teams": [],
+    "understat_id": "31212"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Man United|Man City",
+    "date": "2026-09-13",
+    "home": "football-data:E0:Man United",
+    "away": "football-data:E0:Man City",
+    "actual_xg_home_away": [
+      0.943406,
+      1.14073
+    ],
+    "earlier_expected_xg_home_away": [
+      1.6445894547994218,
+      1.711632227353938
+    ],
+    "fit_before_date": "2026-09-13",
+    "training_max_date": "2026-09-12",
+    "unknown_teams": [],
+    "understat_id": "31218"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Leeds|Newcastle",
+    "date": "2026-09-14",
+    "home": "football-data:E0:Leeds",
+    "away": "football-data:E0:Newcastle",
+    "actual_xg_home_away": [
+      2.2902,
+      0.793165
+    ],
+    "earlier_expected_xg_home_away": [
+      1.7374294467293332,
+      1.4155547566168647
+    ],
+    "fit_before_date": "2026-09-14",
+    "training_max_date": "2026-09-13",
+    "unknown_teams": [],
+    "understat_id": "31219"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Brentford|Chelsea",
+    "date": "2026-09-18",
+    "home": "football-data:E0:Brentford",
+    "away": "football-data:E0:Chelsea",
+    "actual_xg_home_away": [
+      2.47935,
+      0.885111
+    ],
+    "earlier_expected_xg_home_away": [
+      1.9582293879236208,
+      1.7470867668492827
+    ],
+    "fit_before_date": "2026-09-18",
+    "training_max_date": "2026-09-14",
+    "unknown_teams": [],
+    "understat_id": "31220"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Nott'm Forest|Coventry",
+    "date": "2026-09-19",
+    "home": "football-data:E0:Nott'm Forest",
+    "away": "football-data:E0:Coventry",
+    "actual_xg_home_away": [
+      1.31852,
+      0.69375
+    ],
+    "earlier_expected_xg_home_away": [
+      1.6131430777189777,
+      1.2472135266195956
+    ],
+    "fit_before_date": "2026-09-19",
+    "training_max_date": "2026-09-18",
+    "unknown_teams": [],
+    "understat_id": "31227"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Bournemouth|Liverpool",
+    "date": "2026-09-20",
+    "home": "football-data:E0:Bournemouth",
+    "away": "football-data:E0:Liverpool",
+    "actual_xg_home_away": [
+      0.944706,
+      1.29116
+    ],
+    "earlier_expected_xg_home_away": [
+      1.7951561408864898,
+      1.5626329925409685
+    ],
+    "fit_before_date": "2026-09-20",
+    "training_max_date": "2026-09-19",
+    "unknown_teams": [],
+    "understat_id": "31228"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Fulham|Man United",
+    "date": "2026-09-20",
+    "home": "football-data:E0:Fulham",
+    "away": "football-data:E0:Man United",
+    "actual_xg_home_away": [
+      1.71719,
+      2.12453
+    ],
+    "earlier_expected_xg_home_away": [
+      1.3985055801441644,
+      1.6961711430667374
+    ],
+    "fit_before_date": "2026-09-20",
+    "training_max_date": "2026-09-19",
+    "unknown_teams": [],
+    "understat_id": "31229"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Leeds|Crystal Palace",
+    "date": "2026-09-20",
+    "home": "football-data:E0:Leeds",
+    "away": "football-data:E0:Crystal Palace",
+    "actual_xg_home_away": [
+      1.08552,
+      1.12905
+    ],
+    "earlier_expected_xg_home_away": [
+      1.875163676284087,
+      1.3854013257565805
+    ],
+    "fit_before_date": "2026-09-20",
+    "training_max_date": "2026-09-19",
+    "unknown_teams": [],
+    "understat_id": "31225"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Arsenal|Leeds",
+    "date": "2026-10-10",
+    "home": "football-data:E0:Arsenal",
+    "away": "football-data:E0:Leeds",
+    "actual_xg_home_away": [
+      2.32061,
+      1.19826
+    ],
+    "earlier_expected_xg_home_away": [
+      1.974041208282872,
+      0.9547990998851218
+    ],
+    "fit_before_date": "2026-10-10",
+    "training_max_date": "2026-09-20",
+    "unknown_teams": [],
+    "understat_id": "31230"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Aston Villa|Brentford",
+    "date": "2026-10-10",
+    "home": "football-data:E0:Aston Villa",
+    "away": "football-data:E0:Brentford",
+    "actual_xg_home_away": [
+      1.83842,
+      1.28128
+    ],
+    "earlier_expected_xg_home_away": [
+      1.671138927770232,
+      1.6406951237007712
+    ],
+    "fit_before_date": "2026-10-10",
+    "training_max_date": "2026-09-20",
+    "unknown_teams": [],
+    "understat_id": "31231"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Chelsea|Bournemouth",
+    "date": "2026-10-10",
+    "home": "football-data:E0:Chelsea",
+    "away": "football-data:E0:Bournemouth",
+    "actual_xg_home_away": [
+      1.3732,
+      1.67505
+    ],
+    "earlier_expected_xg_home_away": [
+      1.873694698274581,
+      1.6271204971530773
+    ],
+    "fit_before_date": "2026-10-10",
+    "training_max_date": "2026-09-20",
+    "unknown_teams": [],
+    "understat_id": "31232"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Man United|Tottenham",
+    "date": "2026-10-10",
+    "home": "football-data:E0:Man United",
+    "away": "football-data:E0:Tottenham",
+    "actual_xg_home_away": [
+      0.867817,
+      2.03436
+    ],
+    "earlier_expected_xg_home_away": [
+      2.02738283965086,
+      1.1162809028849427
+    ],
+    "fit_before_date": "2026-10-10",
+    "training_max_date": "2026-09-20",
+    "unknown_teams": [],
+    "understat_id": "31235"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Crystal Palace|Nott'm Forest",
+    "date": "2026-10-11",
+    "home": "football-data:E0:Crystal Palace",
+    "away": "football-data:E0:Nott'm Forest",
+    "actual_xg_home_away": [
+      2.24807,
+      3.76379
+    ],
+    "earlier_expected_xg_home_away": [
+      1.7254359765639993,
+      1.3801422000389105
+    ],
+    "fit_before_date": "2026-10-11",
+    "training_max_date": "2026-10-10",
+    "unknown_teams": [],
+    "understat_id": "31236"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Brentford|Liverpool",
+    "date": "2026-10-17",
+    "home": "football-data:E0:Brentford",
+    "away": "football-data:E0:Liverpool",
+    "actual_xg_home_away": [
+      0.858733,
+      1.54933
+    ],
+    "earlier_expected_xg_home_away": [
+      1.7118591433071308,
+      1.657232852111285
+    ],
+    "fit_before_date": "2026-10-17",
+    "training_max_date": "2026-10-12",
+    "unknown_teams": [],
+    "understat_id": "31242"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Everton|Chelsea",
+    "date": "2026-10-17",
+    "home": "football-data:E0:Everton",
+    "away": "football-data:E0:Chelsea",
+    "actual_xg_home_away": [
+      0.570749,
+      1.602
+    ],
+    "earlier_expected_xg_home_away": [
+      1.6049589551429315,
+      1.614095668330029
+    ],
+    "fit_before_date": "2026-10-17",
+    "training_max_date": "2026-10-12",
+    "unknown_teams": [],
+    "understat_id": "31240"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Bournemouth|Sunderland",
+    "date": "2026-10-18",
+    "home": "football-data:E0:Bournemouth",
+    "away": "football-data:E0:Sunderland",
+    "actual_xg_home_away": [
+      4.386,
+      0.0943414
+    ],
+    "earlier_expected_xg_home_away": [
+      1.902054056410885,
+      1.2030375403595956
+    ],
+    "fit_before_date": "2026-10-18",
+    "training_max_date": "2026-10-17",
+    "unknown_teams": [],
+    "understat_id": "31246"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Leeds|Man United",
+    "date": "2026-10-18",
+    "home": "football-data:E0:Leeds",
+    "away": "football-data:E0:Man United",
+    "actual_xg_home_away": [
+      1.41034,
+      1.08135
+    ],
+    "earlier_expected_xg_home_away": [
+      1.575121000107608,
+      1.5352362182643755
+    ],
+    "fit_before_date": "2026-10-18",
+    "training_max_date": "2026-10-17",
+    "unknown_teams": [],
+    "understat_id": "31247"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Nott'm Forest|Arsenal",
+    "date": "2026-10-18",
+    "home": "football-data:E0:Nott'm Forest",
+    "away": "football-data:E0:Arsenal",
+    "actual_xg_home_away": [
+      0.74721,
+      0.9151
+    ],
+    "earlier_expected_xg_home_away": [
+      1.12133430765268,
+      1.7923743261215253
+    ],
+    "fit_before_date": "2026-10-18",
+    "training_max_date": "2026-10-17",
+    "unknown_teams": [],
+    "understat_id": "31248"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Ipswich|Nott'm Forest",
+    "date": "2026-10-23",
+    "home": "football-data:E0:Ipswich",
+    "away": "football-data:E0:Nott'm Forest",
+    "actual_xg_home_away": [
+      0.856862,
+      2.75509
+    ],
+    "earlier_expected_xg_home_away": [
+      1.435977571425949,
+      1.7992165468666026
+    ],
+    "fit_before_date": "2026-10-23",
+    "training_max_date": "2026-10-19",
+    "unknown_teams": [],
+    "understat_id": "31250"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Chelsea|Tottenham",
+    "date": "2026-10-24",
+    "home": "football-data:E0:Chelsea",
+    "away": "football-data:E0:Tottenham",
+    "actual_xg_home_away": [
+      0.460466,
+      0.979641
+    ],
+    "earlier_expected_xg_home_away": [
+      1.9343330046049882,
+      1.2599692813016932
+    ],
+    "fit_before_date": "2026-10-24",
+    "training_max_date": "2026-10-23",
+    "unknown_teams": [],
+    "understat_id": "31255"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Hull|Brentford",
+    "date": "2026-10-25",
+    "home": "football-data:E0:Hull",
+    "away": "football-data:E0:Brentford",
+    "actual_xg_home_away": [
+      1.93749,
+      1.70706
+    ],
+    "earlier_expected_xg_home_away": [
+      1.3413477928012711,
+      1.7793974302786484
+    ],
+    "fit_before_date": "2026-10-25",
+    "training_max_date": "2026-10-24",
+    "unknown_teams": [],
+    "understat_id": "31258"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Man United|Bournemouth",
+    "date": "2026-10-25",
+    "home": "football-data:E0:Man United",
+    "away": "football-data:E0:Bournemouth",
+    "actual_xg_home_away": [
+      0.84372,
+      2.56254
+    ],
+    "earlier_expected_xg_home_away": [
+      1.7211706416529142,
+      1.5657244972869875
+    ],
+    "fit_before_date": "2026-10-25",
+    "training_max_date": "2026-10-24",
+    "unknown_teams": [],
+    "understat_id": "31256"
+  },
+  {
+    "match_id": "football-data:E0:2026/27:Sunderland|Leeds",
+    "date": "2026-10-25",
+    "home": "football-data:E0:Sunderland",
+    "away": "football-data:E0:Leeds",
+    "actual_xg_home_away": [
+      1.02357,
+      1.06511
+    ],
+    "earlier_expected_xg_home_away": [
+      1.3763203121095402,
+      1.5456988078884448
+    ],
+    "fit_before_date": "2026-10-25",
+    "training_max_date": "2026-10-24",
+    "unknown_teams": [],
+    "understat_id": "31259"
+  }
+]

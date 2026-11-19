@@ -1,0 +1,19 @@
+{
+  "evidence_saved_at": "2026-10-29T11:13:36.317529+00:00",
+  "executed_test_file": "G:/Codex/football-prediction-2026-10-22/work/test_predict_epl_personnel_context_20261029.py",
+  "observed_exit_code": 0,
+  "tests_run": 7,
+  "all_passed": true,
+  "elapsed_test_runner_seconds": 0.113,
+  "covered": [
+    "same fixture revision rather than new unique fixture",
+    "two existing fixed fits and target ID exclusion",
+    "score grid probability axes",
+    "saved base and rich tree reproduction without refitting",
+    "LLM factual packet contains no model prediction or target label keys",
+    "original factual window IDs dates actual counts",
+    "unknown optional measurement remains null without window substitution"
+  ],
+  "additional_fits_in_tests": 0,
+  "historical_prediction_scoring_in_tests": false
+}

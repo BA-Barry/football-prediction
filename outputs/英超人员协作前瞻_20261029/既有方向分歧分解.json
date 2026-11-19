@@ -1,0 +1,66 @@
+{
+  "computed_at_utc": "2026-10-29T11:47:10.147238+00:00",
+  "method": "Existing probabilities only: pH=(1-pD)*qH; no new prediction, weights or result-based judgement.",
+  "records": [
+    {
+      "fixture_id": "epl-2026-27-r9-1",
+      "statistical_HDA": [
+        0.45335241893987177,
+        0.2248474315022607,
+        0.32180014955786757
+      ],
+      "independent_llm_HDA": [
+        0.34,
+        0.29,
+        0.37
+      ],
+      "statistical_draw_probability": 0.2248474315022607,
+      "llm_draw_probability": 0.29,
+      "statistical_home_given_non_draw": 0.5848557269422168,
+      "llm_home_given_non_draw": 0.4788732394366198,
+      "conditional_direction_crosses_half": true,
+      "note": "Conditional direction is a diagnostic decomposition, never the unconditional home-win probability."
+    },
+    {
+      "fixture_id": "epl-2026-27-r9-2",
+      "statistical_HDA": [
+        0.4339424031434911,
+        0.26523711653170906,
+        0.30082048032480013
+      ],
+      "independent_llm_HDA": [
+        0.54,
+        0.26,
+        0.2
+      ],
+      "statistical_draw_probability": 0.26523711653170906,
+      "llm_draw_probability": 0.26,
+      "statistical_home_given_non_draw": 0.5905883556544921,
+      "llm_home_given_non_draw": 0.7297297297297298,
+      "conditional_direction_crosses_half": false,
+      "note": "Conditional direction is a diagnostic decomposition, never the unconditional home-win probability."
+    },
+    {
+      "fixture_id": "epl-2026-27-r9-3",
+      "statistical_HDA": [
+        0.4893594793453643,
+        0.2526178477381309,
+        0.2580226729165049
+      ],
+      "independent_llm_HDA": [
+        0.33,
+        0.28,
+        0.39
+      ],
+      "statistical_draw_probability": 0.2526178477381309,
+      "llm_draw_probability": 0.28,
+      "statistical_home_given_non_draw": 0.6547647383127523,
+      "llm_home_given_non_draw": 0.45833333333333337,
+      "conditional_direction_crosses_half": true,
+      "note": "Conditional direction is a diagnostic decomposition, never the unconditional home-win probability."
+    }
+  ],
+  "fits": 0,
+  "parameter_searches": 0,
+  "target_results_used": false
+}

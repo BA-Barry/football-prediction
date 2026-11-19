@@ -1,0 +1,40 @@
+{
+  "completed_at_utc": "2026-10-29T11:33:09.445081+00:00",
+  "new_files_drive": "G",
+  "statistical_fixed_fits": {
+    "goal_simple": 1,
+    "independent_xg": 1,
+    "rich_121": 0
+  },
+  "parameter_searches": 0,
+  "historical_backtests": 0,
+  "current_result_queries": 0,
+  "source_counts": {
+    "current_fpl_players": 669,
+    "nonempty_news": 200,
+    "element_summary_requests": 29,
+    "earlier_participation_rows": 145,
+    "official_sources": 13,
+    "official_claims": 27
+  },
+  "forecast_versions": {
+    "statistical": 10,
+    "clean_context_llm": 3,
+    "new_unique_fixtures": 0
+  },
+  "original_fixture_ids_retained": true,
+  "original_predictions_overwritten": false,
+  "llm_fact_citations_checked": 57,
+  "forecast_records": 10,
+  "settled": 0,
+  "pending": 10,
+  "input_review_status": "passed_with_disclosed_source_time_limitation",
+  "statistical_ordinary_checks": 7,
+  "input_independent_measurements": 12,
+  "numerical_joint_pool_generated": false,
+  "original_llm_input": "v1; later v2 time-scope note attached separately",
+  "stop_point": "Current source intake, two fixed existing-model refits, 3 clean-context LLM forecasts, source-linked synthesis and prospective recording completed. No outcome check or further tuning.",
+  "report": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\本轮协作结果与判断.md",
+  "hyperparameter_changes": false,
+  "fitted_parameter_values_reestimated": true
+}

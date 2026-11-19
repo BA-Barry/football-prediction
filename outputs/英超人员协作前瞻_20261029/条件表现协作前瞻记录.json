@@ -1,0 +1,2314 @@
+{
+  "published_at_utc": "2026-10-29T12:08:19.212475+00:00",
+  "records": [
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+        "home": "Chelsea",
+        "away": "Manchester United",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T12:30:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+          "probabilities": [
+            0.45335241893987177,
+            0.2248474315022607,
+            0.32180014955786757
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:chelsea:manchester-united:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": {
+          "fixture_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+          "probabilities": [
+            0.34,
+            0.29,
+            0.37
+          ],
+          "generated_at": "2026-10-29T11:22:06.868258+00:00",
+          "model": "Uncalibrated clean-context LLM; descriptive past form + sourced personnel; session_inherited_model_identity_not_exposed",
+          "id": "personnel-llm:prematch:premier-league:2026-10-31:chelsea:manchester-united:2026-10-29T11:22:06.868258+00:00",
+          "exposed_to_statistical": false,
+          "exposed_to_market": false
+        },
+        "market": null,
+        "llm_model_informed": {
+          "fixture_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+          "probabilities": [
+            0.39,
+            0.3,
+            0.31
+          ],
+          "generated_at": "2026-10-29T12:07:49.467523+00:00",
+          "model": "Uncalibrated model-assisted LLM; historical opponent/venue-conditioned xG plus original performance/personnel; session_inherited_model_identity_not_exposed",
+          "id": "conditioned-form-llm:prematch:premier-league:2026-10-31:chelsea:manchester-united:2026-10-29T12:07:49.467523+00:00",
+          "exposed_to_statistical": true,
+          "exposed_to_market": false
+        },
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "market": "No market observations in this personnel-context run.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+              "home": "Chelsea",
+              "away": "Manchester United",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T12:30:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+              "home": "Chelsea",
+              "away": "Manchester United",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T12:30:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 84,
+        "official_fixture_id": "epl-2026-27-r9-1"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\独立LLM预测.json",
+        "llm_input": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入.json",
+        "later_source_time_annotation": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\LLM来源限定补充.json",
+        "assisted_forecast": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\模型辅助LLM条件表现预测.json",
+        "assisted_input": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\模型辅助LLM条件表现输入.json",
+        "historical_context": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_adjusted_context_20261029\\对手条件表现.json"
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.8040211371071253,
+            1.5899949470979846
+          ],
+          "probabilities": [
+            0.43175405465170646,
+            0.2253792536142117,
+            0.3428666917340817
+          ],
+          "over_2_5": 0.6591044073750426,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.0963019118287981
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.08686534224148923
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07655977660183229
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06905772762095248
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.060567432622704684
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.05463246433583545
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.05338180903092132
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05223563782856367
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.04243840331305722
+            },
+            {
+              "score": "3-2",
+              "home_goals": 3,
+              "away_goals": 2,
+              "probability": 0.04152720010292828
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.5457433850118492,
+            1.479918259947676
+          ],
+          "probabilities": [
+            0.39357648279738006,
+            0.2416836472665618,
+            0.36473986993605806
+          ],
+          "over_2_5": 0.5825345420922653,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11100613171780137
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.08579349689927275
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.08214000064766555
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.07500828574256939
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.071814075217246
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06348368132299902
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.05797178075382762
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.05313948061762911
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.04852570385866113
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.044204910103028475
+            }
+          ]
+        }
+      },
+      "assisted_exposure_details": {
+        "current_statistical_probabilities": false,
+        "historical_model_estimates": true,
+        "market": false,
+        "other_llm": false,
+        "target_results": false
+      },
+      "assisted_policy": "Historical model estimates are visible; current target statistical probabilities are not. This track is model-assisted, not independent."
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+        "home": "AFC Bournemouth",
+        "away": "Leeds United",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+          "probabilities": [
+            0.4339424031434911,
+            0.26523711653170906,
+            0.30082048032480013
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": {
+          "fixture_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+          "probabilities": [
+            0.54,
+            0.26,
+            0.2
+          ],
+          "generated_at": "2026-10-29T11:22:06.868258+00:00",
+          "model": "Uncalibrated clean-context LLM; descriptive past form + sourced personnel; session_inherited_model_identity_not_exposed",
+          "id": "personnel-llm:prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united:2026-10-29T11:22:06.868258+00:00",
+          "exposed_to_statistical": false,
+          "exposed_to_market": false
+        },
+        "market": null,
+        "llm_model_informed": {
+          "fixture_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+          "probabilities": [
+            0.55,
+            0.27,
+            0.18
+          ],
+          "generated_at": "2026-10-29T12:07:49.467523+00:00",
+          "model": "Uncalibrated model-assisted LLM; historical opponent/venue-conditioned xG plus original performance/personnel; session_inherited_model_identity_not_exposed",
+          "id": "conditioned-form-llm:prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united:2026-10-29T12:07:49.467523+00:00",
+          "exposed_to_statistical": true,
+          "exposed_to_market": false
+        },
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "market": "No market observations in this personnel-context run.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+              "home": "AFC Bournemouth",
+              "away": "Leeds United",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+              "home": "AFC Bournemouth",
+              "away": "Leeds United",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 82,
+        "official_fixture_id": "epl-2026-27-r9-2"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\独立LLM预测.json",
+        "llm_input": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入.json",
+        "later_source_time_annotation": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\LLM来源限定补充.json",
+        "assisted_forecast": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\模型辅助LLM条件表现预测.json",
+        "assisted_input": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\模型辅助LLM条件表现输入.json",
+        "historical_context": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_adjusted_context_20261029\\对手条件表现.json"
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.8595429632807936,
+            1.2566901695803518
+          ],
+          "probabilities": [
+            0.5152221444519979,
+            0.2266516114156451,
+            0.258126244132357
+          ],
+          "over_2_5": 0.6023405670105729,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.10357896826457093
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09630477079013375
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.08242204066827322
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07663366287196544
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.06508333559668078
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06051262936782507
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05969428628438764
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.05570130419671855
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.04750119618133197
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.04432381627948834
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.6560120440996333,
+            1.1431132664950174
+          ],
+          "probabilities": [
+            0.49332089613860225,
+            0.2435375416937742,
+            0.2631415621676236
+          ],
+          "over_2_5": 0.5303377860073225,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11521474939748999
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.10079031778780617
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09539850633008223
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.0834549900926183
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.0695736180228881
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.06585175426608482
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.06086327581186491
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.054525649094862946
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05266035849057709
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.04606748957786382
+            }
+          ]
+        }
+      },
+      "assisted_exposure_details": {
+        "current_statistical_probabilities": false,
+        "historical_model_estimates": true,
+        "market": false,
+        "other_llm": false,
+        "target_results": false
+      },
+      "assisted_policy": "Historical model estimates are visible; current target statistical probabilities are not. This track is model-assisted, not independent."
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+        "home": "Brentford",
+        "away": "Nottingham Forest",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+          "probabilities": [
+            0.4893594793453643,
+            0.2526178477381309,
+            0.2580226729165049
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:brentford:nottingham-forest:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": {
+          "fixture_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+          "probabilities": [
+            0.33,
+            0.28,
+            0.39
+          ],
+          "generated_at": "2026-10-29T11:22:06.868258+00:00",
+          "model": "Uncalibrated clean-context LLM; descriptive past form + sourced personnel; session_inherited_model_identity_not_exposed",
+          "id": "personnel-llm:prematch:premier-league:2026-10-31:brentford:nottingham-forest:2026-10-29T11:22:06.868258+00:00",
+          "exposed_to_statistical": false,
+          "exposed_to_market": false
+        },
+        "market": null,
+        "llm_model_informed": {
+          "fixture_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+          "probabilities": [
+            0.29,
+            0.28,
+            0.43
+          ],
+          "generated_at": "2026-10-29T12:07:49.467523+00:00",
+          "model": "Uncalibrated model-assisted LLM; historical opponent/venue-conditioned xG plus original performance/personnel; session_inherited_model_identity_not_exposed",
+          "id": "conditioned-form-llm:prematch:premier-league:2026-10-31:brentford:nottingham-forest:2026-10-29T12:07:49.467523+00:00",
+          "exposed_to_statistical": true,
+          "exposed_to_market": false
+        },
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "market": "No market observations in this personnel-context run.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+              "home": "Brentford",
+              "away": "Nottingham Forest",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+              "home": "Brentford",
+              "away": "Nottingham Forest",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 83,
+        "official_fixture_id": "epl-2026-27-r9-3"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\独立LLM预测.json",
+        "llm_input": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入.json",
+        "later_source_time_annotation": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\LLM来源限定补充.json",
+        "assisted_forecast": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\模型辅助LLM条件表现预测.json",
+        "assisted_input": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\模型辅助LLM条件表现输入.json",
+        "historical_context": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_adjusted_context_20261029\\对手条件表现.json"
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.8190168820938182,
+            1.457492378012484
+          ],
+          "probabilities": [
+            0.4623547505765965,
+            0.2273760647004984,
+            0.3102691847229052
+          ],
+          "over_2_5": 0.6358341002650623,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.10010900167276698
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09104998204616073
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07295405345424846
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.06868578057971121
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06635232742522638
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.06247029721714322
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05520715148543513
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.05503467431128752
+            },
+            {
+              "score": "3-2",
+              "home_goals": 3,
+              "away_goals": 2,
+              "probability": 0.04023200125090115
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.040106309167550515
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.5637116242304048,
+            1.3323699291116369
+          ],
+          "probabilities": [
+            0.42851424542986855,
+            0.24611520243026472,
+            0.32537055213986676
+          ],
+          "over_2_5": 0.5531296291652348,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11508778965055966
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.0899820572417819
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.08637825511965355
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07666975506916558
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.07359911371586893
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.06753534080567085
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.0599446936142761
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.05523924858086631
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.049030622962145796
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.04690199629371334
+            }
+          ]
+        }
+      },
+      "assisted_exposure_details": {
+        "current_statistical_probabilities": false,
+        "historical_model_estimates": true,
+        "market": false,
+        "other_llm": false,
+        "target_results": false
+      },
+      "assisted_policy": "Historical model estimates are visible; current target statistical probabilities are not. This track is model-assisted, not independent."
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:coventry-city:sunderland",
+        "home": "Coventry City",
+        "away": "Sunderland",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:coventry-city:sunderland",
+          "probabilities": [
+            0.3581322727674936,
+            0.2812530695304428,
+            0.3606146577020637
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:coventry-city:sunderland:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:coventry-city:sunderland",
+              "home": "Coventry City",
+              "away": "Sunderland",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:coventry-city:sunderland",
+              "home": "Coventry City",
+              "away": "Sunderland",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 85,
+        "official_fixture_id": "epl-2026-27-r9-4"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.402491916128832,
+            1.2059667452330245
+          ],
+          "probabilities": [
+            0.4149502850823291,
+            0.26190318687606245,
+            0.3231465280416083
+          ],
+          "over_2_5": 0.48369184746259636,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.12456513298458473
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.10329068647785594
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.08881700603908668
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.08735079602119651
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07511070399746923
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.0736479727904312
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07243217639829533
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.05355517784714962
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.052671077585598094
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.040836261762382225
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.1651233400553695,
+            1.1776287864425383
+          ],
+          "probabilities": [
+            0.3566357551976702,
+            0.2805989938981052,
+            0.36276525090422457
+          ],
+          "over_2_5": 0.41526554171328806,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.13180624704954333
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.11312643264298489
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.11192512323659534
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.09606289685285713
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07760941537924956
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.07678526740126355
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.06661047179396593
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.06520328671076542
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.0452122706332079
+            },
+            {
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.030465027216526847
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:hull-city:ipswich-town",
+        "home": "Hull City",
+        "away": "Ipswich Town",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:hull-city:ipswich-town",
+          "probabilities": [
+            0.5420740950402488,
+            0.23499898306102399,
+            0.22292692189872726
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:hull-city:ipswich-town:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:hull-city:ipswich-town",
+              "home": "Hull City",
+              "away": "Ipswich Town",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:hull-city:ipswich-town",
+              "home": "Hull City",
+              "away": "Ipswich Town",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 86,
+        "official_fixture_id": "epl-2026-27-r9-5"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.8680256964993804,
+            1.3451088916959006
+          ],
+          "probabilities": [
+            0.49755705971643027,
+            0.2256300020614607,
+            0.2768129382221091
+          ],
+          "over_2_5": 0.622830724971153,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.10108661835693392
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09441620033148927
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.07515125279521782
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07019223567279391
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.06798625459169093
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06350003529301382
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.0587906294616851
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.054114147651377044
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.043706966643839835
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.040230309966318364
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.6123559169204245,
+            1.1676216483466026
+          ],
+          "probabilities": [
+            0.4769756425860378,
+            0.24676838415273805,
+            0.27625597326122414
+          ],
+          "over_2_5": 0.5257598636283901,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11679765887115279
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.10003039857692154
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09415969818167824
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.08064230250870393
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.07243912937922202
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.0681877374870798
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.0620398992103295
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.054971450999354875
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.050606315499556735
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.043341364534665174
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:manchester-city:brighton-and-hove-albion",
+        "home": "Manchester City",
+        "away": "Brighton & Hove Albion",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T15:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:manchester-city:brighton-and-hove-albion",
+          "probabilities": [
+            0.521165393565002,
+            0.22410384815888154,
+            0.25473075827611646
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:manchester-city:brighton-and-hove-albion:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:manchester-city:brighton-and-hove-albion",
+              "home": "Manchester City",
+              "away": "Brighton & Hove Albion",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:manchester-city:brighton-and-hove-albion",
+              "home": "Manchester City",
+              "away": "Brighton & Hove Albion",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T15:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 88,
+        "official_fixture_id": "epl-2026-27-r9-6"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            2.0699004460212067,
+            1.3500277537734617
+          ],
+          "probabilities": [
+            0.5406284752872283,
+            0.2117115756028748,
+            0.24765994910989697
+          ],
+          "over_2_5": 0.6640884393387949,
+          "top_scores": [
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.0946140584135872
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.09141894586810274
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.0700830469219107
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.06771634554369547
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.06528056057005356
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06386580237774313
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.06170905707132623
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.048354976694062704
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.04416586606560214
+            },
+            {
+              "score": "3-2",
+              "home_goals": 3,
+              "away_goals": 2,
+              "probability": 0.04406528427573092
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            2.0390682131671403,
+            1.2610156224069045
+          ],
+          "probabilities": [
+            0.5537335822853905,
+            0.21319276894585423,
+            0.2330736487687553
+          ],
+          "over_2_5": 0.6405903699981986,
+          "top_scores": [
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09668203449159267
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.09482962253766225
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07666997360988705
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.07520098946645931
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.06571375443871189
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06095877794999077
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.059790817743471
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.05211176869742807
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.04650635124676389
+            },
+            {
+              "score": "3-2",
+              "home_goals": 3,
+              "away_goals": 2,
+              "probability": 0.041433035477113384
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+        "home": "Tottenham Hotspur",
+        "away": "Crystal Palace",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T17:30:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+          "probabilities": [
+            0.48067253200633997,
+            0.24839662232156942,
+            0.2709308456720907
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:tottenham-hotspur:crystal-palace:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+              "home": "Tottenham Hotspur",
+              "away": "Crystal Palace",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T17:30:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+              "home": "Tottenham Hotspur",
+              "away": "Crystal Palace",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T17:30:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 90,
+        "official_fixture_id": "epl-2026-27-r9-7"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.6217293577508987,
+            1.4281028184232643
+          ],
+          "probabilities": [
+            0.4224416847613889,
+            0.23953038469247115,
+            0.33802793054614
+          ],
+          "over_2_5": 0.5878811901438077,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.10970150105732221
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.08895307242700033
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07833251142261227
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.07681624855165618
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.0676447648511846
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06351706672020396
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.062287582714255385
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.04830183966777785
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.04808593633900281
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.047366873013996044
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.6453787751213267,
+            1.2508847567420553
+          ],
+          "probabilities": [
+            0.46626527222260755,
+            0.24263628401194964,
+            0.2910984437654427
+          ],
+          "over_2_5": 0.5531717839858246,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.1136715863778247
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09351640778022163
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.09087294873900591
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07476021054392433
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07109502733735439
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.06908536082789982
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.0584891244987767
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.055229197138698435
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05128997082905587
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.0432089123868223
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-10-31:aston-villa:fulham",
+        "home": "Aston Villa",
+        "away": "Fulham",
+        "competition": "Premier League",
+        "kickoff": "2026-10-31T20:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-10-31:aston-villa:fulham",
+          "probabilities": [
+            0.4837245622126455,
+            0.25763952510541577,
+            0.25863591268193875
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-10-31:aston-villa:fulham:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:aston-villa:fulham",
+              "home": "Aston Villa",
+              "away": "Fulham",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T20:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-10-31:aston-villa:fulham",
+              "home": "Aston Villa",
+              "away": "Fulham",
+              "competition": "Premier League",
+              "kickoff": "2026-10-31T20:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 81,
+        "official_fixture_id": "epl-2026-27-r9-8"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.6303996186997016,
+            1.306027362723321
+          ],
+          "probabilities": [
+            0.45049105578693693,
+            0.2424601510067915,
+            0.3070487932062715
+          ],
+          "over_2_5": 0.5624171104403715,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11297238737749202
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09209506865192899
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.08650078137867083
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07377251457359167
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07051542048850558
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.06929122534240488
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.06013933981565101
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.0530549568256512
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05005058827140929
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.04524811814690421
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.5129802766069003,
+            1.3035178319621983
+          ],
+          "probabilities": [
+            0.4220958719288638,
+            0.25039323123937535,
+            0.327510896831761
+          ],
+          "over_2_5": 0.5344697608649158,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11796703293748398
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.09049897902808665
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.08924089706212493
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.0779699740713368
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07688606550884118
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.06846158516127833
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.0598150421570895
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.05816355033039141
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.05081762577980888
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.04500657237390055
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-11-01:liverpool:arsenal",
+        "home": "Liverpool",
+        "away": "Arsenal",
+        "competition": "Premier League",
+        "kickoff": "2026-11-01T16:30:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-11-01:liverpool:arsenal",
+          "probabilities": [
+            0.2909332738096692,
+            0.2674170497755801,
+            0.44164967641475067
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-11-01:liverpool:arsenal:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-11-01:liverpool:arsenal",
+              "home": "Liverpool",
+              "away": "Arsenal",
+              "competition": "Premier League",
+              "kickoff": "2026-11-01T16:30:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-11-01:liverpool:arsenal",
+              "home": "Liverpool",
+              "away": "Arsenal",
+              "competition": "Premier League",
+              "kickoff": "2026-11-01T16:30:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 87,
+        "official_fixture_id": "epl-2026-27-r9-9"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.286616184760673,
+            1.5637052279872206
+          ],
+          "probabilities": [
+            0.3140778627820009,
+            0.2475454503751751,
+            0.438376686842824
+          ],
+          "over_2_5": 0.5424546192221538,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.1163389225051618
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.09095989066986081
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.09042239937841473
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.07484177030637944
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.07439952263567708
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.07069698931758775
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.05851523374995213
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.05782573196023983
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.04786181498076508
+            },
+            {
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.04741148552586912
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.2336861862929738,
+            1.5278392253093442
+          ],
+          "probabilities": [
+            0.3072781441869894,
+            0.25168984332708555,
+            0.4410320124859251
+          ],
+          "over_2_5": 0.5213249107792315,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11911517957718575
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.09655225202375614
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.09099442184389545
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.0779631636653839
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.07375815896692406
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.07347537581109051
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.06319529596067744
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.05612928062926472
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.0480910390268412
+            },
+            {
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.046341615659149626
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "match_id": "prematch:premier-league:2026-11-02:newcastle-united:everton",
+        "home": "Newcastle United",
+        "away": "Everton",
+        "competition": "Premier League",
+        "kickoff": "2026-11-02T20:00:00+00:00",
+        "neutral": false
+      },
+      "as_of": "2026-10-29T12:08:19.212475+00:00",
+      "settlement": "regulation_including_stoppage",
+      "tracks": {
+        "statistical": {
+          "fixture_id": "prematch:premier-league:2026-11-02:newcastle-united:everton",
+          "probabilities": [
+            0.4481678818664837,
+            0.2546473843213065,
+            0.2971847338122099
+          ],
+          "generated_at": "2026-10-29T11:11:47.176237+00:00",
+          "model": "Existing EPL DateTeamGoalModel regularization=.01 half_life=180; independent Poisson rho=0; strictly earlier data refreshed 2026-10-29",
+          "id": "goal-refresh:prematch:premier-league:2026-11-02:newcastle-united:everton:2026-10-29T11:11:47.176237+00:00"
+        },
+        "llm_independent": null,
+        "market": null,
+        "llm_model_informed": null,
+        "joint_pool": null
+      },
+      "missing_reasons": {
+        "llm_independent": "This context policy was run on the earliest three fixtures only.",
+        "market": "No market observations in this personnel-context run.",
+        "llm_model_informed": "Only the original earliest three fixtures received assisted context.",
+        "joint_pool": "No numeric pooling: this assisted policy has no earlier prospective paired-result fit. Original independent/statistical tracks remain separate."
+      },
+      "scope": "five research lines; joint weights retain explicit manual or earlier-result learned provenance",
+      "revision": {
+        "same_existing_fixture": true,
+        "new_unique_fixture": false,
+        "original_fixture_sources": [
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\data\\prematch-intelligence\\20261024_batch\\run_20261024T150900467071Z\\batch_case.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-11-02:newcastle-united:everton",
+              "home": "Newcastle United",
+              "away": "Everton",
+              "competition": "Premier League",
+              "kickoff": "2026-11-02T20:00:00+00:00"
+            }
+          },
+          {
+            "source_file": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\当前丰富信息预测_20261026T030805654404Z\\完整预测与来源.json",
+            "fixture": {
+              "match_id": "prematch:premier-league:2026-11-02:newcastle-united:everton",
+              "home": "Newcastle United",
+              "away": "Everton",
+              "competition": "Premier League",
+              "kickoff": "2026-11-02T20:00:00+00:00"
+            }
+          }
+        ],
+        "source_fixture_id": 89,
+        "official_fixture_id": "epl-2026-27-r9-10"
+      },
+      "source_files": {
+        "statistics": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\统计预测.json",
+        "llm": null,
+        "llm_input": null,
+        "later_source_time_annotation": null
+      },
+      "additional_statistical_research": {
+        "independent_xg": {
+          "rates": [
+            1.6749434093715019,
+            1.3599957007705041
+          ],
+          "probabilities": [
+            0.449532824312924,
+            0.23821276992340867,
+            0.3122544057636674
+          ],
+          "over_2_5": 0.5845919850612629,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.1095167041176456
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09171714088896966
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.08052724288437017
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07447112338127669
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.06743928737201701
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.06538531600822271
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.062367458647980684
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05120700688612575
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.04807759022412993
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.04446187433235186
+            }
+          ]
+        },
+        "rich_121_research": {
+          "rates": [
+            1.553023393526526,
+            1.2687957465193456
+          ],
+          "probabilities": [
+            0.4396132341852655,
+            0.2488210276446243,
+            0.31156573817011024
+          ],
+          "over_2_5": 0.5357311809397212,
+          "top_scores": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.11723822384121306
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.09240117975082247
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09103685212045157
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.0754903141381499
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07437567986960701
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.07175059687123843
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.059497609717908115
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.05775358537346981
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.047890894740946904
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.047127453672025414
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "results": {},
+  "unique_existing_fixtures": 10,
+  "new_unique_fixtures": 0,
+  "new_assisted_llm_versions": 3,
+  "unchanged_statistical_versions": 10,
+  "unchanged_independent_llm_versions": 3,
+  "llm_citations_resolved": 27,
+  "source_record": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\人员协作前瞻记录.json",
+  "input_policy": "existing_descriptive_personnel_facts_plus_strictly_earlier_opponent_venue_conditioned_xg",
+  "note": "Three new forecast versions for existing matches; no target results, probability averaging, hyperparameter selection or accuracy claim."
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at_utc": "2026-10-29T11:23:42.000398+00:00",
+  "kind": "post_forecast_source_timing_addendum",
+  "actual_read_at_utc": "2026-10-29T11:23:00.626885+00:00",
+  "read_scope": {
+    "input_packet": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入_v2.json",
+    "pointer": "/official_observation_time_note",
+    "value": "For web-read sources without a local response receipt, observed_at_utc is the actual tool-clock time when these notes were finalized after reading; publication timestamps come from each explicitly stated source. Local HTTP receipt timestamps preserve exact receipt time where available.",
+    "scope_note": "仅补读v2顶层来源时间限定；未据v2重新进行比赛分析。"
+  },
+  "original_forecast": {
+    "path": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\独立LLM预测.json",
+    "input_packet": "G:\\Codex\\football-prediction-2026-10-22\\data\\epl_personnel_live_20261029\\独立LLM人员协作输入.json",
+    "input_assembled_at_utc": "2026-10-29T11:16:30.037563+00:00",
+    "generated_at_utc": "2026-10-29T11:22:06.868258+00:00",
+    "records": [
+      {
+        "fixture_id": "epl-2026-27-r9-1",
+        "source_fixture_id": 84,
+        "record_pointer": "/records/0"
+      },
+      {
+        "fixture_id": "epl-2026-27-r9-2",
+        "source_fixture_id": 82,
+        "record_pointer": "/records/1"
+      },
+      {
+        "fixture_id": "epl-2026-27-r9-3",
+        "source_fixture_id": 83,
+        "record_pointer": "/records/2"
+      }
+    ]
+  },
+  "input_versions": {
+    "sequence": "先依据v1完成原预测，之后在11:23:00UTC补读v2的来源时间说明；v2不是原预测最初输入。",
+    "fact_equivalence": "根据上游明确补充，v1/v2除assembled_at_utc和新增official_observation_time_note外，三场事实、顺序及既有JSON Pointer相同。",
+    "equivalence_basis": "这是本次上游通知给出的版本关系；本补充按要求仅读取v2的顶层note，没有重新比对其余字段。"
+  },
+  "source_timing_interpretation": {
+    "upstream_detail": "上游补充说明：7个web来源的observed_at_utc=11:11:37UTC为阅读笔记完成时间，没有逐源HTTP receipt；6个raw来源有逐源receipt，原published时间不变。",
+    "meaning": "无本地response receipt的web来源，其observed_at_utc记录读后笔记完成的实际工具时钟时间，不能解释为每个页面各自HTTP响应抵达的精确时刻。有本地receipt的来源保留各自精确接收时间；发布时间仍须按各自明确来源解释。",
+    "forecast_implication": "该限定降低了把统一observed_at当逐源接收证据的时间精度，不增加任何球员可用性、正式首发或比赛表现事实。它应作为原预测之后的来源说明，不能倒写成原始输入已含此限定，也不构成重新生成概率的依据。"
+  },
+  "preservation": {
+    "original_forecast_modified": false,
+    "original_generated_at_utc_preserved": true,
+    "original_input_v1_preserved": true,
+    "probabilities_regenerated": false,
+    "retrained": false
+  },
+  "exposure": {
+    "current_statistical_probabilities": false,
+    "historical_model_estimates": false,
+    "market": false,
+    "other_llm": false,
+    "target_results": false
+  }
+}

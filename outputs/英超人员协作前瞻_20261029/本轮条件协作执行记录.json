@@ -1,0 +1,62 @@
+{
+  "completed_at_utc": "2026-10-29T12:10:38.601932+00:00",
+  "source_record": "G:\\Codex\\football-prediction-2026-10-22\\outputs\\英超人员协作前瞻_20261029\\条件表现协作前瞻记录.json",
+  "historical_context": {
+    "team_side_observations": 30,
+    "unique_historical_matches": 25,
+    "date_prefix_fits": 13,
+    "fixed_existing_settings": true,
+    "hyperparameter_searches": 0,
+    "historical_expectations_reconstructed_now": true,
+    "historical_source_publication_revision_times_fully_known": false
+  },
+  "new_assisted_forecasts": 3,
+  "existing_statistical_forecasts_retained": 10,
+  "existing_independent_llm_forecasts_retained": 3,
+  "new_unique_fixtures": 0,
+  "target_results_queried": 0,
+  "settled": 0,
+  "pending": 10,
+  "llm_citations_resolved": 27,
+  "current_target_probabilities_exposed_to_new_llm": false,
+  "historical_model_estimates_exposed_to_new_llm": true,
+  "new_numeric_pools": 0,
+  "main_model_predictions_changed": false,
+  "efficacy_improvement_established": false,
+  "llm_sampling_variation_is_not_controlled": true,
+  "assistant_synthesis": [
+    {
+      "fixture_id": "prematch:premier-league:2026-10-31:chelsea:manchester-united",
+      "official_fixture_id": "epl-2026-27-r9-1",
+      "generated_at_utc": "2026-10-29T12:10:38.601932+00:00",
+      "preferred_single_outcome": "home_win",
+      "confidence": "低",
+      "probabilities": null,
+      "reasoning": "微偏切尔西；两队近期进攻不足、主队人员不确定，保留原独立LLM客胜版本。",
+      "numeric_pooling": false
+    },
+    {
+      "fixture_id": "prematch:premier-league:2026-10-31:afc-bournemouth:leeds-united",
+      "official_fixture_id": "epl-2026-27-r9-2",
+      "generated_at_utc": "2026-10-29T12:10:38.601932+00:00",
+      "preferred_single_outcome": "home_win",
+      "confidence": "中",
+      "probabilities": null,
+      "reasoning": "三场相对优先伯恩茅斯；利兹限制机会较好，主队进攻均值受单场高值影响。",
+      "numeric_pooling": false
+    },
+    {
+      "fixture_id": "prematch:premier-league:2026-10-31:brentford:nottingham-forest",
+      "official_fixture_id": "epl-2026-27-r9-3",
+      "generated_at_utc": "2026-10-29T12:10:38.601932+00:00",
+      "preferred_single_outcome": null,
+      "confidence": "低",
+      "probabilities": null,
+      "reasoning": "主线偏布伦特福德、LLM偏森林，保留分歧，暂不列优先单选。",
+      "numeric_pooling": false
+    }
+  ],
+  "stopping_point": "One complete integration, actual three-fixture assisted forecast, source/numerical review, prospective record and synthesis completed; no further tuning in this run.",
+  "next": "Use the same input policy on more genuinely distinct future matches; assess full HDA probabilities after results, with no per-match parameter reaction.",
+  "all_new_project_files_under": "G:\\Codex\\football-prediction-2026-10-22"
+}
