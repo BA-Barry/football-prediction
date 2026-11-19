@@ -4,9 +4,10 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import urllib.request
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'data/historical_context_20261028/coach_sources'
 SOURCES = {
     'games.csv.gz': 'https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/games.csv.gz',

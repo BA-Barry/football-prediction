@@ -10,7 +10,6 @@ import csv
 from datetime import date, datetime, timedelta, timezone
 import json
 import math
-import os
 from pathlib import Path
 import time
 
@@ -250,9 +249,7 @@ def render_report(result):
 
 
 def run_experiment(root, inspection):
-    root, inspection = Path(root).resolve(), Path(inspection).resolve()
-    if os.name == "nt" and (root.drive.upper() != "G:" or inspection.drive.upper() != "G:"):
-        raise ValueError("All research inputs/outputs must stay on G:")
+    root, inspection = Path(root).expanduser().resolve(), Path(inspection).expanduser().resolve()
     records, audit = load_inspections(inspection)
     begun = datetime.now(timezone.utc)
     output = root / "outputs" / ("英超英冠共享身份研究_" + begun.strftime("%Y%m%dT%H%M%S%fZ"))

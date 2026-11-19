@@ -1,5 +1,6 @@
 """Synthetic lineup sensitivity demonstration; never a real-match prediction."""
 
+import argparse
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 import json
@@ -79,8 +80,21 @@ def run_demo(output_dir: Path):
     return result, destination
 
 
-if __name__ == "__main__":
-    task_root = Path(__file__).resolve().parents[3]
-    result, destination = run_demo(task_root / "outputs" / "model-v2")
+def main():
+    parser = argparse.ArgumentParser(
+        description="Run the data-free synthetic football probability demonstration."
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path.cwd() / "outputs" / "model-v2",
+        help="Directory for generated JSON and Markdown (default: ./outputs/model-v2)",
+    )
+    args = parser.parse_args()
+    result, destination = run_demo(args.output_dir.resolve())
     print(json.dumps({"output": str(destination), "status": result["status"],
                       "one_x_two": result["summary"]["one_x_two"]}, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

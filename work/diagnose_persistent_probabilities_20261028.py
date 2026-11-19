@@ -2,7 +2,7 @@
 
 The log-loss identity separates draw/non-draw identification from direction
 conditional on a non-draw. It does not define a new prediction or branch rule.
-All output and computation artifacts remain on G:.
+All output and computation artifacts remain below the project root.
 """
 from collections import Counter
 from datetime import datetime, timezone
@@ -10,12 +10,13 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/持续状态净胜球研究_20261028'
 SOURCE = OUT / '逐场概率与状态.json.gz'
 NAMES = ('主胜', '平局', '客胜')

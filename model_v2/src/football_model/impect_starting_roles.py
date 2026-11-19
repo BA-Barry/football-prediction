@@ -45,11 +45,8 @@ def _write(path, value):
         json.dump(value, stream, ensure_ascii=False, indent=2, allow_nan=False)
 
 
-def _on_g(path):
-    path = Path(path).resolve()
-    if path.drive and path.drive.upper() != "G:":
-        raise ValueError("Project, saved source inputs and new outputs must remain on G:")
-    return path
+def _resolved(path):
+    return Path(path).expanduser().resolve()
 
 
 def extract_roles(metadata, lineups, expected):
@@ -96,7 +93,7 @@ def inspect_match(item, expected, score_path):
     if not isinstance(receipt, dict):
         observation.update(status="lineups_receipt_missing")
         return observation, None
-    _on_g(receipt["file"])
+    _resolved(receipt["file"])
     # Reuse the old reader/join/validation without changing it. Other file
     # kinds, substitutions and current squad attributes never enter this call.
     record = {"match_id": metadata["id"], "files": [receipt]}
@@ -121,7 +118,9 @@ def inspect_match(item, expected, score_path):
 
 
 def run(root, source_inspection, matches_source):
-    root, source_inspection, matches_source = map(_on_g, (root, source_inspection, matches_source))
+    root, source_inspection, matches_source = map(
+        _resolved, (root, source_inspection, matches_source)
+    )
     source, matches = read(source_inspection), read(matches_source)
     if not isinstance(source, dict) or not isinstance(source.get("matches"), list):
         raise ValueError("Explicit saved XI source inspection required")
@@ -134,7 +133,7 @@ def run(root, source_inspection, matches_source):
     source_ids = [f"impect:match:{row['source_match_id']}" for row in source_rows]
     if len(ids) != len(matches) or len(set(ids)) != len(ids) or len(set(source_ids)) != len(source_ids) or set(ids) != set(source_ids):
         raise ValueError("Saved XI and source inspection must have identical distinct match IDs")
-    score_path = _on_g(source["source_score_file"])
+    score_path = _resolved(source["source_score_file"])
     by_id = dict(zip(ids, matches))
     observations, converted = [], []
     for item in source_rows:

@@ -1,6 +1,6 @@
 """Prepare real, already-accepted historical observations for multi-rating reuse.
 
-Only existing G-drive files are read. The preparation does not fetch results,
+Only existing project-local files are read. The preparation does not fetch results,
 fit models or infer individual publication timestamps. Execution is in main.
 """
 from collections import Counter
@@ -39,8 +39,8 @@ def prepare_observations():
     by_season_league = []
     for season, directory_text in sorted(directories.items()):
         directory = Path(directory_text)
-        if directory.drive.casefold() != 'g:':
-            raise ValueError('Use only the existing G-drive historical archive')
+        if not directory.resolve().is_relative_to(ROOT):
+            raise ValueError('Use only the historical archive below the project root')
         for competition in LEAGUES:
             path = directory / f'{competition}.csv'
             if not path.exists():

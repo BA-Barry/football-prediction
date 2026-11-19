@@ -2,11 +2,12 @@
 from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.prospective import _time
 from summarize_new_round_20261024 import CHINESE
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 LATEST = ROOT / 'outputs/欧战赛程信息修订_20261024T154941744958Z/当前20场信息版本总表.json'
 OBSERVATION = ROOT / 'data/prematch-intelligence/20261024_batch/result_observation_20261024T155023874777Z/result_observations.json'
 
@@ -40,11 +41,11 @@ def main():
                '- 补进周中杯赛与9队下周欧战安排，7场另存信息版本。赛事安排不等于测得的疲劳、战意或确定轮换；长期伤缺可能已反映在历史结果中。LLM采样也可能影响变化，因此新旧差值不能当成欧战因果效应。',
                '- 原比分分布中伊普斯维奇1–1概率11.25%，是最大单格；这与胜平负最高概率落在另一类并不矛盾。仍记原1X2方向失误，比分／总球分开评价，不事后改评分目标。',
                '- 既有两季3478场概率复核提示平局偏低及强热门组偏保守，属于待验证解释；不从两场失利或事后分组直接调参数。', '',
-               '本轮统计使用1591场较早日期比赛拟合1次、参数搜索0次。欧战资料版0次拟合；相关模块123项及版本模块36项测试通过。所有新增项目文件、数据、模型与临时目录均在G盘。', '',
+               '本轮统计使用1591场较早日期比赛拟合1次、参数搜索0次。欧战资料版0次拟合；相关模块123项及版本模块36项测试通过。所有新增项目文件、数据、模型与临时目录均在项目目录。', '',
                '## 后续安排', '',
                '先按已存原概率累计比赛结果，分别评价各线Log loss、Brier和统计比分NLL；旧版、新版按同一比赛配对，不能增加独立样本数。出现确认首发、真实杯赛用人或可靠伤情变化时才新增下一版本。', '',
                '同一资料不继续反复抽取LLM答案。只有跨轮持续出现明确概率偏差，或特征与误差能稳定对应时，再讨论一项结构改变；此前已经试过的校准和分布方案不换名字重复调同一目标季。', '',
-               '[新增10场原版及来源](G:/Codex/football-prediction-2026-10-22/outputs/前瞻新增执行_20261024T152455896607Z/新增预测与优化说明.md) · [欧战资料新旧对照](G:/Codex/football-prediction-2026-10-22/outputs/欧战赛程信息修订_20261024T154941744958Z/欧战赛程修订与后续优化说明.md) · [两场失误复核](G:/Codex/football-prediction-2026-10-22/outputs/前瞻失误复核_20261024T150602478007Z/前瞻失误复核说明.md) · [历史概率误差定位](G:/Codex/football-prediction-2026-10-22/outputs/已存概率误差定位_20261024T151251984500Z/概率误差定位说明.md)。', '']
+               '[新增10场原版及来源](../../outputs/前瞻新增执行_20261024T152455896607Z/新增预测与优化说明.md) · [欧战资料新旧对照](../../outputs/欧战赛程信息修订_20261024T154941744958Z/欧战赛程修订与后续优化说明.md) · [两场失误复核](../../outputs/前瞻失误复核_20261024T150602478007Z/前瞻失误复核说明.md) · [历史概率误差定位](../../outputs/已存概率误差定位_20261024T151251984500Z/概率误差定位说明.md)。', '']
     path = target / '当前预测与优化进度.md'
     path.write_text('\n'.join(report), encoding='utf-8')
     print(json.dumps({'report': str(path), 'new_unique': 10, 'total_unique': 20, 'settled': 2, 'pending': 18}, ensure_ascii=False))

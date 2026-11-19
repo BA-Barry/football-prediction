@@ -11,6 +11,7 @@ import gzip
 import math
 import warnings
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -21,7 +22,7 @@ from scipy.special import gammaln
 from scipy.stats import poisson, skellam
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 MEASUREMENTS = ('goals_for', 'goals_against', 'xg_for', 'xg_against',
     'npxg_for', 'npxg_against', 'deep_for', 'deep_against',
     'ppda_att', 'ppda_def', 'ppda_allowed_att', 'ppda_allowed_def')

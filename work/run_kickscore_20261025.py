@@ -1,7 +1,7 @@
 """Directly reuse KickScore on trusted chronological football histories.
 
 No upstream-paper reproduction, kernel grid, or evaluation-season tuning.
-Run with the G: environment variables in run_kickscore_20261025.ps1.
+Run with the project-local environment variables in run_kickscore_20261025.ps1.
 """
 import argparse
 from datetime import date, datetime, timezone
@@ -9,6 +9,7 @@ from importlib.metadata import version
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import shutil
 import time
 
@@ -18,7 +19,7 @@ from scipy.optimize import minimize
 
 from football_model.kickscore_model import KickScoreOutcomeModel
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/动态胜平负接入_20261025'
 INITIAL = {'cvar': .5, 'dvar': .25, 'lscale_days': 180., 'margin': .4, 'havar': 1.}
 BOUNDS = {'cvar': (.001, 4.), 'dvar': (.001, 4.), 'lscale_days': (7., 3000.), 'margin': (.03, 1.5)}

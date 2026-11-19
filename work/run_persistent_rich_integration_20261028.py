@@ -12,6 +12,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 import traceback
 
@@ -25,7 +26,7 @@ from football_model.persistent_rich_integration import plan_windows, window_rows
 from football_model.probability import score_grid, summarize
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/持续状态与丰富信息接入_20261028'
 INPUT = OUT / '联合输入_待训练.json.gz'
 SOURCE = ROOT / 'outputs/固定发布日期信息刷新_20261025T071806561562Z/lead_3'
@@ -305,7 +306,7 @@ def render_report(result):
         '一次固定接入到此停止，不按结果改列、窗口、种子、权重或树参数。', '',
         f"实际新增原设置进球树拟合{result['new_fits']}次；复用原模型{result['original_model_reuses']}窗；"
         f"复用本轮已经保存的模型{result['prepared_model_reuses']}窗。GAS全局参数重训0次、参数网格0次。"
-        '当前预测未替换、新赛果查询0，全部新增文件在G盘。', ''])
+        '当前预测未替换、新赛果查询0，全部新增文件在项目目录。', ''])
     lines += ['## 本轮留下的具体认识', '',
         '两季合计命中仍为1,824场；早季增加8场不能掩盖晚季减少8场。H/D/A损失点值均下降，'
         '但两季四周条件区间均跨0，不能称稳定提准。总球损失点值两季均稍差，不能宣布全面改善。', '']

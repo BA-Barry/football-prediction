@@ -9,6 +9,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -17,7 +18,7 @@ from football_model.early_goal_learners import EarlyGoalLearner
 from run_broad_early_models_20261025 import predict_row
 from run_shot_increment_20261025 import score_details
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 BASE = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练'
 DATA = ROOT/'data/historical_context_20261028'
 OUT = ROOT/'outputs/历史情境共同接入_20261028'

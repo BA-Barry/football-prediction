@@ -2,12 +2,13 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from observe_batch_results_20261024 import download, stamp, write_json
 
 
 def main():
-    root = Path(r"G:\Codex\football-prediction-2026-10-22")
+    root = REPOSITORY_ROOT
     directory = root / "data/prematch-intelligence/20261024_batch/result_observation_20261024T150244904813Z"
     url = "https://www.mancity.com/news/mens/aston-villa-v-city-premier-league-match-report-63928435"
     _, body, metadata = download(("villa_official_away_club_report", url))

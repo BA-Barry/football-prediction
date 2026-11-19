@@ -3,9 +3,10 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import requests
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 OUT=ROOT/'data/serie_a_today_20261028'
 ESPN='https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261028&limit=1000'
 OFFICIAL='https://www.legaseriea.it/serie-a/news/quando-si-gioca-anticipi-e-posticipi-fino-alla-12a-giornata'

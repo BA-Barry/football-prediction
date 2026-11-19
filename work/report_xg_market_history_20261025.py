@@ -1,8 +1,9 @@
 """Report the measured market reference gap without adding a model or bet rule."""
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 RUN = ROOT/'outputs/进球xG历史市场对照_20261024T181414691003Z'
 LABELS = {'avg_preclosing':'平均赔率AvgH／D／A','avg_closing':'平均收盘AvgCH／CD／CA',
           'b365_preclosing':'B365H／D／A','b365_closing':'B365CH／CD／CA'}
@@ -60,8 +61,8 @@ def main():
                '去水概率是采用明确规则构造的市场参考，真实概率仍未知。整体概率评分与某种选择规则的可成交价值、收益是不同问题；本轮未构造交易规则或估算盈利。', '',
                '## 独立核验与下一步', '',
                '独立审查直接从原CSV重建3,466场的四组报价，去水概率完全一致；旧保存的5,199份报价版本一致，三个模型的概率与来源逐条相同。48个范围的四指标、四组对比和全部2／4／8周区间复算通过，最大评分差约2.78×10⁻¹⁵、区间差约6.94×10⁻¹⁸。没有发现需修改计算或重训的问题。', '',
-               '此市场对照完成后，用户明确同意固定总球的主客分配研究；该研究已另行实跑完成，结论见下方链接。市场对照本身保持零拟合，没有自动引入市场融合或神经网络。当前比赛赛果复核仍暂停，等待用户提醒。全部文件与临时文件均在G盘。', '',
-               '[后续主客分配实跑结论](G:/Codex/football-prediction-2026-10-22/outputs/固定总球主客分配研究_20261024T182604417382Z/主客分配实跑与采用结论.md)', '',
+               '此市场对照完成后，用户明确同意固定总球的主客分配研究；该研究已另行实跑完成，结论见下方链接。市场对照本身保持零拟合，没有自动引入市场融合或神经网络。当前比赛赛果复核仍暂停，等待用户提醒。全部文件与临时文件均在项目目录。', '',
+               '[后续主客分配实跑结论](../../outputs/固定总球主客分配研究_20261024T182604417382Z/主客分配实跑与采用结论.md)', '',
                f'[完整结果与逐场报价]({(RUN/"历史市场对照结果.json").as_posix()}) · [评分前分析计划]({(RUN/"分析前计划.json").as_posix()})', '']
     (RUN/'历史市场对照结论与优化边界.md').write_text('\n'.join(report),encoding='utf-8')
     print(str(RUN/'历史市场对照结论与优化边界.md'))

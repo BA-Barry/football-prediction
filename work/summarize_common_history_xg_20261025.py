@@ -4,8 +4,9 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 RUN = ROOT / 'outputs/进球xG共同训练记录_20261024T174247963857Z'
 
 
@@ -86,7 +87,7 @@ def main():
         '1. **优先扩展历史年份。** 沿用相同攻防模型、比分分布与单权重学习规则，向更早赛季做时间前推复现，检验优势能否跨年份重复；不围绕61%的权重反复微调。资料可用日期及历史修订的局限继续明确记录。',
         '2. **针对实际预测缺口做诊断。** 关注意甲比分退步及总进球、主客进球率的偏差，先确认是否跨赛季重复；单一联赛或少数失败比赛不触发新增参数。',
         '3. **保留其他线路。** 纯进球、独立xG、市场、LLM和联合线路继续分别保留。球员、伤停、轮换和赛事投入仍需可核实的赛前资料；不把LLM主观判断直接乘入统计概率。需要新增核心结构或深度学习时再讨论。', '',
-        '本轮未查询或复核当前比赛赛果；复核等待用户提醒。没有改写已有赛前预测，所有文件与临时文件均在G盘。', '',
+        '本轮未查询或复核当前比赛赛果；复核等待用户提醒。没有改写已有赛前预测，所有文件与临时文件均在项目目录。', '',
         f'[实际训练与完整结果]({(RUN/"共同训练记录融合说明.md").as_posix()}) · [独立核验]({(RUN/"独立核验与采用结论.md").as_posix()}) · [逐月描述数据]({(RUN/"逐月描述对照.json").as_posix()})', '',
     ]
     (RUN/'本轮结论与优化计划.md').write_text('\n'.join(report), encoding='utf-8')

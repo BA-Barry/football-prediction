@@ -10,6 +10,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 import traceback
 
@@ -20,7 +21,7 @@ from football_model.forecast_diagnostics import moving_block_means
 from football_model.persistent_goal_difference import fit_static_panel, fit_dynamics, forecast_targets
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/持续状态净胜球研究_20261028'
 INPUT = OUT / '输入资料.json.gz'
 SEASONS = ('2024/25', '2025/26')
@@ -312,7 +313,7 @@ def render_report(summary):
 
 本轮到一次固定结构的完整拟合、重放与报告停止，不根据后季换参数边界、种子、衰减、联赛权重或做救分变体。保留持续状态、同日批处理、未知回退和净胜球输出等组件；一次接法的结果不用于否定整个状态建模方向。是否进入真正前瞻应结合完整结果讨论，当前原预测、LLM和市场线路保持原记录。
 
-所有新文件、缓存与临时目录均在G盘。主要文件为`执行前说明.json`、`静态初始化.json`、`动态参数拟合.json`、`逐场概率与状态.json.gz`、`逐场改向与纠正改坏.csv`、`最终过滤状态.json`与`完整结果与分解.json`。
+所有新文件、缓存与临时目录均在项目目录。主要文件为`执行前说明.json`、`静态初始化.json`、`动态参数拟合.json`、`逐场概率与状态.json.gz`、`逐场改向与纠正改坏.csv`、`最终过滤状态.json`与`完整结果与分解.json`。
 '''
     (OUT / '实际结果与优化判断.md').write_text(report, encoding='utf-8')
 

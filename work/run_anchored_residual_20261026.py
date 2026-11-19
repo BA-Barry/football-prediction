@@ -4,6 +4,7 @@ from datetime import date, datetime, timedelta, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -17,7 +18,7 @@ from football_model.score_reconciliation import reconcile_score_probabilities
 from run_integrated_components_20261026 import CONTEXT, metrics, derive_grid_losses
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 PRIOR = ROOT/'outputs/现有组件整合_20261026'
 OUT = ROOT/'outputs/锚定增量整合_20261026'
 CUTOFF = date(2025,8,1)

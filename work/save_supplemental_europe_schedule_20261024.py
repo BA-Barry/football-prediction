@@ -2,8 +2,9 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 DEST = ROOT / "data/prematch-intelligence/NEW20261024_cohort_20261024T150344311377Z"
 
 

@@ -1,6 +1,10 @@
 param([ValidateSet('benchmark','tune','forward','all')][string]$Stage='all')
 $ErrorActionPreference='Stop'
-$taskRoot='G:\Codex\football-prediction-2026-10-22'
+$taskRoot = if ([string]::IsNullOrWhiteSpace($env:FOOTBALL_MODEL_ROOT)) {
+    Split-Path -Parent $PSScriptRoot
+} else {
+    [System.IO.Path]::GetFullPath($env:FOOTBALL_MODEL_ROOT)
+}
 $env:PYTHONDONTWRITEBYTECODE='1'
 $env:PYTHONIOENCODING='utf-8'
 $env:PYTHONPATH=Join-Path $taskRoot 'model_v2\src'

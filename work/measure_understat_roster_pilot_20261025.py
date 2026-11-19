@@ -4,11 +4,12 @@ from datetime import datetime, timezone
 import html
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'data/understat/roster_pilot_20261024T183946498125Z'
 OUT = ROOT/'outputs/历史首发数据接通_20261025'
 

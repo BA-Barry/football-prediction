@@ -1,8 +1,9 @@
 """Write measured results and their limits; never refit or choose an arm."""
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 RUN = ROOT/'outputs/进球xG更早年份复现_20261024T180238377843Z'
 OLD = ROOT/'outputs/进球xG共同训练记录_20261024T174247963857Z/共同训练记录融合结果.json'
 NAMES = {'E0':'英超','D1':'德甲','SP1':'西甲','I1':'意甲','F1':'法甲'}
@@ -74,8 +75,8 @@ def main():
         '这是固定方法在更早年份的回溯复现。模型结构、0.01／180及xG路线是在看过其他历史研究后保留的方案，因此不是新的盲测。历史xG发布时间与后续修订未知；采用严格更早日历日期可用的研究假设。区间条件于已有预测，未包含权重估计和完整研究选择不确定性；本轮只覆盖历史联赛，未验证欧战跨联赛适用性。', '',
         '## 后续结构讨论', '',
         '此复现之后，用户已同意保持当前保存的总进球率，仅在更早赛季学习一个主客进球分配权重，再在两组年份检验。该研究已另行实跑完成，未发现稳定新增增益，未采用；最新结论见下方链接。原完整融合、纯进球及独立xG继续保留。', '',
-        '[后续主客分配实跑结论](G:/Codex/football-prediction-2026-10-22/outputs/固定总球主客分配研究_20261024T182604417382Z/主客分配实跑与采用结论.md)', '',
-        '当前融合仍是研究候选，没有替换正式预测或改写原赛前概率。市场、LLM与联合线路继续保留。没有查询或复核当前比赛赛果，等待用户提醒；没有新增神经网络。全部文件、缓存及临时文件在G盘。', '',
+        '[后续主客分配实跑结论](../../outputs/固定总球主客分配研究_20261024T182604417382Z/主客分配实跑与采用结论.md)', '',
+        '当前融合仍是研究候选，没有替换正式预测或改写原赛前概率。市场、LLM与联合线路继续保留。没有查询或复核当前比赛赛果，等待用户提醒；没有新增神经网络。全部文件、缓存及临时文件在项目目录。', '',
         '## 新增历史例外的官方依据', '',
         '- 2022-03-18波鸿—门兴：69分钟终止，后按0–2判定，不能视为完整90分钟进球训练样本。[德国足协判决](https://www.dfb.de/fileadmin/_dfbdam/257416-220324_VfL_Bochum.pdf)。',
         '- 2020-09-19维罗纳—罗马：两家当前源均保留场上0–0，但官方确认行政判罚；按既有特殊比赛政策共同排除，不把源比分改成3–0。[意大利足协](https://www.figc.it/it/federazione/news/respinto-il-ricorso-della-roma-confermata-la-sconfitta-per-3-0-a-tavolino-con-il-verona-ha0usqwf)。',

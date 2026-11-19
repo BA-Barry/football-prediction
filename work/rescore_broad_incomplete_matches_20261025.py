@@ -2,11 +2,12 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from run_broad_early_models_20261025 import compare, failure_diagnostics
 from run_shot_increment_20261025 import write
 
-OUT = Path('G:/Codex/football-prediction-2026-10-22/outputs/多信息多算法前推_20261025T060704977450Z')
+OUT = REPOSITORY_ROOT / Path('outputs/多信息多算法前推_20261025T060704977450Z')
 EXCLUSIONS = {
     'football-data:F1:2024/25:Montpellier|St Etienne':
         'https://ligue1.com/fr/articles/l1_article_2269-le-point-sur-la-lutte-pour-le-maintien-020425-l1',

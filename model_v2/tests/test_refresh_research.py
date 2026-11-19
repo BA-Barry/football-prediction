@@ -26,7 +26,7 @@ def record(key, day, home="A", away="B", score=(2, 1), *, exclusion=None, market
         home, away, score, None,
         {"avg_preclosing": (2.0, 3.5, 4.0), "avg_closing": (2.1, 3.4, 3.8)}
         if markets is None else markets,
-        "G:/synthetic-not-a-source/E0.csv", "https://example.invalid/E0.csv", exclusion,
+        "synthetic/not-a-source/E0.csv", "https://example.invalid/E0.csv", exclusion,
     )
 
 

@@ -310,7 +310,7 @@ def write_report(output, result):
         "Wyscout球员ID独立建模，不直接继承StatsBomb系数；xG原路线保留，但该来源不生成新xG。", "",
         "双轨市场概率、赛事重视程度、新球员先验均未调整；本报告不提供当前投注组合。", "",
         "## 来源与复用", "",
-        "原始数据由Pappalardo等作者公开，CC BY 4.0；原ZIP、作者／许可元数据及下载时间留存G盘。"
+        "原始数据由Pappalardo等作者公开，CC BY 4.0；原ZIP、作者／许可元数据及下载时间留存项目目录。"
         "[原始数据集合](https://figshare.com/collections/Soccer_match_event_dataset/4415000)；"
         "[原始事件](https://figshare.com/articles/dataset/Events/7770599)；"
         "[原始赛程](https://figshare.com/articles/dataset/Matches/7770422)；"

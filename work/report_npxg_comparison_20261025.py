@@ -1,8 +1,9 @@
 """Write the readable findings from the saved, completed NP comparison."""
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/非点球xG对照_20261025T054906945702Z'
 
 
@@ -12,7 +13,7 @@ def main():
               'npxg_scaled': '非点球xG＋前季尺度', 'old_blend': '原进球／总xG融合'}
     lines = ['# 非点球xG独立对照：实跑结果与采用结论', '',
         '**结论：两组后季均有很小的平均改善，但主比较的不确定区间均跨零，尚无足够证据采用非点球线路替换现有模型。保留数据和代码，不继续围绕本结果搜索权重或联赛例外。**', '',
-        '用户要求暂停首发后，本轮实际执行较早可用机会信息的首项研究。没有查询或复核当前赛果，没有下载新的比赛资料，原赛前预测、市场和LLM线路均未改动。所有数据、代码、缓存及临时文件在G盘。', '',
+        '用户要求暂停首发后，本轮实际执行较早可用机会信息的首项研究。没有查询或复核当前赛果，没有下载新的比赛资料，原赛前预测、市场和LLM线路均未改动。所有数据、代码、缓存及临时文件在项目目录。', '',
         '## 实际做了什么', '',
         f'原30季资料10,734场中，沿用既有独立比分、日期差异与特殊比赛规则后，可联结{result["source_matches"]:,}场源NPxG。字段完整不改变原目标队列，也不自动解决未知球队。每次NP训练ID、日期、权重和截止与原进球／总xG模型逐一相同。', '',
         '固定设置为正则0.01、半衰期180天、每28天更新、原独立Poisson比分分布。新增214次非点球均值拟合；原214次进球和214次总xG参数原样复用，新增4个闭式尺度估计，无参数网格、无新增融合权重。154项相关测试通过。', '',
@@ -68,7 +69,7 @@ def main():
         '## 解释范围与复现', '',
         '这是已看过赛果的历史研究，按严格较早日使用资料，不是原始发布时间精确可还原的赛前24小时回放；供应商历史修订未知。2／4／8周日历块共同重采样五联赛，保留空周，但区间条件于当前已估计的模型及尺度，不包含全部模型选择、尺度估计与数据商不确定性，不作盈利或保证命中解释。', '',
         '[分析前计划](./分析前计划.json)、[汇总评分与全部区间](./非点球对照汇总.json)、[数据联结](./逐季数据联结.json)、[更早组逐场预测](./earlier_前推结果.json)、[较近组逐场预测](./recent_前推结果.json)。原排除理由、参数和训练ID均在文件中保留。', '',
-        '[运行程序](G:/Codex/football-prediction-2026-10-22/work/run_npxg_comparison_20261025.py)、[源NP读取与均值模型](G:/Codex/football-prediction-2026-10-22/model_v2/src/football_model/npxg_history.py)、[经验尺度换算](G:/Codex/football-prediction-2026-10-22/model_v2/src/football_model/goal_rate_scale.py)。', '']
+        '[运行程序](../../work/run_npxg_comparison_20261025.py)、[源NP读取与均值模型](../../model_v2/src/football_model/npxg_history.py)、[经验尺度换算](../../model_v2/src/football_model/goal_rate_scale.py)。', '']
     (OUT/'非点球实跑与采用结论.md').write_text('\n'.join(lines), encoding='utf-8')
     print(str(OUT/'非点球实跑与采用结论.md'))
 

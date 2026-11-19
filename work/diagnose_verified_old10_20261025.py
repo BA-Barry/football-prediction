@@ -2,9 +2,10 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from statistics import mean
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 OBS = ROOT / "data/prematch-intelligence/20261024_batch/result_observation_20261024T160147143875Z"
 LABELS = {"statistical": "统计模型", "llm_independent": "独立LLM", "market": "市场去水", "llm_model_informed": "知情LLM", "joint_pool": "联合"}
 

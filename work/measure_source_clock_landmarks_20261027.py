@@ -9,9 +9,10 @@ import gzip
 import io
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import zipfile
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/射门分钟状态重建_20261027'
 MANIFEST = ROOT / 'outputs/平局条件信息定位_20261027/EPL分钟资料精确联结明细.json.gz'
 SHOTS = ROOT / 'data/understat/earlier_shot_archive_20261027/1099场ID联结射门原字段.json.gz'

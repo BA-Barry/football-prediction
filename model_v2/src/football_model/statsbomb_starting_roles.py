@@ -62,11 +62,8 @@ def _write(path, value):
         json.dump(value, stream, ensure_ascii=False, indent=2, allow_nan=False)
 
 
-def _on_g(path):
-    path = Path(path).resolve()
-    if path.drive and path.drive.upper() != "G:":
-        raise ValueError("Project, source inputs and outputs must remain on G:")
-    return path
+def _resolved(path):
+    return Path(path).expanduser().resolve()
 
 
 def _integer(value, label, minimum=1):
@@ -305,7 +302,9 @@ def inspect_match(metadata, source, scores):
 
 
 def run(root, source, catalogue, score_file):
-    root, source, catalogue, score_file = map(_on_g, (root, source, catalogue, score_file))
+    root, source, catalogue, score_file = map(
+        _resolved, (root, source, catalogue, score_file)
+    )
     matches, scores = read(catalogue), load_scores(score_file)
     if not isinstance(matches, list) or not matches:
         raise ValueError("Explicit nonempty match catalogue required")

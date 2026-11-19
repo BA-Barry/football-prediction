@@ -64,7 +64,7 @@ def inspect_catalog(root):
         "historical_first_available_at": None,
         "limits": "full match schedule does not establish complete valid events/lineups; data availability clocks not historical prediction clocks"})
     lines = ["# 第二赛季数据覆盖核查", "",
-        "只核查官方目录与逐场赛程；未下载新事件大包、未训练新模型。所有目录和来源记录保留在G盘。", "",
+        "只核查官方目录与逐场赛程；未下载新事件大包、未训练新模型。所有目录和来源记录保留在项目目录。", "",
         "| 赛事 | 赛季 | 场数 | 球队数 | 每队最少／最多场 | 完整主客双循环 |",
         "|---|---|---:|---:|---:|---|"]
     for row in results:

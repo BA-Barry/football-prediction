@@ -1,6 +1,6 @@
 """Append a settlement of the saved 27 October Serie A forecast, never refit it.
 
-Raw result downloads and their real observation receipts are separate G: files.
+Raw result downloads and their real observation receipts remain separate project files.
 The original prematch forecasts, facts, LLM responses and market snapshot stay
 unchanged. No current postmatch market or regenerated LLM enters this scoring.
 """
@@ -9,6 +9,7 @@ import html
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
 import numpy as np
@@ -16,7 +17,7 @@ import numpy as np
 from football_model.multiline import score_multi
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OLD = ROOT/'outputs/今日意甲预测_20261027'
 DATA = ROOT/'data/serie_a_settlement_20261028'
 OUT = ROOT/'outputs/昨日意甲复核_20261028'
@@ -225,7 +226,7 @@ def main():
             lines.append(f"|{label}|{LABELS[route]}|{m['expected_total_goals']:.3f}|{m['actual_total_goals']}|{100*m['actual_score_probability']:.4f}|{100*m['total_at_least_actual_probability']:.4f}|")
     lines += ['', '三场实际总球为8、6、4。方向全部命中，但原统计分布对这批进球数量估计明显偏低，尤其萨索洛—拉齐奥的8球尾部。3场不足以确认长期系统偏差，不能立即把总球率抬高或更换分布。这里保留为以后较大样本的误差诊断，不以赛后比分反写赛前推理。', '',
         '昨日报价是否有价值仍以当时概率及价格判断。热门全部赢球不能追认当时低于估计公平赔率的报价有正期望；本次不把未经执行的组合计算成真实投注收益。', '',
-        '原始预测、LLM答复、赛前市场快照和初始评分文件保持不变；新完场下载、来源收据、完整结算及逐场概率都另存G盘。']
+        '原始预测、LLM答复、赛前市场快照和初始评分文件保持不变；新完场下载、来源收据、完整结算及逐场概率都另存项目目录。']
     (OUT/'结算.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     print(json.dumps({'match_count': len(details), 'scores': [r['actual_score'] for r in details],
         'metrics': metrics, 'old_files_unchanged': old_unchanged,

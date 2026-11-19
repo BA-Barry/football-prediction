@@ -222,7 +222,7 @@ def finalize(llm_path):
         '数据复核：20队season／last5／home／away及17队previous_season共970个数值与原始Understat重算吻合，最大四舍五入差4e-7；8场杯赛状态／时间、13队参与及全部开球间隔吻合来源。计划赛程边界测试3项、现有多线评分测试70项通过。新组统计记录逐字段等于原统计记录。', '',
         '一次新LLM整批判断已保存，不反复生成至出现喜欢的方向。新训练0、调参0、新统计预测0；新旧版本都保留，10场仍为同10场，不增加独立比赛样本数。初始结算为0，不能声称准确率改善。新事实与一次重新生成同时存在，概率差不能全部归因于杯赛。', '',
         '本轮不平均合并概率。先逐场列分歧及信息缺口，待真实杯赛完成或已核实可用性出现后再追加真实时点的新版本；重大模型结构变更另行讨论。现阶段优先收集可改变判断的新事实，不再围绕同一批历史赛季来回微调。', '',
-        '[完整事实包](G:/Codex/football-prediction-2026-10-22/data/current_all_competition/planned_20261027/facts_only_llm_packet.json)；[逐场新旧判断](G:/Codex/football-prediction-2026-10-22/outputs/计划赛程与独立LLM_20261027/逐场新旧判断.json)。']
+        '[完整事实包](../../data/current_all_competition/planned_20261027/facts_only_llm_packet.json)；[逐场新旧判断](../../outputs/计划赛程与独立LLM_20261027/逐场新旧判断.json)。']
     (OUTPUT/'计划赛程与独立判断.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     print(json.dumps({'output': str(OUTPUT), 'records': len(records), 'new_llm_batches': 1, 'statistical_fits': 0}))
 

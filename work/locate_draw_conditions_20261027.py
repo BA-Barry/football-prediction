@@ -10,11 +10,12 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / 'outputs/历史比赛模式与平局分支_20261027'
 OUT = ROOT / 'outputs/平局条件信息定位_20261027'
 LABELS = ('主胜', '平局', '客胜')
@@ -287,7 +288,7 @@ def main():
         '是否值得补全，依可取得资料决定；这不妨碍先推进上述已有攻防信息的整合。', '',
         '本轮到错误定位、一个外部分钟包的精确联结和760场状态测量为止。'
         '新增训练0、参数搜索0、当前赛果查询0；统计／LLM／市场线路及既有比赛预测保持原记录。'
-        '没有新增准确率结论，所有新增文件均在G盘。', '',
+        '没有新增准确率结论，所有新增文件均在项目目录。', '',
         f'[已有条件信息盘点]({OUT.as_posix()}/现有条件信息覆盖.md) · '
         f'[外部方法与复用边界]({OUT.as_posix()}/状态校正可复用方法与边界.md)', '']
     (OUT / '条件定位与下一步.md').write_text('\n'.join(lines), encoding='utf-8')

@@ -6,12 +6,13 @@ import gzip
 import io
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import zipfile
 
 from football_model.archive_shot_context import reconstruct_archive_context
 from measure_source_clock_landmarks_20261027 import MANIFEST, SHOTS, MINUTES, integer, side_of
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/射门分钟状态重建_20261028'
 
 
@@ -142,7 +143,7 @@ def main():
     table = '\n'.join(f"|{season}|{row['matches']}|{row['matches_without_withhold_reason']}|{row['counts']['shots']}|{row['counts']['window_unique_joint_state']}|{row['counts']['with_unknown_branch_or_source_conflict']}|" for season, row in by_season.items())
     report = f'''# 历史射门状态重建与本轮判断
 
-2026-10-28。已对既有1,099场、27,582脚历史射门完成一次实际重建；训练、调参、新比赛预测和新赛果查询均为0。全部新文件与运行临时目录在G盘。
+2026-10-28。已对既有1,099场、27,582脚历史射门完成一次实际重建；训练、调参、新比赛预测和新赛果查询均为0。全部新文件与运行临时目录在项目目录。
 
 本轮补充的是历史机会的比赛背景：同样的机会产出，可能来自平局相持、领先后收缩、落后追赶或红牌记录变化。后续可研究如何解释这些差别；这次没有给任何一种状态添加强弱系数。
 
@@ -174,7 +175,7 @@ unknown/covered的产生显式使用该脚已发生的结果，不能作为预�
 
 新增11项语义测试和原6项早段射门状态测试共17项通过，涵盖乌龙记账、排除自身进球、同分钟乱序、补时跨半场、缺失候选、红牌前后与冲突撤回。测试只核对实现规则，不能证明时钟假设为真。一次独立代码审查另外检查了这些语义边界。
 
-文件：`逐射门条件状态候选.json.gz`、`原分钟事件与状态拆分.json.gz`、`重建覆盖与未知汇总.json`、`单进球侧时钟证据.json`。复现使用G盘环境运行`python -B work/reconstruct_archive_shot_context_20261028.py`。原始两份数据保持原样。
+文件：`逐射门条件状态候选.json.gz`、`原分钟事件与状态拆分.json.gz`、`重建覆盖与未知汇总.json`、`单进球侧时钟证据.json`。复现使用项目目录环境运行`python -B work/reconstruct_archive_shot_context_20261028.py`。原始两份数据保持原样。
 '''
     (OUT / '历史射门状态重建与下一步.md').write_text(report, encoding='utf-8')
     print(json.dumps({k: summary[k] for k in ('matches', 'matches_without_withhold_reason', 'all_shots', 'by_season', 'singleton_goal_sides', 'model_fits')}, ensure_ascii=False), flush=True)

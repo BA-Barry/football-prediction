@@ -254,7 +254,7 @@ def test_csv_exact_common_row_fields_roundtrip_and_summary_consistency(tmp_path)
 def make_source(key, day, comp, score=(2, 1)):
     return HistoricalMatch(key, comp, "synthetic", date.fromisoformat(day), None,
         f"football-data:{comp}:A", f"football-data:{comp}:B", "A", "B", tuple(score), None,
-        {}, "G:/synthetic-not-a-source.csv", "https://example.invalid/synthetic.csv", None)
+        {}, "synthetic/not-a-source.csv", "https://example.invalid/synthetic.csv", None)
 
 
 def install_archive_environment(tmp_path, monkeypatch):

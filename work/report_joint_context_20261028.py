@@ -4,10 +4,11 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from run_shot_increment_20261025 import score_details
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/历史情境共同接入_20261028'
 DATA = ROOT/'data/historical_context_20261028'
 BASE = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练'
@@ -88,7 +89,7 @@ def main():
         'records':examples})
     a=result['old_expanded121']['one_x_two'];b=result['joint_context213']['one_x_two']
     lines=['# 历史情境共同接入：本轮结果与所学','',
-        '2026-10-28。所有数据、模型、缓存和报告均在G盘。本轮到两次固定设置训练及一次独立核对结束；不追加调参或替换当前预测。','',
+        '2026-10-28。所有数据、模型、缓存和报告均在项目目录。本轮到两次固定设置训练及一次独立核对结束；不追加调参或替换当前预测。','',
         '## 真正新增与复用的内容','',
         '|信息|实际覆盖|本轮处理|','|---|---|---|',
         '|原121项表现|8753场|逐值保留，继续学真实全场进球|',
@@ -118,7 +119,7 @@ def main():
         '## 后续顺序与本轮停止点','',
         '保留共同输入、两个研究模型、全部来源和失败/纠正记录；本轮不再更换衰减、树深、权重或按联赛救分。当前赛前统计、独立LLM、情境LLM及助手综合继续保留各自身份，五场原记录未变，未查询新赛果。','',
         '下一步先明确这些信息如何服务当前季状态与证据解释：有可靠历史字段的进入共同数据；新闻的严重性、持续期、人员替代与战术适应没有量化依据时，交给LLM说明作用路径和未知，不假装已训练因果效应。若要改变长期规律和短期状态的学习关系，或将文本解释学成胜率修正，应先讨论具体结构及所需监督资料。','',
-        '核对见[独立核对](G:/Codex/football-prediction-2026-10-22/outputs/历史情境共同接入_20261028/独立核对.md)：原121项2118226单元保持，892373条教练引用严格更早；评分训练7027与目标1726的ID交集0；训练预处理仅由训练数据重算一致，保存模型全目标重放率误差0。']
+        '核对见[独立核对](../../outputs/历史情境共同接入_20261028/独立核对.md)：原121项2118226单元保持，892373条教练引用严格更早；评分训练7027与目标1726的ID交集0；训练预处理仅由训练数据重算一致，保存模型全目标重放率误差0。']
     (OUT/'本轮共同接入与所学.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps({'diagnostics':diagnostics['top1_transitions'],
         'mean_max_probability_change':diagnostics['mean_max_single_outcome_probability_change'],

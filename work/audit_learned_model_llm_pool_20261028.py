@@ -3,12 +3,13 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/模型LLM融合研究_20261028'
 TODAY = ROOT/'outputs/今日意甲预测_20261028'
 

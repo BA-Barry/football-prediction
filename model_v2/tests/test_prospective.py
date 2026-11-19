@@ -88,7 +88,7 @@ def test_duplicate_evidence_id_is_idempotent_but_conflicting_available_claims_re
         build_llm_packet(F, NOW, [evidence(), evidence(status="confirmed_out")])
 
 
-@pytest.mark.parametrize("changes", [{"team": "other-team"}, {"url": "file:///G:/secret"},
+@pytest.mark.parametrize("changes", [{"team": "other-team"}, {"url": "file:///tmp/secret"},
     {"url": "javascript:alert(1)"}, {"claim_type": "confirmed_truth"}, {"category": "odds"},
     {"status": ""}, {"id": False}, {"observed_at": NOW.replace(tzinfo=None)},
     {"published_at": "2026-10-23"}])

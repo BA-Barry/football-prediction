@@ -2,6 +2,7 @@
 from datetime import date,datetime,timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -11,7 +12,7 @@ from football_model.probability import score_grid,summarize
 from football_model.xg_history import join_understat,DateTeamXgModel
 from run_shot_increment_20261025 import score_details,write
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 SOURCE=ROOT/'data/understat/history_20261024T172015108538Z'
 AUDIT=ROOT/'outputs/跨联赛xG源核对_20261024T172403681186Z/逐季源差异.json'
 EPL=ROOT/'outputs/独立历史xG前推_20261024T171031805341Z/独立xG前推结果.json'

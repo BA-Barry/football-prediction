@@ -2,8 +2,9 @@
 import json
 from math import isclose
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path("G:/Codex/football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / "data/statsbomb/20261022_player_probe"
 OUTPUT = ROOT / "outputs/球员在场数据接入_20261022T125043786815Z"
 

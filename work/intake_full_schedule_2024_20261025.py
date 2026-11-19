@@ -8,12 +8,13 @@ import argparse
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 import time
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 YEAR = 2024
 OUT = ROOT/'outputs/全赛事赛程可用性_20261025/2024-25全量'
 SLUGS = {'E0': 'eng.1', 'D1': 'ger.1', 'SP1': 'esp.1', 'I1': 'ita.1', 'F1': 'fra.1'}

@@ -3,10 +3,11 @@ from copy import deepcopy
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from football_model.batch_scoring import run
 from diagnose_verified_old10_20261025 import individual, table
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 OBS = ROOT / "data/prematch-intelligence/20261024_batch/result_observation_20261024T163124853784Z"
 
 def load(path):

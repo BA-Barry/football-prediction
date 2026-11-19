@@ -3,11 +3,12 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import traceback
 
 from football_model.persistent_goal_difference import fit_static_panel, fit_dynamics
 
-OUT = Path('G:/Codex/football-prediction-2026-10-22/outputs/持续状态净胜球研究_20261028')
+OUT = REPOSITORY_ROOT / Path('outputs/持续状态净胜球研究_20261028')
 
 
 def save(name, value):

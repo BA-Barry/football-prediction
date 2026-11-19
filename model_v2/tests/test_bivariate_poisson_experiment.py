@@ -370,7 +370,7 @@ def test_empty_target_window_stops_instead_of_dropping_a_fold(tmp_path, monkeypa
     assert not (output / experiment.RESULT_FILE).exists()
 
 
-def test_cli_default_root_and_source_stay_on_g_project(tmp_path, monkeypatch, capsys):
+def test_cli_default_root_and_source_use_current_checkout(tmp_path, monkeypatch, capsys):
     calls = []
     def run(root, parent, output):
         calls.append((root, parent, output))
@@ -380,7 +380,7 @@ def test_cli_default_root_and_source_stay_on_g_project(tmp_path, monkeypatch, ca
     experiment.main()
     root, parent, output = calls[0]
     assert root == Path(experiment.__file__).resolve().parents[3]
-    assert root.drive.upper() == "G:" and root.name == "football-prediction-2026-10-22"
+    assert (root / "model_v2" / "pyproject.toml").is_file()
     assert parent == root / "outputs" / "更新频率研究_20261023T073047979805Z"
     assert output == tmp_path / "chosen"
     assert json.loads(capsys.readouterr().out)["k_path"] == [.1]

@@ -11,6 +11,7 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -20,7 +21,7 @@ from current_rich_model_helpers_20261026 import load_current_rich_sources
 from predict_epl_personnel_context_20261029 import current_independent, instant
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / 'data/epl_personnel_live_20261029/stat_sources'
 FACTS = ROOT / 'outputs/英超人员协作前瞻_20261029/给LLM的表现事实包.json'
 OUT = ROOT / 'data/epl_adjusted_context_20261029'

@@ -1,10 +1,11 @@
-"""Inspect publicly accessible ESPN team/stat coverage; save all files on G:."""
+"""Inspect public ESPN team/stat coverage; save files below the project root."""
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import requests
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'data/espn/personnel_20261026'
 
 

@@ -4,11 +4,12 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.persistent_rich_integration import plan_windows
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/胜平负机制复用收束_20261028'
 SOURCE = ROOT/'outputs/持续状态与丰富信息接入_20261028/联合输入_待训练.json.gz'
 DRAW = ROOT/'outputs/历史比赛模式与平局分支_20261027/逐场概率与纠错.json'

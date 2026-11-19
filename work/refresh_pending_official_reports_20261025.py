@@ -3,12 +3,13 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
-OUT = Path(r"G:\Codex\football-prediction-2026-10-22\data\prematch-intelligence\20261024_batch\result_observation_20261024T163124853784Z")
+OUT = REPOSITORY_ROOT / Path('data/prematch-intelligence/20261024_batch/result_observation_20261024T163124853784Z')
 
 def fetch(item):
     name, url = item

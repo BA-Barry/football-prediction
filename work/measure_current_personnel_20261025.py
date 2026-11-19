@@ -8,6 +8,7 @@ import argparse
 import json
 from math import fsum
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
 from football_model.historical_player_usage import extract_usage
@@ -15,7 +16,7 @@ from football_model.historical_relevance import personnel_usage_overlap
 from football_model.understat_rosters import extract_starting_xi
 from audit_understat_roster_seasons_20261025 import canonical_team, normalized_name
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'data/understat/roster_EPL_2025_2026_20261025'
 OUT = ROOT/'outputs/当前人员历史代表性_20261025'
 CUTOFF = date(2026, 10, 25)
@@ -189,8 +190,8 @@ def main():
     parser.add_argument('--output', type=Path, default=OUT)
     args = parser.parse_args()
     source, output = args.source.resolve(), args.output.resolve()
-    if output.drive.casefold() != 'g:':
-        raise ValueError('All outputs must be on G:')
+    if not output.is_relative_to(REPOSITORY_ROOT):
+        raise ValueError('Output must remain below the project root')
     output.mkdir(parents=True, exist_ok=True)
     selection = read(source/'比赛选择.json')
     selected = selection['selected']

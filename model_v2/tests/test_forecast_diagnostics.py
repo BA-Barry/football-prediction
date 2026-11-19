@@ -606,11 +606,11 @@ def test_report_handles_unavailable_intervals_and_empty_secondary_market():
     all_tracks = tracks([row()])
     remove_market(all_tracks, "avg_closing")
     result = diagnose(all_tracks, repeats=8)
-    result.update({"parent_directory": "G:/synthetic-source", "settings": {"repeats": 8, "seed": 20261023}})
+    result.update({"parent_directory": "synthetic/source", "settings": {"repeats": 8, "seed": 20261023}})
     content = report(result)
     assert "不可估计" in content
     assert "| avg_closing | 0 |" in content
-    assert "G:/synthetic-source" in content
+    assert "synthetic/source" in content
     assert "探索性" in content
     assert "0次拟合" in content
 

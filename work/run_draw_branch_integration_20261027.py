@@ -9,6 +9,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from sklearn.metrics import roc_auc_score
@@ -19,7 +20,7 @@ from football_model.forecast_diagnostics import moving_block_means
 from football_model.probability import score_grid, summarize
 from football_model.refresh_experiment import scores_for
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/条件平局分支整合_20261027'
 RICH = ROOT / 'outputs/固定发布日期信息刷新_20261025T071806561562Z/lead_3'
 CLASSIFIER = ROOT / 'outputs/直接胜平负分类研究_20261025T091329913808Z/lead_3'

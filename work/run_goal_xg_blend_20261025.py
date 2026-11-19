@@ -2,6 +2,7 @@
 from datetime import date,datetime,timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -10,7 +11,7 @@ from football_model.forecast_diagnostics import moving_block_means
 from football_model.probability import score_grid,summarize
 from run_shot_increment_20261025 import score_details,write
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 CROSS=ROOT/'outputs/独立xG跨联赛复现_20261024T172741074372Z/跨联赛xG复现结果.json'
 EPL=ROOT/'outputs/独立历史xG前推_20261024T171031805341Z/独立xG前推结果.json'
 

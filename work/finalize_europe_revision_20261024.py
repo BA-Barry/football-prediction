@@ -4,12 +4,13 @@ from datetime import datetime, timezone, timedelta
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.multiline import TRACKS, score_multi
 from football_model.prospective import _probabilities, _time
 from football_model.prospective_revision import run
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 PACKETS = ROOT / 'data/prematch-intelligence/20261024_batch/europe_context_20261024T154313760557Z'
 BASE = ROOT / 'data/prematch-intelligence/20261024_batch/run_20261024T150900467071Z/batch_case.json'
 OLD = ROOT / 'outputs/五线赛果评分_20261024T150438997728Z/原赛前记录及新增赛果.json'
@@ -102,11 +103,11 @@ def main():
     report += ['', f"独立LLM某一项概率最大变化{largest * 100:.2f}个百分点。这同时提醒我们：资料增加不等于判断必然变好，新的LLM采样及上下文变化也会影响数字，不能将差额解释成测得的欧战影响。", '',
                '曼城一场独立LLM主胜由55%变61%，尽管新增欧战日程并没有直接证明联赛实力上升；应将它保留为未来可检验的上下文敏感性现象，不能选择看起来更有信心的一版宣布升级。维拉有三天后的巴萨客场，但两条LLM均不能从这一安排确认其联赛轮换。', '',
                '欧洲日程包括维拉11月3日客战巴塞罗那、曼联同日主战罗马，利物浦/曼城/阿森纳11月4日欧冠，伯恩茅斯/水晶宫/桑德兰11月5日欧联及布莱顿同日欧协。日期和计划间隔已逐条核算；实际出场分钟、伤停恢复、旅行、教练取舍和优先级仍未知。', '',
-               f"[本版五线及旧新版完整对照]({Path(result['report']).as_posix()})；[新增10场原版报告](G:/Codex/football-prediction-2026-10-22/outputs/前瞻新增执行_20261024T152455896607Z/新增预测与优化说明.md)。原版与本版将来分别评分、按同一比赛对齐，不能把版本拼接扩大样本。", '',
-               '[原比分分布复核](G:/Codex/football-prediction-2026-10-22/outputs/原比分分布复核_20261024T154517265623Z/原比分分布复核说明.md)显示：伊普斯维奇1比1的原单格概率11.25%，是原分布最大单格，但原胜平负最高概率方向仍未命中。分类、比分、总球各有目标，不能事后挑好的改成绩。', '',
+               f"[本版五线及旧新版完整对照]({Path(result['report']).as_posix()})；[新增10场原版报告](../../outputs/前瞻新增执行_20261024T152455896607Z/新增预测与优化说明.md)。原版与本版将来分别评分、按同一比赛对齐，不能把版本拼接扩大样本。", '',
+               '[原比分分布复核](../../outputs/原比分分布复核_20261024T154517265623Z/原比分分布复核说明.md)显示：伊普斯维奇1比1的原单格概率11.25%，是原分布最大单格，但原胜平负最高概率方向仍未命中。分类、比分、总球各有目标，不能事后挑好的改成绩。', '',
                '失误研究继续以原样本概率的Log loss、Brier和比分NLL为依据。两个完赛样本不能确认哪个算法更优；历史平局和强热门分组偏差仍作为候选问题，已有校准研究不在同一目标季重复搜索。下一次有正式名单或杯赛实际负荷才值得补新的版本，停止同一信息的反复LLM采样。', '',
                '所有缓存市场仍为第三方署名资料，未确认最新可成交，不能作为即时赔率或收益依据。原始独立回答使用home/draw/away键值形式，衔接时按明确键序转为数组，数值与实际生成时间均未变，原始文件完整保留。', '',
-               '相关模块此前123项测试通过，本次通用资料版本模块36项测试通过。原预测未覆盖，文件均在G盘；没有新增训练网络、权重搜索或手写战意系数。', '']
+               '相关模块此前123项测试通过，本次通用资料版本模块36项测试通过。原预测未覆盖，文件均在项目目录；没有新增训练网络、权重搜索或手写战意系数。', '']
     (target / '欧战赛程修订与后续优化说明.md').write_text('\n'.join(report), encoding='utf-8')
     print(json.dumps({'directory': str(target), 'revision': result, 'total_unique': 20,
                       'settled': scores['n_settled'], 'pending': len(scores['pending_fixture_ids']),

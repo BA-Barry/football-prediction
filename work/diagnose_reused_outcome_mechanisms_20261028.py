@@ -3,13 +3,14 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from diagnose_persistent_probabilities_20261028 import loss_parts, metrics
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/胜平负机制复用收束_20261028'
 SOURCES = {
     'direct': '直接胜平负分类研究_20261025T091329913808Z/lead_3/逐场胜平负概率.json',

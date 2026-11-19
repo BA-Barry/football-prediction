@@ -2,11 +2,12 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.domain import Fixture
 from football_model.multiline import multi_record, score_multi
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/协作预测与大样本方案_20261028'
 SOURCE = ROOT/'data/serie_a_collaborative_20261028/情境协作LLM回答.json'
 

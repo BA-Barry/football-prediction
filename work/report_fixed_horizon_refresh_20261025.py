@@ -6,9 +6,10 @@ saved fits and probabilities; it never trains, calibrates, or changes forecasts.
 import argparse
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 NAMES = {'fresh_performance': '刷新表现', 'fresh_allcomp': '刷新表现＋全赛事',
          'locked_allcomp': '锁定表现＋全赛事', 'goal': '合法较早纯进球',
          'xg_raw': '合法较早总xG', 'clean_blend': '较早学习进球／xG融合'}
@@ -99,7 +100,7 @@ def main():
     lines = ['# 固定发布日期下的信息刷新：完整实跑结果', '', f'**结论：{conclusion}**', '',
         f'本轮实际完成{finished}次随机树完整拟合，而非只更改预测日期或复制上一轮模型。'
         '每个提前量保留刷新表现、刷新表现加全赛事、锁定表现加全赛事三套固定方案，并保留纯进球、总xG和较早学习融合参照。'
-        '原赛前预测及市场、LLM线路未改写；首发和当前赛果复核仍暂停，所有产物和临时文件在G盘。', '',
+        '原赛前预测及市场、LLM线路未改写；首发和当前赛果复核仍暂停，所有产物和临时文件在项目目录。', '',
         '## 验证的问题与时间规则', '',
         '本轮检验整套较新信息能否改善预测，并区分新增全赛事信息。两档提前量是不同使用时点，全部报告，不按后季成绩挑选赢家。'
         '算法继续使用相同ExtraTrees设置：120树、最多6层、叶至少60样本、每次随机取80%特征、180天半衰期；未搜索窗口、树深或融合网格。', '',

@@ -5,11 +5,12 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 BASE = ROOT / "data" / "prematch-intelligence" / "20261024_batch"
 UTC = timezone.utc
 

@@ -4,6 +4,7 @@ import ctypes
 import json
 import os
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import subprocess
 import sys
 import tempfile
@@ -11,7 +12,7 @@ import time
 import unittest
 
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 RUNNER = ROOT / "work" / "run_bounded_experiment.py"
 LOG_ROOT = ROOT / "work" / "bounded-experiment-checks"
 

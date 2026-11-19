@@ -2,7 +2,7 @@
 
 Example (run from the project directory):
   python -B work/run_bounded_experiment.py --name smoke --max-seconds 30 \
-    --log-dir G:/Codex/football-prediction-2026-10-22/work/bounded-logs \
+    --log-dir work/bounded-logs \
     -- python -B work/test_bounded_experiment.py
 Exit codes: 0 success, 1 failure, 124 budget exhausted, 130 interrupted.
 The time budget ends execution; recorded elapsed time also includes bounded
@@ -17,6 +17,7 @@ import json
 import math
 import os
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 import shutil
 import signal
@@ -25,7 +26,7 @@ import sys
 import time
 
 
-PROJECT_ROOT = Path(r"G:\Codex\football-prediction-2026-10-22").resolve()
+PROJECT_ROOT = REPOSITORY_ROOT.resolve()
 STATUSES = ("success", "failure", "time_budget_exhausted", "interrupted")
 
 

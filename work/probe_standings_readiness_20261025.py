@@ -7,9 +7,10 @@ import csv
 from datetime import date, datetime, timedelta, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 OUT=ROOT/'outputs/赛前新信息可行性_20261025'
 SOURCE_DIRS={
     '2023/24': ROOT/'data/football-data/2023-24/20261022T113804786593Z',

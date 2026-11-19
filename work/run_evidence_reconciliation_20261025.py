@@ -7,10 +7,11 @@ from collections import Counter
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.evidence_reconciliation import reconcile_evidence
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 RUN=ROOT/'data/prematch-intelligence/20261024_batch/run_20261024T150900467071Z'
 OUT=ROOT/'outputs/历史代表性与证据联合_20261025/current'
 

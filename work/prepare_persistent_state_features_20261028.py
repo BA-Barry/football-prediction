@@ -4,10 +4,11 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.persistent_state_features import build_persistent_state_features, STATE_FEATURE_NAMES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / 'outputs/持续状态净胜球研究_20261028'
 ORIGINAL = ROOT / 'outputs/固定发布日期信息刷新_20261025T071806561562Z/features_lead3.json.gz'
 OUT = ROOT / 'outputs/持续状态与丰富信息接入_20261028'

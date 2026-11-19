@@ -1,6 +1,7 @@
 """Record the new statistical variant with unchanged, earlier LLM/market lines."""
 from datetime import datetime, timezone
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 
 import numpy as np
@@ -8,7 +9,7 @@ import numpy as np
 from football_model.domain import Fixture
 from football_model.multiline import multi_record, score_multi
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/同日赛前模型一致化_20261027'
 OLD = ROOT / 'outputs/今日意甲预测_20261027'
 

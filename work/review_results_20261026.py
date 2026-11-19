@@ -4,11 +4,12 @@ from datetime import datetime, timezone, timedelta
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from statistics import mean
 
 from football_model.multiline import TRACKS, score_multi
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/赛果对比_20261026'
 PREVIOUS = ROOT/'outputs/赛果对比_20261025'
 FPL = ROOT/'data/prematch-intelligence/20261024_batch/result_observation_20261026T005954635787Z/result_observations.json'
@@ -243,7 +244,7 @@ def main():
         '- 三个新完赛欧洲票面方向命中，不能反过来证明此前低赔率有正期望；单场结果无法验证价值判断。',
         '- 比分事实与赛后事件不倒填到赛前输入。对状态滞后、升班马和低估平局的假设继续用较早数据或后续赛前记录检查；不凭这几场重选参数。',
         '- 原9场修订版本已另存评分，作为明确的信息版本对照，未挑成绩更好版本代替首次预测。', '',
-        '本轮只追加赛果和重新计算评分。模型、原预测及融合权重保持原值。所有文件在G盘。']
+        '本轮只追加赛果和重新计算评分。模型、原预测及融合权重保持原值。所有文件在项目目录。']
     (OUT/'赛果核对与优化依据.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     print(json.dumps({k:summary[k] for k in ('recorded_at_beijing','distinct_recorded_matches','settled_distinct_matches',
         'pending_distinct_matches','original10_completed','ticket_selected_hits','ticket_completed_legs','sixfold_can_still_win')},ensure_ascii=False))

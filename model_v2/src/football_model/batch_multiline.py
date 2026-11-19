@@ -7,7 +7,6 @@ are actual saved observations; first-case research records remain untouched.
 import argparse
 from datetime import datetime, timezone, timedelta
 import json
-import os
 from pathlib import Path
 
 from .domain import Fixture, OddsSnapshot
@@ -40,10 +39,7 @@ def _write(path, value):
 
 
 def _paths(*values):
-    paths = tuple(Path(value).resolve() for value in values)
-    if os.name == "nt" and any(path.drive.upper() != "G:" for path in paths):
-        raise ValueError("All batch project inputs/outputs must stay on G:")
-    return paths
+    return tuple(Path(value).expanduser().resolve() for value in values)
 
 
 def _fixture(row):
@@ -303,7 +299,7 @@ def render_report(payload, projection, scores):
         lines += ["本轮尚未录入可结算的真实赛果，没有准确率、校准效果或优越性结论；未录入不表示比赛一定尚未结束。", ""]
     for observation in payload["market_source"]["market_observations"]:
         lines.append(f"- [{observation['fixture_id']}]({observation['source_url']})：{observation['decimal_prices']}，记录{observation['observed_at']}；开盘未知。")
-    lines += ["", "导出不触发下载、球队拟合或LLM调用，不刷新原预测时间。所有新增工程文件、数据、模型及缓存／临时目录均在G盘。", ""]
+    lines += ["", "导出不触发下载、球队拟合或LLM调用，不刷新原预测时间。所有新增工程文件、数据、模型及缓存／临时目录均在项目目录。", ""]
     return "\n".join(lines)
 
 

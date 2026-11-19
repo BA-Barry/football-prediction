@@ -3,12 +3,13 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.forecast_diagnostics import moving_block_means
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 NEW = ROOT/'outputs/进球xG更早年份复现_20261024T180238377843Z'
 PREVIOUS = ROOT/'outputs/进球xG共同训练记录_20261024T174247963857Z/共同训练记录融合结果.json'
 

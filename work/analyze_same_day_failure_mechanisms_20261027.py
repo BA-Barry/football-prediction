@@ -7,6 +7,7 @@ from collections import Counter
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from scipy.optimize import brentq
@@ -14,7 +15,7 @@ from scipy.special import i0e
 
 from football_model.decision_diagnostics import independent_poisson_draw_limit
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / 'outputs/同日赛前模型一致化_20261027'
 OUT = ROOT / 'outputs/同日误差互补与结构定位_20261027'
 ROUTES = ('same_day_rich', 'same_day_goal', 'same_day_xg')
@@ -143,13 +144,13 @@ def main():
         '| 路线 | 总进球均值范围 | 固定总球下平局无法首选的场数 | 实际平局位于其中 |', '|---|---:|---:|---:|']
     for key, s in route_summary.items():
         lines.append(f'| {ZH[key]} | {s["total_mean_min"]:.3f}—{s["total_mean_max"]:.3f} | {s["draw_top1_impossible_at_fixed_total_n"]} | {s["actual_draws_in_impossible_group"]} |')
-    lines += ['', f'![独立泊松的平局首选边界](G:/Codex/football-prediction-2026-10-22/outputs/{OUT.name}/平局首选的结构边界.png)', '',
+    lines += ['', f'![独立泊松的平局首选边界](../../outputs/{OUT.name}/平局首选的结构边界.png)', '',
         '丰富模型440场实际平局都处于这个结构条件中。只改主客进球分配仍无效；下调总球率虽可能越过边界，但会同时改变总球与比分概率，不能仅为抬平而调整，效果需单独评价。依赖比分或重新校准的模型不受这条独立Poisson公式直接限制；摆脱限制只是必要能力，不代表具备识别平局的有效信息。', '',
         '## 对既有工作的具体含义', '',
         '单温度不会改变H/D/A的排序；既有条件正平局研究只使用截距与强弱差两个输入，虽可改变比分形状，但保存结果没有改变首选。它们不是无价值资产：前者可校准概率，后者证明比分结构可以在原模型外调整；但不能把同一个修正再次包装为平局辨别提升。', '',
         '本轮确认下一步需要讨论的是“哪些赛前条件支持不同的胜平负／联合比分形状”，而不是继续微调近期权重或在三个单选之间选择。现有121项表现、时间外预测与score_reconciliation可复用；LLM需单列，当前没有同口径的1732场历史LLM结果。神经网络并非由本诊断自然推导出的必需品。', '',
         '本轮到一次完整错误分解与结构测量为止。保留全部互补和失败记录，不学习新阈值、不修改概率、不据同向自动提高置信度，今晚三场的原生成时间与结果留空状态均保留。新加入decision_diagnostics只输出数学诊断，不参与胜平负计算。', '',
-        f'[逐场错误](G:/Codex/football-prediction-2026-10-22/outputs/{OUT.name}/逐场错误与结构说明.json)；[今晚结构说明](G:/Codex/football-prediction-2026-10-22/outputs/{OUT.name}/今晚预测的结构说明.json)；[下一步具体整合方案（待讨论）](G:/Codex/football-prediction-2026-10-22/outputs/{OUT.name}/下一步核心整合方案_待讨论.md)。全部新增资料在G盘。']
+        f'[逐场错误](../../outputs/{OUT.name}/逐场错误与结构说明.json)；[今晚结构说明](../../outputs/{OUT.name}/今晚预测的结构说明.json)；[下一步具体整合方案（待讨论）](../../outputs/{OUT.name}/下一步核心整合方案_待讨论.md)。全部新增资料在项目输出目录。']
     (OUT / '本轮定位与下一步.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     print(json.dumps({k: summary[k] for k in ('n', 'all_correct_n', 'all_wrong_n', 'complementary_n', 'finite_saved_top1_oracle',
                      'critical_total_mean_for_balanced_draw_equal_one_third')}, ensure_ascii=False))

@@ -3,12 +3,13 @@ from copy import deepcopy
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.batch_multiline import _fixture
 from football_model.multiline import build_packet
 from football_model.prospective import _time
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 ORIGINAL = ROOT / 'data/prematch-intelligence/20261024_batch/run_20261024T150900467071Z'
 SUPPLEMENT = ROOT / 'data/prematch-intelligence/NEW20261024_cohort_20261024T150344311377Z/supplemental_europe_schedule_observation.json'
 

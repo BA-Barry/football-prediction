@@ -7,13 +7,14 @@ from datetime import date, datetime, timezone
 import argparse
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import requests
 
 from football_model.all_competition_features import AllCompetitionFeatures, ScheduleClub, ScheduleEvent
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 MEMBERS = ROOT/'data/espn/personnel_20261026/eng.1_2026_teams.json'
 OFFICIAL_TEAMS = ROOT/'data/current_rich_inputs/run_20261026T025507813598Z/official-fpl/bootstrap.json'
 START, CUTOFF = date(2026,7,1), date(2026,10,26)

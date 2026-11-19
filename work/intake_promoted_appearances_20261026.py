@@ -3,10 +3,11 @@ from datetime import datetime, timezone
 import json
 from math import fsum, isfinite
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from probe_espn_personnel_20261026 import OUT as ARCHIVE, read_source
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/升班球队人员参考_20261026'
 CLUBS = [('Coventry', '考文垂', '388'), ('Hull', '赫尔城', '306'), ('Ipswich', '伊普斯维奇', '373')]
 

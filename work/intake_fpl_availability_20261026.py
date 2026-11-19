@@ -11,13 +11,14 @@ import gzip
 import json
 import lzma
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 import time
 
 import requests
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT/'data/fpl_availability_archive'
 SOURCE = ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z/features_lead3.json.gz'
 OUT = ROOT/'outputs/FPL历史可用性接入_20261026'

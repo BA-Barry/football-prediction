@@ -4,10 +4,11 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.persistent_goal_difference import PersistentGoalDifferenceFilter, PARAMETER_NAMES, DYNAMIC_BOUNDS
 
-OUT = Path('G:/Codex/football-prediction-2026-10-22/outputs/持续状态净胜球研究_20261028')
+OUT = REPOSITORY_ROOT / Path('outputs/持续状态净胜球研究_20261028')
 static = json.loads((OUT / '静态初始化.json').read_text(encoding='utf-8'))
 fit = json.loads((OUT / '动态参数拟合.json').read_text(encoding='utf-8'))
 payload = json.load(gzip.open(OUT / '输入资料.json.gz', 'rt', encoding='utf-8'))

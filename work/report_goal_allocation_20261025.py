@@ -1,8 +1,9 @@
 """Report the completed fixed-total allocation contrast, including negative results."""
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 RUN = ROOT/'outputs/固定总球主客分配研究_20261024T182604417382Z'
 MARKET_REPORT = ROOT/'outputs/进球xG历史市场对照_20261024T181414691003Z/历史市场对照结论与优化边界.md'
 NAMES = {'E0':'英超','D1':'德甲','SP1':'西甲','I1':'意甲','F1':'法甲'}
@@ -65,7 +66,7 @@ def main():
         '## 采用结论与后续方向', '',
         '这版新增份额权重不采用，停止围绕其数值继续微调；原完整融合继续列为研究候选，纯进球、独立xG、市场与LLM线路均保留。它只检验了固定现有总球判断后重新分配主客份额的一个具体结构，不能推出所有主客分配模型或xG资料都无价值。', '',
         '下一步的重点应是能够改变主客相对实力判断的新信息及其赛前可用时间，先评估现有球员、首发、伤停和赛事投入资料能支持哪些历史对照，再讨论实质结构调整。新增复杂度必须有明确数据与检验目的，不用另加参数来补本轮分数，也不直接转向黑盒。', '',
-        '本轮仍是已查看历史样本上的探索，条件区间不包含全部权重估计和研究选择不确定性。历史xG发布／修订与赔率时间仍有限制。没有查询或复核当前比赛赛果，也未改原赛前预测。全部文件、测试、缓存和临时文件在G盘。', '',
+        '本轮仍是已查看历史样本上的探索，条件区间不包含全部权重估计和研究选择不确定性。历史xG发布／修订与赔率时间仍有限制。没有查询或复核当前比赛赛果，也未改原赛前预测。全部文件、测试、缓存和临时文件在项目目录。', '',
         f'[完整结果]({(RUN/"固定总球主客分配结果.json").as_posix()}) · [评分前计划]({(RUN/"分析前计划.json").as_posix()}) · [历史市场对照]({MARKET_REPORT.as_posix()})', '']
     (RUN/'主客分配实跑与采用结论.md').write_text('\n'.join(report),encoding='utf-8')
     print(str(RUN/'主客分配实跑与采用结论.md'))

@@ -8,11 +8,12 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/持续状态与丰富信息接入_20261028'
 parameters = json.loads((OUT / '接入模型参数.json').read_text(encoding='utf-8'))
 with gzip.open(OUT / '接入逐场概率.json.gz', 'rt', encoding='utf-8') as stream:

@@ -9,10 +9,11 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT/'data/personnel_semantics_20261028'
 CONTEXT = ROOT/'data/historical_context_20261028/availability_sources/8753场历史可用性上下文.json.gz'
 HISTORY = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练/扩样合并特征.json.gz'

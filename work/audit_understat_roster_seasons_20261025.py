@@ -5,6 +5,7 @@ import argparse
 import html
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 import unicodedata
 
@@ -13,7 +14,7 @@ from football_model.understat_rosters import (
 )
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'data/understat/roster_seasons_EPL_2023_2024_20261025'
 OUT = ROOT/'outputs/英超跨季首发覆盖_20261025'
 
@@ -153,8 +154,8 @@ def main():
     if args.self_test:
         self_test(); return
     output_directory = args.output.resolve()
-    if output_directory.drive.casefold() != 'g:':
-        raise ValueError('All audit outputs must remain on G:')
+    if not output_directory.is_relative_to(REPOSITORY_ROOT):
+        raise ValueError('Audit output must remain below the project root')
     progress = read(SOURCE/'进度.json')
     if progress.get('status') != 'completed':
         raise RuntimeError('Saved downloader is not completed; this script never downloads or retries.')

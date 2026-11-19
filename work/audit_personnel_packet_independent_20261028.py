@@ -2,6 +2,7 @@
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from urllib.parse import urlparse
 import csv
 import gc
@@ -13,7 +14,7 @@ import re
 from align_personnel_news_history_20261028 import load_original_windows
 from build_personnel_semantic_packets_20261028 import materialize_match
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT/'data/personnel_semantics_20261028'
 OUT = ROOT/'outputs/人员信息语义接入_20261028'
 errors = []

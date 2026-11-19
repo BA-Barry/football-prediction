@@ -2,14 +2,13 @@
 
 The reference calendar date is only for classifying source-reported dates; it
 does not reconstruct historical knowledge or a real-time prediction information
-set. All project output is written under the explicit G-drive task root.
+set. All project output is written below the explicitly supplied task root.
 """
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone
 import json
-import os
 from pathlib import Path
 import re
 from typing import Callable
@@ -134,9 +133,7 @@ def run_snapshot(task_root: Path, season: str = "2026-27", calendar_date: date |
         raise ValueError("season must name consecutive years")
     if calendar_date is not None and type(calendar_date) is not date:
         raise ValueError("calendar_date must be a date, not a timestamp")
-    task_root = Path(task_root).resolve()
-    if os.name == "nt" and task_root.drive.upper() != "G:":
-        raise ValueError("task_root must be on G:; no project output may be created on C:")
+    task_root = Path(task_root).expanduser().resolve()
     started = datetime.now(timezone.utc)
     reference_date = calendar_date if calendar_date is not None else started.date()
     run_name = started.strftime("%Y%m%dT%H%M%S%fZ")

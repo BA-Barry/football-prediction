@@ -3,12 +3,13 @@ from datetime import datetime, timezone
 import html
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 import unicodedata
 
 from football_model.impect_season import TEAM_NAMES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 PILOT = ROOT/'data/understat/roster_pilot_20261024T183946498125Z'
 IMPECT = ROOT/'data/impect/season_20261024T055349773201Z/raw'
 PLAYERS = ROOT/'data/impect/pilot_20261024T053746962994Z/players_743.json'

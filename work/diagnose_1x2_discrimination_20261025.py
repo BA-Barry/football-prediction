@@ -1,12 +1,13 @@
 """Describe saved historical discrimination; no fitting or new result requests."""
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs/直接胜平负分类研究_20261025T091329913808Z'
 OUT = ROOT/'outputs/胜平负核心调研_20261025'
 NAMES = {

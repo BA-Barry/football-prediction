@@ -1,7 +1,17 @@
 param([ValidateSet('demo','test','inspect-data','openfootball-snapshot','market-research','market-fusion-research','laplace-diagnostics','season-state-research','minutes-research','core-tuning','score-shape','cmp-research','cmp-forward','dependence-forward','rate-calibration-forward','snapshot-dynamic','prematch-pilot','multiline-pilot','batch-pilot','batch-score','english-tiers-research','english-tiers-weighting','player-context','prospective-revision','impect-pilot','impect-season','impect-player-research','starting-xi-data','starting-xi-research','starting-xi-diagnostics','starting-roles-data','statsbomb-starting-roles','starting-xi-transfer','hierarchical-xi-research','backtest','native-train','forecast-diagnostics','calibration-research','refresh-research','goal-rate-diagnostics','rate-calibration-research','schedule-research','player-data','player-train','player-rolling','catalog-data','wyscout-data','wyscout-inspect','timing-measure','timing-fit','second-team','second-players','window-clock','player-shrinkage','player-forward-selection','player-exposure-scaling')][string]$Action = 'demo', [string]$BatchInput = '', [string[]]$ResultEvidence = @(), [string]$TierInput = '', [string]$TierReference = '', [string]$NewsInput = '', [string]$SnapshotInput = '', [string]$RevisionInput = '', [string]$SampleInput = '', [string]$SeasonInput = '', [string]$ParsedInput = '', [string]$InspectionInput = '', [string]$ResearchInput = '')
 $ErrorActionPreference = 'Stop'
-$taskRoot = Split-Path -Parent $PSScriptRoot
+$taskRoot = if ([string]::IsNullOrWhiteSpace($env:FOOTBALL_MODEL_ROOT)) {
+    Split-Path -Parent $PSScriptRoot
+} else {
+    [System.IO.Path]::GetFullPath($env:FOOTBALL_MODEL_ROOT)
+}
 $taskPython = Join-Path $taskRoot '.venv\Scripts\python.exe'
+if (-not (Test-Path -LiteralPath $taskPython)) {
+    $taskPython = Join-Path $taskRoot '.venv\bin\python'
+}
+if (-not (Test-Path -LiteralPath $taskPython)) {
+    throw "Virtual environment Python was not found. Run the setup command in README.md first."
+}
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:PYTHONIOENCODING = 'utf-8'
 $env:PYTHONPATH = Join-Path $PSScriptRoot 'src'

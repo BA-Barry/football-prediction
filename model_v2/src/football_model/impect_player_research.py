@@ -290,7 +290,7 @@ def make_report(result):
                   "本轮不产生xG、1X2、总进球分布、半全场、市场融合或串关；没有新增神经网络、球员先验或"
                   "赛事投入假设。2023/24 IMPECT球员系数不能按姓名／整数ID拼进2026其他来源。"
                   "接入赛前需要预计在场情景与条件参考映射，仍需讨论，当前球队与LLM预测不被覆盖。", "",
-                  "复现：`python -m football_model.impect_player_research --root <G盘项目> --parsed <parsed_matches.json> "
+                  "复现：`python -m football_model.impect_player_research --root <项目目录项目> --parsed <parsed_matches.json> "
                   "--inspection <inspection.json>`。只读取显式本地输入，不隐式选最近目录或联网。", ""])
     return "\n".join(lines)
 

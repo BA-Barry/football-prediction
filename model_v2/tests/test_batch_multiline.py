@@ -1,7 +1,7 @@
 """Synthetic batch comparison tests; no real responses/results are edited.
 
 Every packet, forecast, market quote and settlement below belongs to a temporary
-test project on G:. None is an observation of real forecasting performance.
+test project. None is an observation of real forecasting performance.
 """
 
 from copy import deepcopy

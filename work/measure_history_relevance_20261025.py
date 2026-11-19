@@ -4,13 +4,14 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.historical_relevance import personnel_usage_overlap
 
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 OUT=ROOT/'outputs/历史代表性与证据联合_20261025/history'
 LINEUPS=ROOT/'outputs/英超跨季首发覆盖_20261025/首发身份观察.json'
 PREDICTIONS=ROOT/'outputs/直接胜平负分类研究_20261025T091329913808Z/lead_3/逐场胜平负概率.json'

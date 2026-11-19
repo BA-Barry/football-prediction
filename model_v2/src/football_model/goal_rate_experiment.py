@@ -148,7 +148,7 @@ def report(result):
         f"本轮0次拟合、0条新增模型预测、0次概率修正。读取{counts['parameter_snapshots_read']}份已有参数，"
         f"对{counts['saved_prediction_rows_validated']}条存档预测核验日期、来源、覆盖及完整比分摘要。"
         f"共同队列共{counts['unique_common_matches']}场；三臂合计{counts['common_arm_diagnostic_rows']}条诊断记录，"
-        "不是三倍独立样本。所有新文件与临时目录均在G盘。", "",
+        "不是三倍独立样本。所有新文件与临时目录均在项目目录。", "",
         "## 本轮问什么", "",
         "检查每场赛前条件进球率λ，而非射门xG。28天旧轨为诊断参照，7／14天完整保留作敏感性对照；"
         "只重放原系数，不从有限比分网格的expected_goals倒推λ。模型仍是ridge=0.01、半衰期180天、rho=0的独立Poisson。"

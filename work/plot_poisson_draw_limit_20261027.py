@@ -1,5 +1,6 @@
 """Plot the derived score-law bound and the existing rich-rate range."""
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 
 import matplotlib
@@ -8,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.special import i0e
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/同日误差互补与结构定位_20261027'
 data = json.loads((OUT / '互补与结构汇总.json').read_text(encoding='utf-8'))
 critical = data['critical_total_mean_for_balanced_draw_equal_one_third']

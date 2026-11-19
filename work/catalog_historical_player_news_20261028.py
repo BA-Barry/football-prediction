@@ -9,9 +9,10 @@ import gzip
 import json
 import lzma
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CONTEXT = ROOT/'data/historical_context_20261028/availability_sources/8753场历史可用性上下文.json.gz'
 ARCHIVE = ROOT/'data/fpl_availability_archive'
 MANIFEST = ARCHIVE/'selected_snapshot_manifest.json'

@@ -7,10 +7,11 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 NAMES = {
     'logistic_performance': '多项逻辑回归／表现',
     'logistic_allcomp': '多项逻辑回归／表现＋全赛事',

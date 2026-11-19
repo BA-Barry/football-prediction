@@ -306,11 +306,11 @@ def make_report(coverage, selection, final):
         "本次较晚成绩已被查看。后续据此改动属于探索性研发，需要另一个较晚赛季验证；不能继续把同一150场称为未见过的最终检验。"
         "下一步先讨论未知球员先验与滚动更新，再扩充另一完整赛季、做稳定性与成组不确定性分析，最后才接赛前概率。", "",
         "## 来源、用途和复现", "",
-        "[StatsBomb / Hudl Open Data](https://github.com/hudl/open-data)：原始事件、阵容、赛程与其数据协议保留在G盘。"
+        "[StatsBomb / Hudl Open Data](https://github.com/hudl/open-data)：原始事件、阵容、赛程与其数据协议保留在项目目录。"
         "[Football-Data官方CSV](https://www.football-data.co.uk/mmz4281/1516/E0.csv)：只作独立比分核验，本轮不使用赔率。"
         "仅个人非商业统计研究／娱乐，不重新分发原始或衍生数据。数据许可不等于软件MIT许可，没有代用户注册或提交联系资料。", "",
         "复现命令：在model_v2目录运行 `run.ps1 -Action player-train`。读取已下载本地数据，不联网。"
-        "所有参数、明细、临时文件和报告在G盘；源码压缩包不含原始或衍生数据。", ""])
+        "所有参数、明细、临时文件和报告在项目目录；源码压缩包不含原始或衍生数据。", ""])
     return "\n".join(lines)
 
 

@@ -214,7 +214,7 @@ def finalize(freshness_path=None):
         'next_availability_llm10': str(OUTPUT/'标准前瞻记录.json')})
     comparison = read(DATA/'fpl_snapshot_comparison.json')
     lines = ['# 当前可用性接入与独立判断', '',
-        '本轮已接通20队官方FPL名单、官网／英超可用性报道、原球队表现及已公布杯赛安排。无需等待目标首发；不加入神经网络、不学习球员能力或新融合权重。原统计路线逐字段复用，全部新增文件在G盘。', '',
+        '本轮已接通20队官方FPL名单、官网／英超可用性报道、原球队表现及已公布杯赛安排。无需等待目标首发；不加入神经网络、不学习球员能力或新融合权重。原统计路线逐字段复用，全部新增文件在项目目录。', '',
         f'FPL于北京时间{datetime.fromisoformat(comparison["current_observed_at"]).astimezone(BJ):%Y-%m-%d %H:%M:%S}获取；{comparison["paired_player_count"]}人可跨快照配对，较10月26日早间旧快照，来源状态变化{len(comparison["status_changes"])}、新闻文字变化{len(comparison["news_changes"])}。本轮是把已取得／已发布资料接入判断，不是宣布今晚出现这些新伤。旧时刻为原取数运行结束上界，未伪造单个响应时间。', '',
         f'官网研究覆盖20队，{packet["official_research_summary"]["teams_with_official_claims"]}队有可提取正文／官方摘要；其余为'+ '、'.join(packet['official_research_summary']['teams_without_extractable_official_claims'])+'。未读到正文的状态保留未知，不视作全员健康。具体网页、日期、适用比赛及限制均保留。', '',
         '## 可用性事实与限制', '', '| 比赛 | 主队FPL i／d／s | 客队FPL i／d／s | 官网取得情况 |', '|---|---:|---:|---|']
@@ -250,7 +250,7 @@ def finalize(freshness_path=None):
         '已复用既有多线评分和证据解释层：数值路线单独保留，额外输出有来源的模型知情质疑，不生成联合胜率。前瞻仍为20场不同英超比赛，其中下一轮10场尚无归档结果；版本数量不增加样本。本轮不查询目标赛果、不调参，不重新生成多批LLM择优。', '',
         '球员身份按FPL球队代码＋球员代码配对，转会／新增／缺失单列；4项边界测试通过。新旧状态完全相同也不删除资料：它说明信息接入缺口与伤情变化是两回事。', '',
         '下一步优先取得能明确改变目标可用性的官方新公告，或杯赛后真实新增信息；长缺球员与现有表现的重复计算、替代能力、来源停赛范围仍需保留未知。在这些未识别前，不手工学习“缺一个人扣几点”，也不凭一次命中或失误改变模型结构。', '',
-        '[事实包](G:/Codex/football-prediction-2026-10-22/data/current_availability/official_20261027/facts_only_llm_packet.json)；[逐场对照与可用性](G:/Codex/football-prediction-2026-10-22/outputs/当前可用性接入与判断_20261027/逐场对照与可用性.json)；[证据收束](G:/Codex/football-prediction-2026-10-22/outputs/当前可用性接入与判断_20261027/逐场证据收束.json)。']
+        '[事实包](../../data/current_availability/official_20261027/facts_only_llm_packet.json)；[逐场对照与可用性](../../outputs/当前可用性接入与判断_20261027/逐场对照与可用性.json)；[证据收束](../../outputs/当前可用性接入与判断_20261027/逐场证据收束.json)。']
     (OUTPUT/'可用性接入与判断.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps({'output':str(OUTPUT),'summary':summary},ensure_ascii=False))
 

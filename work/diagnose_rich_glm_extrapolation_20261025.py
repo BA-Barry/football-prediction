@@ -3,11 +3,12 @@ from datetime import date, timedelta
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/多信息多算法前推_20261025T060704977450Z'
 CUTOFF = '2025-08-29'
 

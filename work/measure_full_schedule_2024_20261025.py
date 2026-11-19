@@ -4,12 +4,13 @@ import argparse
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.native_experiment import load_seasons, season_directories
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 from measure_cross_comp_schedule_20261025 import EXTRA_ALIASES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 YEAR = 2024
 OUT = ROOT/'outputs/全赛事赛程可用性_20261025/2024-25全量'
 FD = ROOT/'outputs/Football-Data_2024-25_个人使用_20261022T111235Z'

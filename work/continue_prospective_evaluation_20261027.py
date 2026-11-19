@@ -9,12 +9,13 @@ import argparse
 from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.domain import Fixture
 from football_model.multiline import TRACKS, _summary, multi_record, score_multi
 from football_model.prospective import _time
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CURRENT = Path('outputs/当前丰富信息预测_20261026T030805654404Z')
 SOURCES = {
     'original10': 'outputs/赛果对比_20261026/原10场_原预测与赛果.json',
@@ -191,14 +192,14 @@ def run(root, output, additional_cohorts=None):
         '- 同日简单统计→同日丰富候选：同10场、同批LLM、各自统计概率，观察丰富信息关系是否改善；两组复用的LLM不是20份独立判断。',
         '- 每个版本内统计与LLM三项概率的损失、命中和分歧；有市场的旧版另作同场描述，不能将旧缓存冒充10月26日即时市场。',
         '- 当前丰富候选没有已结算前瞻成绩；历史901/1726不并入该批分母。v0.43／v0.44整合尚无这批完整成员输入，不补造它们的当前概率。', '',
-        '[已保存的下一轮10场三项概率](G:/Codex/football-prediction-2026-10-22/outputs/当前丰富信息预测_20261026T030805654404Z/本轮预测与优化结论.md)。本轮只接通评价，未重新生成这些概率。', '',
+        '[已保存的下一轮10场三项概率](../../outputs/当前丰富信息预测_20261026T030805654404Z/本轮预测与优化结论.md)。本轮只接通评价，未重新生成这些概率。', '',
         '## 时间口径修正', '',
         '10月26日统计资料截止为03:08:05 UTC，实际概率完成为03:09:08 UTC；LLM生成03:14:31 UTC，比较表组装03:16:29 UTC。接入评分时保留实际生成时间，资料截止不冒充概率已经发布的时间。新导出的今天时间也不刷新任何预测。', '',
         '时间和LLM暴露状态来自已有记录及调用方声明，普通本地文件不能独立证明当时已向外发布，亦不能保证LLM预训练无污染。现有证据足以进行可追溯的前瞻观察，不应夸大为认证盲测。', '',
         '## 优化的下一步', '',
         '先让已存下一轮预测产生真实反馈，保留每场三项概率和损失；概率可靠性及类别偏差按后续多批累计观察，不凭一场改参。若根据这些比赛研究调整，它们随后属于开发资料，该调整的效果仍要在更晚比赛确认。', '',
         '资料刷新或明确错队、漏赛、时间错误可以及时修正并留新版本；模型关系、融合权重与深度学习等重大变动仍先讨论。现有回测可用于诊断机制，不能通过反复重算同季来增加独立证据。', '',
-        f'本轮停止点：已完成{len(cohorts)}个既有版本的接入、同场配对、原轮重算及未来版本待评记录。该评价入口新训练0、调参0、新LLM调用0、新赛果查询0；不新增hash、冻结contract、baseline或gate。所有新增文件均在G盘。']
+        f'本轮停止点：已完成{len(cohorts)}个既有版本的接入、同场配对、原轮重算及未来版本待评记录。该评价入口新训练0、调参0、新LLM调用0、新赛果查询0；不新增hash、冻结contract、baseline或gate。所有新增文件均在项目目录。']
     (output / '前瞻评价接续与优化安排.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     return {'output': str(output), 'unique_fixtures': len(unique), 'archived_results': len(unique & set(results)),
             'without_archived_results': len(pending), 'cohorts': len(cohorts), 'fits': 0,

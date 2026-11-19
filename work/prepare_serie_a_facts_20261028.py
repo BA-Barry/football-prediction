@@ -2,8 +2,9 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 DATA=ROOT/'data/serie_a_today_20261028'
 PREVIOUS=ROOT/'data/understat/history_20261024T172015108538Z/Serie_A_2025.json'
 CHINESE={'AC Milan':'AC米兰','Bologna':'博洛尼亚','Parma':'帕尔马','Udinese':'乌迪内斯','Venezia':'威尼斯','Internazionale':'国际米兰','Genoa':'热那亚','Juventus':'尤文图斯','Monza':'蒙扎','Napoli':'那不勒斯'}

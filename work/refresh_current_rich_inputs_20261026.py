@@ -11,11 +11,12 @@ import csv
 import io
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import requests
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 BATCH = ROOT / 'data/prematch-intelligence/20261024_batch/run_20261024T150900467071Z/batch_case.json'
 SEASON = 2026
 LEAGUES = [('EPL', 'E0'), ('Bundesliga', 'D1'), ('La_Liga', 'SP1'), ('Serie_A', 'I1'), ('Ligue_1', 'F1')]

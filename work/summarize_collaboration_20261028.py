@@ -3,8 +3,9 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT/'data/serie_a_collaborative_20261028'
 OUT = ROOT/'outputs/协作预测与大样本方案_20261028'
 ORDER = ('home_win', 'draw', 'away_win')
@@ -133,7 +134,7 @@ def main():
         '- [博洛尼亚训练](https://www.bolognafc.it/seduta-tattica-a-2-da-milan-bologna/)；[米兰赛程](https://www.acmilan.com/it/news/articoli/agenda/2026-10-01/ottobre-mese-di-calendari-intensi)。',
         '- [威尼斯本场名单](https://www.veneziafc.it/news/i-convocati-per-venezia-fc-inter)；[国米赛程](https://www.inter.it/it/notizie/inter-calendario-biglietti-partite-ottobre-san-siro)。',
         '- [尤文发布会](https://www.juventus.com/it/news/articoli/genoa-juventus-le-parole-di-luciano-spalletti-alla-vigilia)；[那不勒斯发布会](https://sscnapoli.it/allegri-a-monza-per-risalire-la-classifica-dobbiamo-migliorare-sia-nelle-prestazioni-che-nei-risultati/)。', '',
-        '完整来源、日期、冲突、未知项见[补充证据](G:/Codex/football-prediction-2026-10-22/data/serie_a_collaborative_20261028/补充赛前证据.json)和[来源复核](G:/Codex/football-prediction-2026-10-22/data/serie_a_collaborative_20261028/本轮来源复核.md)。', '',
+        '完整来源、日期、冲突、未知项见[补充证据](../../data/serie_a_collaborative_20261028/补充赛前证据.json)和[来源复核](../../data/serie_a_collaborative_20261028/本轮来源复核.md)。', '',
         '本轮未查询目标赛果、未刷新市场价格、未训练新闻影响系数。概率同向不证明误差独立，分歧幅度不是置信区间；没有以原13场权重替代证据综合。扩样研究候选没有用于本表，也没有把旧预测改写为新生成。']
     (OUT/'本轮五场综合研判.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
     print(json.dumps({'generated_at':now.isoformat(),'fixtures':len(rows), 'assistant_probability_vector':None,

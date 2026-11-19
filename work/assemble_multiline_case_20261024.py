@@ -2,13 +2,14 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.domain import Fixture, OddsSnapshot
 from football_model.multiline import arithmetic_pool, multi_record
 from football_model.odds_history import SourcedOddsSnapshot, select_asof
 from football_model.prospective import market_track
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DEST = ROOT / 'data/prematch-intelligence/20261024_multiline'
 preparation = json.loads((DEST / 'preparation.json').read_text(encoding='utf-8'))
 market = json.loads((DEST / 'market_observation.json').read_text(encoding='utf-8'))

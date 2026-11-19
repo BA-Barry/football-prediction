@@ -2,11 +2,12 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.domain import Fixture
 from football_model.multiline import build_packet
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CONTEXT = ROOT / 'data/prospective_context/20261023T172314505200Z'
 PROJECTION = ROOT / 'outputs/当前球队研究投影_20261023T172816738118Z/球队投影与来源.json'
 DEST = ROOT / 'data/prematch-intelligence/20261024_multiline'

@@ -4,11 +4,12 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.batch_projection import _history
 from football_model.current_projection import load_current_context
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs/批量球队投影_20261024T150805722459Z/批量球队投影与来源.json'
 OUTPUT = ROOT/'outputs/当前人员历史代表性_20261025'
 

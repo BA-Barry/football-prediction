@@ -237,7 +237,7 @@ def report(result):
         f"本轮实际完成2次闭式进球率校准拟合，共3个标量参数。读取{counts['source_parameter_snapshots_read']}份已有球队参数，"
         "0次基础模型重训。较早学习样本" + str(result["earlier"]["n"]) + "场，较晚同场检验" + str(later["n"]) + "场；"
         f"生成{counts['new_research_forecasts']}条独立研究forecast，原{counts['reused_later_source_forecasts']}条原样复用。"
-        "正式模型／原始存档不改，全部新文件和临时文件在G盘。", "",
+        "正式模型／原始存档不改，全部新文件和临时文件在项目目录。", "",
         "## 设计与时间边界", "",
         "只用2024/25旧28天轨的时间外基础λ及真实比分，跨五联赛逐场等权学习；"
         "校准截止2025-08-01，拟合函数执行后才加载2025/26原始CSV和预测。"

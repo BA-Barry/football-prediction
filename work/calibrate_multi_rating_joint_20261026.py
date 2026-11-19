@@ -6,6 +6,7 @@ reading scores. Run only after the root candidate experiment has completed.
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -14,7 +15,7 @@ from football_model.prematch_calibration import fit_calibrator, apply_calibrator
 from run_multi_rating_joint_20261026 import CONTEXT, COMPS, score, comparison
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/多路评级联合接入_20261026'
 FIT_BEFORE = date(2025, 8, 1)
 CALIBRATION_PERIOD = '2024-25'

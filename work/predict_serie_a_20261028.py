@@ -14,6 +14,7 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -28,7 +29,7 @@ from football_model.xg_history import DateTeamXgModel
 from current_rich_model_helpers_20261026 import load_current_rich_sources
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 INPUT = ROOT / 'data/serie_a_today_20261028'
 OUTPUT = ROOT / 'outputs/今日意甲预测_20261028'
 SAVED_TREE = ROOT / 'outputs/当前丰富信息预测_20261026T030805654404Z/丰富信息候选模型.joblib'

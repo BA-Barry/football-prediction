@@ -1,13 +1,13 @@
 """Export sourced news and separate prediction records; no LLM API or training.
 
 Input is a user-reviewed JSON file. Re-running exports the recorded timestamps,
-not a newly observed forecast. Files are ordinary research artifacts on G:.
+not a newly observed forecast. Files are ordinary research artifacts below the
+explicitly supplied project root.
 """
 
 import argparse
 from datetime import datetime, timezone
 import json
-import os
 from pathlib import Path
 
 from .domain import Fixture
@@ -71,9 +71,7 @@ def render_report(payload, packets, records, scores):
 
 
 def run_pilot(root, input_path):
-    root, input_path = Path(root).resolve(), Path(input_path).resolve()
-    if os.name == "nt" and (root.drive.upper() != "G:" or input_path.drive.upper() != "G:"):
-        raise ValueError("Project input and output must stay on G:")
+    root, input_path = Path(root).expanduser().resolve(), Path(input_path).expanduser().resolve()
     payload = json.loads(input_path.read_text(encoding="utf-8-sig"))
     if not isinstance(payload.get("pilot_id"), str) or not payload["pilot_id"].strip():
         raise ValueError("An explicit pilot_id is required")

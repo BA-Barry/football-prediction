@@ -11,6 +11,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -29,7 +30,7 @@ from run_shot_increment_20261025 import score_details
 from current_rich_model_helpers_20261026 import load_current_rich_sources
 from predict_serie_a_20261027 import distribution
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/同日赛前模型一致化_20261027'
 BASE = ROOT / 'outputs/干净基础专家重建_20261025T064408733954Z/clean_base_rows.json'
 OLD = ROOT / 'outputs/固定发布日期信息刷新_20261025T071806561562Z/lead_3'

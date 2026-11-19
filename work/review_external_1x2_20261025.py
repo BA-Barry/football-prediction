@@ -1,9 +1,10 @@
 """Save bounded source review and a numerical label-dependence example."""
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/胜平负核心调研_20261025'
 OUT.mkdir(parents=True, exist_ok=True)
 

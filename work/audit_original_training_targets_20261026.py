@@ -6,12 +6,13 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z'
 FOLDER = SOURCE/'lead_3'
 OUT = ROOT/'outputs/原模型训练测试核查_20261026'

@@ -9,7 +9,6 @@ import argparse
 from collections import Counter
 from datetime import date, datetime, timezone
 import json
-import os
 from pathlib import Path
 import re
 from urllib.request import Request, urlopen
@@ -224,9 +223,7 @@ def parse_text(text, *, season, competition, source_url="", source_path=""):
 
 def reinspect_saved(directory):
     """Reparse retained raw files offline, preserving previous inspection output."""
-    directory = Path(directory).resolve()
-    if os.name == "nt" and directory.drive.upper() != "G:":
-        raise ValueError("All project intake files must stay on G:")
+    directory = Path(directory).expanduser().resolve()
     manifest = json.loads((directory / "intake_summary.json").read_text(encoding="utf-8"))
     created = datetime.now(timezone.utc)
     output = directory / ("inspection_" + created.strftime("%Y%m%dT%H%M%S%fZ"))
@@ -287,9 +284,7 @@ def transition_summary(inspections):
 
 
 def run_intake(root, *, fetch=_fetch):
-    root = Path(root).resolve()
-    if os.name == "nt" and root.drive.upper() != "G:":
-        raise ValueError("All project intake files must stay on G:")
+    root = Path(root).expanduser().resolve()
     started = datetime.now(timezone.utc)
     directory = root / "data" / "english-tiers" / started.strftime("%Y%m%dT%H%M%S%fZ")
     directory.mkdir(parents=True, exist_ok=False)

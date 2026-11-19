@@ -6,6 +6,7 @@ group-specific parameters, current target scoring or forecast replacement.
 from datetime import date,datetime,timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -13,7 +14,7 @@ from football_model.evaluation import probability_scores,calibration_bins
 from football_model.forecast_diagnostics import moving_block_means
 from football_model.prematch_calibration import fit_calibrator,apply_calibrator
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 SOURCE=ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z'
 GROUPS=ROOT/'outputs/近期长期冲突诊断_20261026T034109989122Z'
 CUTOFF=date(2025,8,1)

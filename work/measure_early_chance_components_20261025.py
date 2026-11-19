@@ -4,8 +4,9 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 ARCHIVE = ROOT/'data/understat/roster_seasons_EPL_2023_2024_20261025'
 OUT = ROOT/'outputs/早期预测研究_20261025'
 

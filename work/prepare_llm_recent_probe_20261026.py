@@ -8,8 +8,9 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 CURRENT=ROOT/'data/current_rich_inputs/run_20261026T025507813598Z/understat/EPL_2026.json'
 PRIOR=ROOT/'data/understat/history_20261024T170717354684Z/EPL_2025.json'
 FIXTURES=ROOT/'data/current_rich_inputs/run_20261026T025507813598Z/official-fpl/confirmed_future_fixtures.json'

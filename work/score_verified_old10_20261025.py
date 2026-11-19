@@ -2,10 +2,11 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from bs4 import BeautifulSoup
 from football_model.batch_scoring import run
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 OBS = ROOT / "data/prematch-intelligence/20261024_batch/result_observation_20261024T160147143875Z"
 
 def write(path, data):

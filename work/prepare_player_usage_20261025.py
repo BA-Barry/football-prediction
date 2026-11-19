@@ -3,11 +3,12 @@ from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from statistics import median
 
 from football_model.historical_player_usage import extract_usage, usage_features
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'data/understat/roster_seasons_EPL_2023_2024_20261025'
 OUT = ROOT/'outputs/历史球员使用输入_20261025'
 

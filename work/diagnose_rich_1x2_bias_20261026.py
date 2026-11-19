@@ -2,6 +2,7 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -10,7 +11,7 @@ from football_model.forecast_diagnostics import moving_block_means
 from diagnose_1x2_discrimination_20261025 import pair_rank_auc
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z'
 PRIOR = ROOT/'outputs/丰富模型单温度校准_20261026T045106381635Z'
 CLASS_NAMES = ('home', 'draw', 'away')

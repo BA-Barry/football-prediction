@@ -1,13 +1,14 @@
 """Present completed forecasts without fitting, averaging, or settling anything."""
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 import math
 import shutil
 
 from run_current_rich_forecasts_20261026 import CHINESE
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 OUT=ROOT/'outputs/当前丰富信息预测_20261026T030805654404Z'
 
 
@@ -71,7 +72,7 @@ def main():
         '', '## 下一步与本轮停止点','',
         '本轮停止增加算法和参数搜索，保存已生成概率。后续重点对照这批真实赛前记录的三项概率质量、单项命中和概率可靠性，再根据跨多场的系统偏差决定是否调整。10场只用于前瞻观察，不能单凭它证明总体提升；不会因为一两场输赢即时改权重。',
         '', '原始来源：Football-Data历史与当前CSV、官方FPL、ESPN已完成比分、Understat球队历史。最新10场由ESPN补充，全部80场再与Understat逐场同日、同队、同比分连接。来源路径与取得时间见完整预测与来源.json；旧记录普通逐值核对未改。',
-        '', '全部新数据、模型、记录及脚本均保存在G盘。本次4次固定拟合、0轮参数搜索；模型保存后复现一致，10场概率轴与概率和已核对，没有结算目标赛果。']
+        '', '全部新数据、模型、记录及脚本均保存在项目目录。本次4次固定拟合、0轮参数搜索；模型保存后复现一致，10场概率轴与概率和已核对，没有结算目标赛果。']
     (OUT/'本轮预测与优化结论.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps({'report':str(OUT/'本轮预测与优化结论.md'),'disagreement_matches':changes,
         'llm_probs':[{'home':r['home_label'],'away':r['away_label'],'p':r['current_llm']['probabilities']} for r in rows]},ensure_ascii=False))

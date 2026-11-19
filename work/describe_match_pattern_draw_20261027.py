@@ -2,8 +2,9 @@
 from collections import Counter
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/历史比赛模式与平局分支_20261027'
 
 
@@ -113,7 +114,7 @@ def main():
         '本轮统计块只提供无条件历史描述，原其他输入虽已有实力信息，仍不能据此宣称上述条件化问题已解决。'
         '下一步先复用现成记录与公开研究确认可补足的具体信息；涉及重新定义学习目标或主客分工时先讨论。', '',
         '本轮停止点已达到：一次完整两季前推完成。当前预测和LLM／市场线路保留，不把同向当加置信度，'
-        '未复核新赛果、未新安装依赖、未把旧历史成绩当作当前预测准确率。所有新增文件、模型、缓存均在G盘。', '',
+        '未复核新赛果、未新安装依赖、未把旧历史成绩当作当前预测准确率。所有新增文件、模型、缓存均在项目目录。', '',
         f'[信息借鉴与解释边界]({OUT.as_posix()}/信息补充依据与解释边界.md) · '
         f'[完整数值]({OUT.as_posix()}/两季完整结果.json) · '
         f'[逐场概率]({OUT.as_posix()}/逐场概率与纠错.json) · '

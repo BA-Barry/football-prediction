@@ -143,8 +143,8 @@ def main():
         '英超官方已公布：联赛第8与第9轮之间、10月26日开始的一周安排联赛杯第四轮，13支英超球队参与。该轮处于本次资料截止与目标联赛之间；这是已知计划信息，尚未计入本轮历史完赛特征。[官方赛程说明](https://www.premierleague.com/en/news/4698490/)。', '',
         '当前特征只计算已经完成的比赛，不把计划赛程当已发生负荷，也不估计届时轮换。赛前后续需要真实更新，这份提前数日的预测不能覆盖尚未发生的比赛过程；已公布赛程可以继续作为独立解释资料，不能直接换成手写概率扣分。', '',
         '日期级历史信息和供应商覆盖限制仍在；全赛事输入完整并不保证其关系跨赛季适用。当前无已结算赛果，初始评分0场，不作准确率、价值赔率或串关结论。', '',
-        '本轮停止点：已完成单日取数修复、实际窗口核对、原模型重放及10场独立前瞻。新训练0、调参0、新LLM调用0，原预测未修改，全部文件和请求缓存在G盘。', '',
-        '[数据覆盖报告](G:/Codex/football-prediction-2026-10-22/data/current_all_competition/daily_20261027/coverage_report.json)；[完整三项概率与输入](G:/Codex/football-prediction-2026-10-22/outputs/全赛事缺口修复与预测_20261027/完整对照与输入.json)。']
+        '本轮停止点：已完成单日取数修复、实际窗口核对、原模型重放及10场独立前瞻。新训练0、调参0、新LLM调用0，原预测未修改，全部文件和请求缓存在项目目录。', '',
+        '[数据覆盖报告](../../data/current_all_competition/daily_20261027/coverage_report.json)；[完整三项概率与输入](../../outputs/全赛事缺口修复与预测_20261027/完整对照与输入.json)。']
     (OUTPUT/'修复结果与独立预测.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     print(json.dumps({'output': str(OUTPUT), 'forecasts': len(records), 'fits': 0,
         'same161_changed_top': changed_top, 'max_probability_change_pp': largest_change,

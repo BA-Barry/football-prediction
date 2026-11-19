@@ -9,11 +9,12 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from run_npxg_comparison_20261025 import load_source
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/持续状态净胜球研究_20261028'
 TARGET_SOURCE = ROOT / 'outputs/对手校正攻防模式整合_20261027/逐场概率与分量.json'
 SEASONS = ('2022/23', '2023/24', '2024/25', '2025/26')

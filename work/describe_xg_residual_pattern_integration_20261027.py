@@ -9,11 +9,12 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.xg_residual_patterns import FEATURE_NAMES
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/对手校正攻防模式整合_20261027'
 TRACKS = ('original', 'existing_draw', 'residual_only', 'combined')
 NAMES = {'original': '原丰富模型', 'existing_draw': '已有平局整合',

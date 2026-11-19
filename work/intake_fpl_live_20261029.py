@@ -9,12 +9,13 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'data/epl_personnel_live_20261029'
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(ROOT / 'model_v2/src'))

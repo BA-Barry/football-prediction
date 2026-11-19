@@ -191,9 +191,7 @@ def inspect_match(metadata, record, score_path):
 
 
 def run(root, source):
-    root, source = Path(root).resolve(), Path(source).resolve()
-    if root.drive and root.drive.upper() != "G:" or source.drive and source.drive.upper() != "G:":
-        raise ValueError("Project, source and output must remain on G:")
+    root, source = Path(root).expanduser().resolve(), Path(source).expanduser().resolve()
     catalogue_path = root / "data/impect/feasibility_20261023/matches_743.json"
     selection_path = source / "selection.json"
     catalogue = selected_catalogue(read(catalogue_path), read(selection_path))

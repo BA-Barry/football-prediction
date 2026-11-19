@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "football-model-research"
+version = "0.52.1"
+description = "Time-aware football score probabilities and auditable statistical / LLM research"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.14",
+  "scikit-learn>=1.6",
+  "penaltyblog==1.13.1",
+  "kickscore==0.2.0",
+  "statsmodels==0.15.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+multi-rating = ["xgboost==3.4.1"]
+archive-data = ["pyreadr==0.5.8"]
+
+[project.scripts]
+football-model-demo = "football_model.demo:main"
+
+[project.urls]
+Repository = "https://github.com/BA-Barry/football-prediction"
+Documentation = "https://github.com/BA-Barry/football-prediction#readme"
+
+[tool.setuptools.packages.find]
+where = ["model_v2/src"]
+
+[tool.setuptools.package-data]
+football_model = ["vendor/*.txt"]
+
+[tool.pytest.ini_options]
+pythonpath = ["model_v2/src", "work"]
+testpaths = ["model_v2/tests"]
+cache_dir = "work/pytest-cache"

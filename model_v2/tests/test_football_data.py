@@ -18,7 +18,7 @@ def row(**changes):
 
 def parse(value, competition="E0", season="2024/25"):
     return parse_row(value, competition=competition, season=season,
-                     source_path="G:/local.csv", source_url="https://example.test/source.csv")
+                     source_path="synthetic/local.csv", source_url="https://example.test/source.csv")
 
 
 def write_csv(path, values):

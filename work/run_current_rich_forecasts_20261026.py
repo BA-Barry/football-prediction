@@ -6,6 +6,7 @@ from __future__ import annotations
 
 from datetime import date, datetime, timezone
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import csv
 import json
 import math
@@ -21,7 +22,7 @@ from football_model.xg_history import DateTeamXgModel
 from football_model.fixed_horizon_features import PreparedPredictionFeatures
 from football_model.prospective import _time
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 INPUT = ROOT/'data/current_rich_inputs/run_20261026T025507813598Z'
 OLD = ROOT/'data/prematch-intelligence/20261024_batch/run_20261024T150900467071Z/batch_case.json'
 FEATURES = ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z/features_lead3.json.gz'

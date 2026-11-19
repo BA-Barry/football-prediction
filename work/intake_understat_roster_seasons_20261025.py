@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import shutil
 import time
 
@@ -12,7 +13,7 @@ import requests
 from football_model.football_data import load_directory
 from football_model.xg_history import join_understat
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 PILOT = ROOT/'data/understat/roster_pilot_20261024T183946498125Z'
 DEFAULT = ROOT/'data/understat/roster_seasons_EPL_2023_2024_20261025'
 
@@ -54,8 +55,8 @@ def main():
     parser.add_argument('--directory', type=Path, default=DEFAULT)
     args = parser.parse_args()
     target = args.directory.resolve()
-    if target.drive.casefold() != 'g:':
-        raise ValueError('User requires all archive storage on G:')
+    if not target.is_relative_to(REPOSITORY_ROOT):
+        raise ValueError('Archive storage must remain below the project root')
     target.mkdir(parents=True, exist_ok=True)
     (target/'raw').mkdir(exist_ok=True)
     (target/'receipts').mkdir(exist_ok=True)

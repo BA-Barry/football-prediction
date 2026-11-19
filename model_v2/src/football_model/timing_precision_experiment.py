@@ -440,7 +440,7 @@ def complete_report(root, output):
         "第二赛季只能先称跨赛季／跨提供商方法复验，不能单独归因于年份。"
         "原xG分轨、市场双轨、新球员严格未知处理均保留；当前正式赛前概率未变。", "",
         "来源：[Hudl/StatsBomb Open Data](https://github.com/hudl/open-data)，"
-        "原始数据、许可与历史下载记录仍留G盘data/，不随源码包分发。"
+        "原始数据、许可与历史下载记录仍留项目目录data/，不随源码包分发。"
         "测量设置、逐场拒绝原因、共同场路径、参数及逐场强度结果在本目录JSON中可复核。", ""]
     (output / "换人分钟精度测量说明.md").write_text("\n".join(lines), encoding="utf-8")
     return output

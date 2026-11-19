@@ -3,11 +3,12 @@ from collections import Counter
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.native_experiment import load_seasons
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/全赛事赛程可用性_20261025'
 FD = ROOT/'data/football-data/2023-24/20261022T113804786593Z'
 EXTRA_ALIASES = {

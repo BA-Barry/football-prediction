@@ -2,12 +2,13 @@
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 from football_model.kickscore_model import KickScoreOutcomeModel
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/动态胜平负接入_20261025'
 CUTOFF = date(2024, 8, 15)
 COMPS = ('E0', 'D1', 'SP1', 'I1', 'F1')

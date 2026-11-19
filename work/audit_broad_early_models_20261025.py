@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -13,7 +14,7 @@ from scipy.stats import poisson, skellam
 
 from football_model.native_experiment import load_seasons
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/多信息多算法前推_20261025T060704977450Z'
 ARMS = ('glm_basic', 'glm_rich', 'hgb_basic', 'hgb_rich', 'extra_trees_rich')
 

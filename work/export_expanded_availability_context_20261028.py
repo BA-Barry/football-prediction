@@ -9,10 +9,11 @@ from datetime import datetime, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from intake_fpl_availability_20261026 import DATA, MEASUREMENTS, archive_index, utc
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 BASE = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练/扩样合并特征.json.gz'
 PREVIOUS = ROOT/'outputs/FPL历史可用性接入_20261026/逐场赛前状态特征.json.gz'
 EXPOSURE = ROOT/'outputs/FPL可用性变化与参与接入_20261026/逐场变化参与特征.json.gz'

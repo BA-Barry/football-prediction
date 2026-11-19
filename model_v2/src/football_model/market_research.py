@@ -235,7 +235,7 @@ def run_research(task_root: Path, parent: Path):
                "方法之间的差异只反映分配水差的假设；不能称为真实概率、置信区间、预测准确率提升或投注盈利。",
                "实验设计技能限定三法、同场同报价；统计分析技能要求保留全部结果与缺失。正式方法/融合仍保持不变。", "",
                "来源：[penaltyblog官方API](https://penaltyblog.readthedocs.io/en/latest/implied/implied.html)。",
-               "全部新增代码、CSV、结果和缓存位于G盘，无新依赖、hash、冻结contract或gate。"]
+               "全部新增代码、CSV、结果和缓存位于项目目录，无新依赖、hash、冻结contract或gate。"]
     destination = output/"市场去水研究说明.md"
     destination.write_text("\n".join(report)+"\n", encoding="utf-8")
     return result, destination

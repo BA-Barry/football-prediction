@@ -3,8 +3,9 @@ from copy import deepcopy
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT / 'data/epl_personnel_live_20261029'
 
 

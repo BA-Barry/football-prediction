@@ -276,7 +276,7 @@ def report(result):
         "本轮新代码为原创适配与统计编排，复用既有SciPy联合模型；没有新下载、依赖安装或原数据改写。", "",
         "来源：[Hudl/StatsBomb Open Data](https://github.com/hudl/open-data)，"
         "[独立Football-Data 2015/16比分](https://www.football-data.co.uk/mmz4281/1516/E0.csv)。"
-        "原始数据条款、下载记录留G盘data，不随源码分发。", ""]
+        "原始数据条款、下载记录留项目目录data，不随源码分发。", ""]
     return "\n".join(lines)
 
 

@@ -10,12 +10,13 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.forecast_diagnostics import moving_block_means
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 SOURCE=ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z'
 
 

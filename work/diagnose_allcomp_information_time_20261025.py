@@ -3,12 +3,13 @@ from collections import Counter
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.all_competition_features import AllCompetitionFeatures, LEAGUE_SLUGS
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/完整清理与全赛事联合模型_20261025T064817840440Z'
 WEEKDAYS = ('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday')
 

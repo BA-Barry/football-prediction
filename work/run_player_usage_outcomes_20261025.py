@@ -2,6 +2,7 @@
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -9,7 +10,7 @@ import joblib
 from football_model.player_usage_outcome import PlayerUsageOutcomeLearner as UsageOutcomeLearner
 from run_direct_outcomes_20261025 import load_rows, score_track
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/历史球员使用输入_20261025'
 SOURCE = ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z'
 OLD = ROOT/'outputs/直接胜平负分类研究_20261025T091329913808Z'

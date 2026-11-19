@@ -2,8 +2,9 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-RUN = Path('G:/Codex/football-prediction-2026-10-22/outputs/进球xG共同训练记录_20261024T174247963857Z')
+RUN = REPOSITORY_ROOT / Path('outputs/进球xG共同训练记录_20261024T174247963857Z')
 
 
 def main():

@@ -4,6 +4,7 @@ from datetime import date
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from scipy.optimize import brentq
@@ -12,7 +13,7 @@ from scipy.special import gammaln
 from run_npxg_comparison_20261025 import pairs, load_source
 from run_shot_increment_20261025 import write
 
-OUT = Path('G:/Codex/football-prediction-2026-10-22/outputs/干净基础专家重建_20261025T064408733954Z')
+OUT = REPOSITORY_ROOT / Path('outputs/干净基础专家重建_20261025T064408733954Z')
 
 
 def main():

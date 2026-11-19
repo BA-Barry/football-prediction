@@ -9,12 +9,13 @@ import csv
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-ROOT = Path("G:/Codex/football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 sys.path.insert(0, str(ROOT / "model_v2" / "src"))
 from football_model.football_data import LEAGUES, load_directory
 

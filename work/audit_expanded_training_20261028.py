@@ -5,6 +5,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -15,7 +16,7 @@ from football_model.fixed_horizon_features import PreparedPredictionFeatures
 from run_broad_early_models_20261025 import observations
 from run_npxg_comparison_20261025 import load_source
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练'
 FEATURE = 'fresh_performance_features'
 

@@ -4,6 +4,7 @@ from datetime import date, datetime, timedelta, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from scipy.special import gammaln
@@ -15,7 +16,7 @@ from football_model.probability import score_grid, summarize
 from football_model.refresh_experiment import scores_for, prediction_arrays
 from football_model.shot_increment import ShotObservation, history_features, OffsetShotModel
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SHAPES = ROOT / 'outputs/比分形态诊断_20261023T123154423712Z'
 SAVED = ROOT / 'outputs/统计市场固定融合研究_20261024T120045031283Z/统计市场融合结果.json'
 

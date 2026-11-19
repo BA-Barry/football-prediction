@@ -1,8 +1,9 @@
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from collections import Counter
 import json
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/阶段尝试总复盘_20261026'
 OUT.mkdir(parents=True, exist_ok=True)
 SRC = ROOT / 'model_v2/src/football_model'

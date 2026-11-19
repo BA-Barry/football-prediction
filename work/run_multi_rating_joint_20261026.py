@@ -10,6 +10,7 @@ import gc
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -21,7 +22,7 @@ from football_model.multi_rating import build_rating_features
 from football_model.multi_rating_xgb import FixedMultiRatingXGB, FIXED_CONFIGURATION
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/多路评级联合接入_20261026'
 SOURCE = ROOT/'outputs/固定发布日期信息刷新_20261025T071806561562Z'
 AVAILABILITY = ROOT/'outputs/FPL历史可用性接入_20261026/逐场赛前状态特征.json.gz'

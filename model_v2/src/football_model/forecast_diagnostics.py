@@ -371,7 +371,7 @@ def report(result):
         f"[arch非环形移动块定义]({SOURCES['moving_blocks']})；"
         f"[scikit-learn校准与评分边界]({SOURCES['calibration']})。"
         "只参考方法；本轮NumPy实现，无复制上游代码、无安装arch、无新增依赖或数据下载。", "",
-        "所有新增文件与运行临时目录在G盘。逐场CSV、共享IDs、全部箱表、按月／联赛评分和区间元数据随结果保留；"
+        "所有新增文件与运行临时目录在项目目录。逐场CSV、共享IDs、全部箱表、按月／联赛评分和区间元数据随结果保留；"
         "原始数据、已有模型和预测文件不改写。", ""]
     return "\n".join(lines)
 

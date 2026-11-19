@@ -3,10 +3,11 @@ from collections import Counter
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.all_competition_features import AllCompetitionFeatures
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs/全赛事赛程可用性_20261025'
 OUT = ROOT/'outputs/全赛事负荷特征接入_20261025'
 

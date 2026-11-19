@@ -8,9 +8,10 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/模型LLM融合研究_20261028'
 EVALUATION = ROOT/'outputs/前瞻评价接续_20261027/分组前瞻记录与评价.json'
 SINGLE = ROOT/'data/prematch-intelligence/20261024_multiline'
@@ -226,7 +227,7 @@ def main():
         'forward_group_rule':'For any reconstructed fold, every training result_available_at must precede the earliest forecast_generated_at of the whole target forecast group. Never feed a result from a simultaneous/batch target into the same group.',
         'source_evaluation':str(EVALUATION),'settled_source_paths':[str(p) for p in result_paths],
         'new_fits':0,'new_llm_calls':0,'new_result_lookups':0,'old_forecasts_modified':False,
-        'all_new_files_on_g':True,
+        'all_new_files_below_project_root':True,
         'limitations':[
             'All exact LLM model IDs remain unknown; multiple prompt policies are not independent model vendors.',
             'Local self-declarations and archived packets do not independently authenticate full prior execution context or exclude pretrained outcome memory.',
@@ -254,7 +255,7 @@ def main():
         f'10场英超结果最晚于{data["temporal_research_prefix"]["latest_earlier_result_available_at"]}归档可得，早于三场意甲最早原概率生成{data["temporal_research_prefix"]["earliest_later_component_generation_at"]}。可用原10场学权重，再在后3场重建检验；该联合是今天新学，并非昨天真实发布的联合命中。','',
         '这还是英超到意甲、不同描述信息政策的迁移，小样本结果不证明普遍权重。当前可用全部13场学习一个探索性权重，供真正尚未开始的新联合预测；13场训练得分只能说明拟合，不能用于证明权重效果。','',
         '前推必须按整批预测生成日分组：训练赛果available_at早于目标整批最早概率生成时间。不能用同批先踢完的一场结果回头给该批原先已生成的其他概率选权重；finished_by是已观察完场的上界，不是假造真实终场时刻。','',
-        'JSON中每场保留原统计模型、原回答身份与暴露声明、两个生成时间、原记录as_of、结果首次可用时间、来源路径、所有未选版本和市场不参与学习的声明。所有新文件在G盘。','']
+        'JSON中每场保留原统计模型、原回答身份与暴露声明、两个生成时间、原记录as_of、结果首次可用时间、来源路径、所有未选版本和市场不参与学习的声明。所有新文件在项目目录。','']
     (OUT/'样本说明.md').write_text('\n'.join(lines),encoding='utf-8')
     print(json.dumps({'output':str(OUT),'counts':data['counts'],'temporal_prefix':data['temporal_research_prefix']},ensure_ascii=False))
 

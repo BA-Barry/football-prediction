@@ -14,10 +14,10 @@ The license is in `licenses/sparsity-sports-forecasting.txt`. New source changes
 
 ## Full candidate execution
 
-`work/run_multi_rating_joint_20261026.ps1` configures the G-drive runtime and runs the complete study. The preparer `work/prepare_multi_rating_observations_20261026.py` uses only existing, exactly matched historical files. The runner has `--prepare-only` and `--reuse-prepared` options; invoking the full run fits the two declared candidates rather than silently selecting a winner.
+`work/run_multi_rating_joint_20261026.ps1` configures the project-local runtime and runs the complete study. The preparer `work/prepare_multi_rating_observations_20261026.py` uses only existing, exactly matched historical files. The runner has `--prepare-only` and `--reuse-prepared` options; invoking the full run fits the two declared candidates rather than silently selecting a winner.
 
 The classifier `football_model.multi_rating_xgb.FixedMultiRatingXGB` uses local H=0/D=1/A=2 coding, native NaN and explicit modern defaults (100 rounds, depth 6, learning rate 0.3, uniform fixture weights). Its output is 1X2 only. The core design has 43 inputs; the full joint design has 236, including existing dated performance, schedules and EPL availability descriptions. Current odds, target lineup values and LLM judgments are not silently substituted into missing fields.
 
 The first full study completed 44 main classifier fits and 10 chronological shot-adjustment fits. Two subsequent temperatures reused earlier out-of-sample 2024/25 predictions, were fixed before 2025/26, and did not alter the predicted top classes. Both new candidates remain below the original system on the complete later-season cohort. They remain reusable research components with measured complementary errors; this does not establish either universal inferiority or deployable ensemble improvement.
 
-Results and all saved models: [study report](G:/Codex/football-prediction-2026-10-22/outputs/多路评级联合接入_20261026/本轮完成与下一步.md). XGBoost 3.4.1 was installed in the G-drive `.venv`; the optional dependency group is `multi-rating`.
+Results and all saved models: [study report](../outputs/多路评级联合接入_20261026/本轮完成与下一步.md). XGBoost 3.4.1 was installed in the project-local `.venv`; the optional dependency group is `multi-rating`.

@@ -8,6 +8,7 @@ from datetime import date, datetime, timedelta, timezone
 import importlib.metadata
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import shutil
 import sys
 import time
@@ -17,7 +18,7 @@ import joblib
 from football_model.gap_model import GAPState, STATISTICS, optimize_gap_updates
 from football_model.gap_outcome import GAPOutcomeModel
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 OUT=ROOT/'outputs/GAP胜平负研究_20261025'
 SOURCE=ROOT/'outputs/多项进攻统计接入_20261025/历史多项统计.json'
 OLD=ROOT/'outputs/直接胜平负分类研究_20261025T091329913808Z/lead_3/逐场胜平负概率.json'

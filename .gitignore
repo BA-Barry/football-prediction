@@ -1,10 +1,13 @@
 # Repository contents: source, tests, research notes and a small saved run.
-# Raw datasets, caches and large experiment artifacts stay on the G drive.
+# Raw datasets, caches and large experiment artifacts stay outside Git.
 /*
 !/.gitignore
 !/.gitattributes
 !/README.md
 !/DATA_AND_ARTIFACTS.md
+!/pyproject.toml
+!/scripts/
+!/docs/
 !/model_v2/
 !/work/
 !/outputs/
@@ -14,6 +17,11 @@
 /model_v2/*.egg-info/
 /model_v2/build/
 /model_v2/dist/
+/*.egg-info/
+**/*.egg-info/
+
+!/scripts/**
+!/docs/**
 
 /work/*
 !/work/*.py

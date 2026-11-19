@@ -3,9 +3,10 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import sys
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 sys.path.insert(0, str(ROOT / "work"))
 from observe_batch_results_20261024 import download, write_json, stamp
 

@@ -3,6 +3,7 @@ from datetime import date,datetime,timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -14,7 +15,7 @@ from football_model.forecast_diagnostics import moving_block_means
 from football_model.probability import score_grid,summarize
 from run_shot_increment_20261025 import score_details,write
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 CROSS=ROOT/'outputs/独立xG跨联赛复现_20261024T172741074372Z/跨联赛xG复现结果.json'
 EPL=ROOT/'outputs/独立历史xG前推_20261024T171031805341Z/独立xG前推结果.json'
 BLEND=ROOT/'outputs/进球xG单权重融合_20261024T173226297740Z/进球xG单权重融合结果.json'
@@ -201,7 +202,7 @@ def main():
     report+=['', '## 解释范围', '',
              '这个实际对照移除了训练ID和权重不同这一具体混杂因素，并不消除历史xG的发布时间／修订未知、两季赛果已被查看、参数与模型选择不确定性未纳入条件区间等限制。未把一次历史改善当作未来命中率保证。', '',
              '保留固定旧权重与早季重估权重两条输出，不依据后季结果选一条再改报告。逐联赛及全部次指标完整保留，不加联赛专属权重，不改变原预测或LLM／市场线路。', '',
-             '没有新增hash、冻结contract或发布门禁；新增拟合用于测量明确的数据处理混杂，普通ID、类型和算术测试本身不能替代这项实测。所有产物与临时文件在G盘。', '']
+             '没有新增hash、冻结contract或发布门禁；新增拟合用于测量明确的数据处理混杂，普通ID、类型和算术测试本身不能替代这项实测。所有产物与临时文件在项目目录。', '']
     (target/'共同训练记录融合说明.md').write_text('\n'.join(report),encoding='utf-8')
     print(json.dumps({'directory':str(target),'new_goal_fits':new_count,'reused_goal_fits':reused,
         'old_weight':old_weight,'new_weight':new_weight,'later_n':later['n'],

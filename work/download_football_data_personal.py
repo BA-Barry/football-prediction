@@ -6,11 +6,12 @@ No model imports, fitting, scraping of other pages, mirrors, or retry bypasses.
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-ROOT = Path("G:/Codex/football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 FILES = (("E0", "英超"), ("D1", "德甲"), ("SP1", "西甲"), ("I1", "意甲"), ("F1", "法甲"))
 
 

@@ -6,9 +6,10 @@ import csv
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import unicodedata
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'data/historical_context_20261028/coach_sources'
 TARGETS = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练/扩样合并特征.json.gz'
 TM_COMP = {'E0':'GB1','D1':'L1','F1':'FR1','I1':'IT1','SP1':'ES1'}

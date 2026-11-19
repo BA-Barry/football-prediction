@@ -1,13 +1,14 @@
 """Archive separate Serie A forecast routes and a readable prematch report."""
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 import math
 
 from football_model.domain import Fixture
 from football_model.multiline import multi_record,score_multi
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 DATA=ROOT/'data/serie_a_today_20261027'
 OUT=ROOT/'outputs/今日意甲预测_20261027'
 BJ=timezone(timedelta(hours=8))
@@ -97,7 +98,7 @@ def main():
         'new_statistical_fits':2,'new_tree_fits':0,'parameter_searches':0,'llm_batches':1})
     lines=['# 今晚意甲赛前预测', '',
         '本报告按意大利当地2026年10月27日晚的3场比赛生成；北京时间均为10月28日凌晨。北京时间10月27日剩余时段没有这3场开球，日期不混写。[意甲官方赛程](https://www.legaseriea.it/serie-a/news/quando-si-gioca-anticipi-e-posticipi-fino-alla-12a-giornata)。', '',
-        f'统计生成：北京时间{datetime.fromisoformat(stats["generated_at"]).astimezone(BJ):%m-%d %H:%M:%S}；独立LLM生成：{datetime.fromisoformat(lm["generated_at"]).astimezone(BJ):%m-%d %H:%M:%S}；市场采集：{datetime.fromisoformat(quotes["observed_at"]).astimezone(BJ):%m-%d %H:%M:%S}。均早于开球，全部新增资料、模型及结果在G盘。', '',
+        f'统计生成：北京时间{datetime.fromisoformat(stats["generated_at"]).astimezone(BJ):%m-%d %H:%M:%S}；独立LLM生成：{datetime.fromisoformat(lm["generated_at"]).astimezone(BJ):%m-%d %H:%M:%S}；市场采集：{datetime.fromisoformat(quotes["observed_at"]).astimezone(BJ):%m-%d %H:%M:%S}。均早于开球，全部新增资料、模型及结果在项目目录。', '',
         '## 主胜／平局／客胜', '',
         '三项分别列出，不用双选覆盖代替单项命中。进球主线按现有固定设置重算意甲历史，xG独立对照；丰富研究列复用含意甲训练样本的121项树模型。各线保留，不简单平均。', '',
         '| 北京时间 | 比赛 | 进球主线% | 独立xG% | 丰富研究列% | 独立LLM% | 市场去水% |',
@@ -142,7 +143,7 @@ def main():
         '121项树直接加载原模型：总训练6967场，其中意甲1493场，训练最晚2026-05-24。本轮没有重训树；同日特征仅用10月27日前的比赛，日期真实，不把北京时间28日改作意大利目标日期以绕过时间限制。同日组装公式已与原较早日期接口逐字段核对726项一致，保存重载预测一致；这些是输入与保存正确性检查，不能替代泛化验证。', '',
         '三场LLM只读无其他路线概率的球队／赛程／官方消息包；未看市场、统计或其他LLM概率，身份无法确知记unknown。独立仅指输入暴露状态，共用事实仍会导致相关错误。未取得本场正文的队伍不当作全员健康，10月10日或21日旧伤情不外推今晚必缺，已持续伤缺不机械重复扣分。', '',
         '本轮3场各自保留3种统计版本，复用的LLM与市场不会算成9场独立比赛；意甲记录与原英超20场分开，不改原预测。新训练为固定进球／xG各1次，新树训练0，调参0，新LLM整批1次；赛果全部留空，首次前瞻评分0场，不声称命中率或盈利已验证。', '',
-        '[全部路线概率、价格及来源](G:/Codex/football-prediction-2026-10-22/outputs/今日意甲预测_20261027/多线概率与价值对照.json)；[完整比分分布](G:/Codex/football-prediction-2026-10-22/outputs/今日意甲预测_20261027/统计预测与比分分布.json)；[进球主线前瞻记录](G:/Codex/football-prediction-2026-10-22/outputs/今日意甲预测_20261027/前瞻记录_goal_simple.json)。']
+        '[全部路线概率、价格及来源](../../outputs/今日意甲预测_20261027/多线概率与价值对照.json)；[完整比分分布](../../outputs/今日意甲预测_20261027/统计预测与比分分布.json)；[进球主线前瞻记录](../../outputs/今日意甲预测_20261027/前瞻记录_goal_simple.json)。']
     (OUT/'今晚意甲预测.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps({'output':str(OUT/'今晚意甲预测.md'),'unique_fixtures':3,'statistical_versions':3,'llm_batches':1,'settled':0},ensure_ascii=False))
 

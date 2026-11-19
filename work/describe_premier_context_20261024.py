@@ -1,8 +1,9 @@
 """Check observed current supplemental results and describe each team's rows."""
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 CONTEXT = ROOT / "data" / "prospective_context" / "20261023T172314505200Z"
 
 

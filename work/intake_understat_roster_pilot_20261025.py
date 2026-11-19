@@ -1,14 +1,15 @@
-"""Fetch a small deterministic historical roster sample, with all storage on G:."""
+"""Fetch a small deterministic historical roster sample below the project root."""
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import requests
 
 from football_model.football_data import load_directory
 from football_model.xg_history import join_understat
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 AUDIT = ROOT/'outputs/跨联赛xG源核对_20261024T172403681186Z/逐季源差异.json'
 SLUGS = {'E0':'EPL','D1':'Bundesliga','SP1':'La_Liga','I1':'Serie_A','F1':'Ligue_1'}
 

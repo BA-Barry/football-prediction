@@ -343,7 +343,7 @@ def test_unsupported_empty_fold_stops_instead_of_dropping_a_window(tmp_path, mon
     assert not (output / experiment.RESULT_FILE).exists()
 
 
-def test_cli_default_paths_are_anchored_at_g_project_not_package(tmp_path, monkeypatch, capsys):
+def test_cli_default_paths_are_anchored_at_checkout_not_package(tmp_path, monkeypatch, capsys):
     calls = []
     def run(root, parent, output):
         calls.append((root, parent, output))
@@ -353,8 +353,7 @@ def test_cli_default_paths_are_anchored_at_g_project_not_package(tmp_path, monke
     experiment.main()
     root, parent, output = calls[0]
     assert root == Path(experiment.__file__).resolve().parents[3]
-    assert root.name == "football-prediction-2026-10-22"
-    assert root.drive.upper() == "G:"
+    assert (root / "model_v2" / "pyproject.toml").is_file()
     assert parent == root / "outputs" / "更新频率研究_20261023T073047979805Z"
     assert output == tmp_path / "chosen"
     assert json.loads(capsys.readouterr().out)["nu_path"] == [1.2]

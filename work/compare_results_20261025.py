@@ -7,11 +7,12 @@ from copy import deepcopy
 from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from statistics import mean
 
 from football_model.multiline import TRACKS, score_multi
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/赛果对比_20261025'
 ORIGINAL = ROOT/'outputs/五线赛果评分_20261024T163356973597Z/原赛前记录及新增赛果.json'
 REVISION = ROOT/'outputs/五线赛果评分_20261024T163357044590Z/原赛前记录及新增赛果.json'

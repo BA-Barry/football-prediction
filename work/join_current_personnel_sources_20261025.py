@@ -3,13 +3,14 @@ import csv
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import requests
 
 from football_model.football_data import _date, parse_row
 from football_model.xg_history import COMPETITION_TEAM_NAMES, join_understat
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CURRENT = ROOT/'data/football-data/2026-27/personnel_20261025'
 OUTPUT = ROOT/'outputs/当前人员历史代表性_20261025/独立比赛连接.json'
 CUTOFF = date(2026, 10, 25)

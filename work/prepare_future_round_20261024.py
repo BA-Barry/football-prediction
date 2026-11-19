@@ -7,11 +7,12 @@ import argparse
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from shutil import copyfile
 
 from football_model.current_projection import ALIASES, load_current_context
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OLD = ROOT / 'data/prospective_context/20261023T175004Z_completed'
 FPL_NAMES = {
     'Arsenal': 'Arsenal FC', 'Aston Villa': 'Aston Villa FC',
@@ -42,8 +43,8 @@ def main():
     parser.add_argument('--confirmed-case', type=Path)
     args = parser.parse_args()
     snapshot = args.snapshot.resolve()
-    if snapshot.drive.upper() != 'G:':
-        raise ValueError('Keep project observations on G')
+    if not snapshot.is_relative_to(REPOSITORY_ROOT):
+        raise ValueError('Project observations must remain below the project root')
     now = datetime.now(timezone.utc)
     metadata = read(snapshot / 'source_metadata.json')
     source = metadata['sources']['fixtures']
@@ -81,8 +82,8 @@ def main():
     confirmed_added = []
     if args.confirmed_case is not None:
         confirmed_path = args.confirmed_case.resolve()
-        if confirmed_path.drive.upper() != 'G:':
-            raise ValueError('Keep confirmed observations on G')
+        if not confirmed_path.is_relative_to(REPOSITORY_ROOT):
+            raise ValueError('Confirmed observations must remain below the project root')
         confirmed = read(confirmed_path)
         source_fixtures = {r['match_id']: r for r in read(ROOT / 'data/prematch-intelligence/20261024_batch/fixtures.json')['fixtures']}
         for ident, result in confirmed['results'].items():

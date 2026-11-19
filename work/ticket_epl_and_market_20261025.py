@@ -7,11 +7,12 @@ from itertools import product
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.date_model import DateTeamGoalModel
 from football_model.probability import score_grid, summarize
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/用户六串一分析_20261025'
 OUT.mkdir(parents=True, exist_ok=True)
 SAVED = ROOT / 'outputs/批量球队投影_20261024T150805722459Z/批量球队投影与来源.json'

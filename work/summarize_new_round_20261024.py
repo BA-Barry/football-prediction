@@ -4,11 +4,12 @@ from datetime import datetime, timezone, timedelta
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.multiline import TRACKS, score_multi
 from football_model.prospective import _time
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OLD_SCORE = ROOT / 'outputs/五线赛果评分_20261024T150438997728Z/原赛前记录及新增赛果.json'
 COHORT = ROOT / 'data/prematch-intelligence/NEW20261024_cohort_20261024T150344311377Z'
 FAILURES = ROOT / 'outputs/前瞻失误复核_20261024T150602478007Z/前瞻失误复核说明.md'
@@ -34,8 +35,8 @@ def main():
     now = datetime.now(timezone.utc)
     case_path = args.case.resolve()
     export_report = args.export_report.resolve()
-    if any(p.drive.upper() != 'G:' for p in (case_path, export_report)):
-        raise ValueError('Project artifacts must remain on G')
+    if any(not p.is_relative_to(REPOSITORY_ROOT) for p in (case_path, export_report)):
+        raise ValueError('Project artifacts must remain below the project root')
     new, old = read(case_path), read(OLD_SCORE)
     projection = read(Path(new['projection_path']))
     new_ids = {r['fixture']['match_id'] for r in new['records']}
@@ -115,7 +116,7 @@ def main():
                '## 后续优化次序', '',
                '先用原概率累计这20个不同比赛的结果，报告同场Log loss、Brier、覆盖与按轮差异。新批次距开球约一周，下一次补充临近开场的确认名单及最新信息时，应保存为新版本，不能覆盖本次或在开场后回填。', '',
                '优先检查杯赛和伤停资料是否产生有来源、可重复的LLM增量，以及不同时间版本是否改善概率评分。统计线继续追踪平局及热门组的概率偏差；此前概率校准、衰减、收缩和分布方案已有研究，不换名字继续搜同一目标季。若需要改变球队强度层、加入赛事投入情景或深度学习，再用具体失败模式和验证安排与用户讨论。', '',
-               '本轮相关测试123项通过。没有新增hash、冻结contract、baseline或gate；没有新增本地神经网络、强化学习或超参数网格。所有项目数据、模型、临时文件及报告都在G盘。实验设计与统计分析技能用于按真实比赛配对、区别版本、事先写明比较和完整报告负结果。', '']
+               '本轮相关测试123项通过。没有新增hash、冻结contract、baseline或gate；没有新增本地神经网络、强化学习或超参数网格。所有项目数据、模型、临时文件及报告都在项目目录。实验设计与统计分析技能用于按真实比赛配对、区别版本、事先写明比较和完整报告负结果。', '']
     (target / '新增预测与优化说明.md').write_text('\n'.join(report), encoding='utf-8')
     print(json.dumps({'directory': str(target), **audit}, ensure_ascii=False))
 

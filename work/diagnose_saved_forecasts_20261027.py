@@ -7,12 +7,13 @@ from datetime import datetime, timedelta, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.probability import score_grid
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 NAMES = ('主胜', '平局', '客胜')
 OUTCOMES = ('home', 'draw', 'away')
 
@@ -149,8 +150,8 @@ def run():
         '2. 按已保存的总球／主客分配拆解观察误差，帮助判断下一项研究应针对进球强度还是比分结构；这种拆解本身不是训练，也没有给新权重。',
         '3. 均势平局、弱方单胜偏高及0:0／1:1／更高平局的旧诊断仍保留；条件正平局修正、温度和全局DC不重复运行。提高平均平局质量与识别具体平局比赛是两件事。',
         '4. 真正缺少的仍有球队变化、可靠全赛事负荷和球员可用性等输入的可学习表示；现有记录不能证明只靠再叠算法会解决。重大结构调整先讨论，日常资料错误修复正常推进。', '',
-        '本轮停止在逐场误差、两线分歧及既有概率的数值分解；无新增训练、预测、阈值选择或赛果查询。所有原始预测未改，全部新文件位于G盘。', '',
-        '[前瞻评价总表](G:/Codex/football-prediction-2026-10-22/outputs/前瞻评价接续_20261027/前瞻评价接续与优化安排.md)；[历史121问题定位](G:/Codex/football-prediction-2026-10-22/outputs/当前121模型胜平负定位_20261026T051442339672Z/结论与下一步选择.md)。']
+        '本轮停止在逐场误差、两线分歧及既有概率的数值分解；无新增训练、预测、阈值选择或赛果查询。所有原始预测未改，全部新文件位于项目目录。', '',
+        '[前瞻评价总表](../../outputs/前瞻评价接续_20261027/前瞻评价接续与优化安排.md)；[历史121问题定位](../../outputs/当前121模型胜平负定位_20261026T051442339672Z/结论与下一步选择.md)。']
     (output/'误差定位与下一步优化.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     print(json.dumps({'output': str(output), 'agreement': groups, 'future_change': summary, 'fits': 0}, ensure_ascii=False))
 

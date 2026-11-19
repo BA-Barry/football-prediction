@@ -4,6 +4,7 @@ from datetime import datetime, timezone, timedelta
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -15,7 +16,7 @@ from football_model.probability import score_grid, summarize
 from football_model.score_reconciliation import reconcile_score_probabilities
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/模型LLM融合研究_20261028'
 TODAY = ROOT/'outputs/今日意甲预测_20261028'
 ASSISTED = ROOT/'data/serie_a_adjusted_context_20261028/模型辅助LLM回答.json'
@@ -190,7 +191,7 @@ def report(result):
     weight=result['weight_parameters']['weight'];early=result['earlier_prefix_parameters']['weight']
     percent=lambda p:'／'.join(f'{100*v:.1f}' for v in p)
     lines=['# 对手校正接线与模型／LLM权重学习','',
-        '用户已明确授权加强联合并用数据学习两条路线占比。本轮复用真实赛前档案，不下载新赛果，不生成历史LLM填充样本。所有新文件在G盘。','',
+        '用户已明确授权加强联合并用数据学习两条路线占比。本轮复用真实赛前档案，不下载新赛果，不生成历史LLM填充样本。所有新文件在项目目录。','',
         '81组版本配对按比赛去重后为28场，已结算13场、无归档结果15场。同场保留最早可用双线版本；意甲同刻版本保留原声明的进球主线。LLM原回答及事实包可核，但精确模型身份unknown、全运行上下文未独立认证。','',
         '## 只学习一个比例','',
         '`P联合 = w × P进球模型 + (1-w) × P独立LLM`，主／平／客共享同一w。以较早实际赛前记录的平均胜平负LogLoss最小化，解一维凸目标，保留0与1端点；不是强制50:50，也不按后季命中数选配比。','',
@@ -215,7 +216,7 @@ def report(result):
         '## 停止位置与下一步','',
         '本轮完成两次一维权重拟合（较早前缀及当前全样本）、一次16日期的解释资料重建、一次新辅助LLM判断和五场真正新联合。至此停止，不因权重端点或某场方向不满意继续换目标、加分类权重或搜索参数。','',
         '后续先按整批新增已结算样本更新同一目标与同一来源政策的权重，再检验更晚比赛；若改变LLM输入或统计模型，另列版本。没有把本轮训练分数称为验证准确率，也不把线路数量当比赛样本量。','',
-        '[去重样本说明](G:/Codex/football-prediction-2026-10-22/outputs/模型LLM融合研究_20261028/样本说明.md)；[当前权重](G:/Codex/football-prediction-2026-10-22/outputs/模型LLM融合研究_20261028/当前学得权重.json)；[当前联合前瞻](G:/Codex/football-prediction-2026-10-22/outputs/模型LLM融合研究_20261028/今日五场学得联合前瞻.json)；[对手校正资料](G:/Codex/football-prediction-2026-10-22/data/serie_a_adjusted_context_20261028/训练与来源说明.md)。','']
+        '[去重样本说明](../../outputs/模型LLM融合研究_20261028/样本说明.md)；[当前权重](../../outputs/模型LLM融合研究_20261028/当前学得权重.json)；[当前联合前瞻](../../outputs/模型LLM融合研究_20261028/今日五场学得联合前瞻.json)；[对手校正资料](../../data/serie_a_adjusted_context_20261028/训练与来源说明.md)。','']
     (OUT/'本轮联合学习与结果.md').write_text('\n'.join(lines),encoding='utf-8')
 
 

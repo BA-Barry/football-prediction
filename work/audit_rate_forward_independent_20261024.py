@@ -8,9 +8,10 @@ import csv
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 
-ROOT = Path("G:/Codex/football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / "outputs/进球率尺度多窗口前推_20261023T162450849975Z"
 ARMS = ("original", "shared_scale", "side_scale")
 DOMAINS = ("one_x_two", "total_goals_0_1_2_3_4plus", "away_minus_two_three_way", "exact_score")

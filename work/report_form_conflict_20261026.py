@@ -2,12 +2,13 @@
 from datetime import datetime,timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.forecast_diagnostics import moving_block_means
 
-OUT=Path('G:/Codex/football-prediction-2026-10-22/outputs/近期长期冲突诊断_20261026T034109989122Z')
+OUT=REPOSITORY_ROOT / Path('outputs/近期长期冲突诊断_20261026T034109989122Z')
 
 
 def read(path): return json.loads(path.read_text(encoding='utf-8'))
@@ -66,7 +67,7 @@ def main():
         '', '这次只分析统计线。LLM没有相同口径的长历史概率，不能把统计线结论套到LLM；独立LLM与统计线继续分别记录。',
         '', '## 限制与复现','',
         '历史年份此前已被查看，本轮是回溯诊断。近期残差按5场定义，不是纯粹的最近1—2场因果效应；丰富模型与简单模型还相差xG、非线性映射等。当前预测提前5—7日的适用性，仍不能由本次提前1／3日结果代替。',
-        '', '分组原值见提前3日_逐场分组与误差.json、提前1日_逐场分组与误差.json；全部评分见完整分组汇总.json；概率偏差区间见冲突单胜概率偏差区间.json。所有文件位于G盘。本轮0次拟合、0次新预测、0轮调参。']
+        '', '分组原值见提前3日_逐场分组与误差.json、提前1日_逐场分组与误差.json；全部评分见完整分组汇总.json；概率偏差区间见冲突单胜概率偏差区间.json。所有文件位于项目目录。本轮0次拟合、0次新预测、0轮调参。']
     # Take displayed point scores from source rather than rounded hand entry.
     for season in ('2024-25','2025-26'):
         m=source['horizons']['3'][season]['groups']['conflict']

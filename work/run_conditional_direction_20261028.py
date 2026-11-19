@@ -7,6 +7,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -21,7 +22,7 @@ from football_model.forecast_diagnostics import moving_block_means
 from run_persistent_rich_integration_20261028 import loss_arrays, metrics
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/条件主客方向研究_20261028'
 RICH = ROOT/'outputs/持续状态与丰富信息接入_20261028'
 DRAW = ROOT/'outputs/历史比赛模式与平局分支_20261027'

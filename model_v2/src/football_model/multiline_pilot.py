@@ -7,7 +7,6 @@ The first real case is a research demonstration, not evidence of superiority.
 import argparse
 from datetime import datetime, timezone
 import json
-import os
 from pathlib import Path
 
 from .multiline import TRACKS, score_multi
@@ -94,14 +93,12 @@ def render_report(payload, scores):
             top1 = "—" if metric["top1_accuracy"] is None else f"{metric['top1_accuracy']:.2%}"
             lines.append(f"| {LABELS[arm]} | {metric['n']} | {loss} | {brier} | {top1} |")
         lines.append("")
-    lines += ["本入口只是重放并导出已经保存的记录，不刷新原预测时点，不重新训练或重采LLM。全部新增文件、数据、模型、缓存和临时目录留在G盘。", ""]
+    lines += ["本入口只是重放并导出已经保存的记录，不刷新原预测时点，不重新训练或重采LLM。全部新增文件、数据、模型、缓存和临时目录留在项目目录。", ""]
     return "\n".join(lines)
 
 
 def run_multiline(root, input_path):
-    root, input_path = Path(root).resolve(), Path(input_path).resolve()
-    if os.name == "nt" and (root.drive.upper() != "G:" or input_path.drive.upper() != "G:"):
-        raise ValueError("All multiline inputs and outputs must stay on G:")
+    root, input_path = Path(root).expanduser().resolve(), Path(input_path).expanduser().resolve()
     payload = json.loads(input_path.read_text(encoding="utf-8-sig"))
     if not isinstance(payload.get("pilot_id"), str) or not isinstance(payload.get("records"), list) or not payload["records"]:
         raise ValueError("Supply an explicit pilot_id and nonempty records")

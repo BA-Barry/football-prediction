@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import numpy as np
@@ -16,7 +17,7 @@ from football_model.probability import score_grid, summarize
 from football_model.refresh_experiment import prediction_arrays, scores_for
 
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 SOURCE=ROOT/'outputs/当前121模型胜平负定位_20261026T051442339672Z'
 CUTOFF='2025-08-01'
 COMPS=('E0','D1','SP1','I1','F1')

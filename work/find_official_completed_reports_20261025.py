@@ -3,12 +3,13 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from html import unescape
 
-OUT = Path(r"G:\Codex\football-prediction-2026-10-22\data\prematch-intelligence\20261024_batch\result_observation_20261024T160147143875Z")
+OUT = REPOSITORY_ROOT / Path('data/prematch-intelligence/20261024_batch/result_observation_20261024T160147143875Z')
 
 def fetch(item):
     label, url = item

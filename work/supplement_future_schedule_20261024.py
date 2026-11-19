@@ -2,9 +2,10 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import sys
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 DEST = ROOT / "data/prematch-intelligence/NEW20261024_cohort_20261024T150344311377Z"
 sys.path.insert(0, str(ROOT / "work"))
 from observe_batch_results_20261024 import write_json, stamp

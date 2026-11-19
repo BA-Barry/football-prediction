@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from observe_batch_results_20261024 import download, stamp, write_json
 
@@ -26,7 +27,7 @@ class HeadingParser(HTMLParser):
 
 
 def main():
-    output_dir = Path(r"G:\Codex\football-prediction-2026-10-22\data\prematch-intelligence\20261024_batch\result_observation_20261024T031009082510Z")
+    output_dir = REPOSITORY_ROOT / Path('data/prematch-intelligence/20261024_batch/result_observation_20261024T031009082510Z')
     label, body, metadata = download(("official_club_report", "https://www.itfc.co.uk/news/2026/october/23/town-1-nottingham-forest-1/"))
     if body:
         metadata["raw_path"] = "official_club_report_raw.html" if metadata.get("status") == 200 else "official_club_report_error_body.bin"

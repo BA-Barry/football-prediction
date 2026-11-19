@@ -8,7 +8,6 @@ time zones by the caller. No downloads, searches, LLM calls or tuning occur.
 import argparse
 from datetime import date, datetime, timezone
 import json
-import os
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -32,10 +31,8 @@ def _write(path, payload):
 
 
 def _resolved_paths(root, context_dir, fixture_path):
-    paths = tuple(Path(value).resolve() for value in (root, context_dir, fixture_path))
-    if os.name == "nt" and any(path.drive.upper() != "G:" for path in paths):
-        raise ValueError("Batch inputs, outputs and project root must stay on G:")
-    return paths
+    return tuple(Path(value).expanduser().resolve()
+                 for value in (root, context_dir, fixture_path))
 
 
 def read_fixtures(path, as_of):

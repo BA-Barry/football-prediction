@@ -12,13 +12,14 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
 from football_model.forecast_diagnostics import moving_block_means
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 REFERENCE = ROOT/'outputs/直接胜平负分类研究_20261025T091329913808Z/lead_3/逐场胜平负概率.json'
 PERIODS = ('2024-25', '2025-26')
 COMPS = ('E0', 'D1', 'SP1', 'I1', 'F1')
@@ -172,8 +173,8 @@ def main(argv=None):
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args(argv)
     forecast, output = args.forecast.resolve(), args.output.resolve()
-    if output.drive.upper() != 'G:':
-        raise ValueError('Evaluation output must stay on G:')
+    if not output.is_relative_to(REPOSITORY_ROOT):
+        raise ValueError('Evaluation output must remain below the project root')
     payload = _read(forecast)
     results = evaluate(payload['rows'], _read(REFERENCE))
     results.update(generated_at=datetime.now(timezone.utc).isoformat(),

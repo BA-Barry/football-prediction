@@ -8,12 +8,13 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
 
 
-ROOT = Path(r'G:\Codex\football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 RUN = ROOT / 'outputs/直接胜平负分类研究_20261025T091329913808Z'
 PLAN = RUN / '分析前计划.json'
 OUT = RUN / '较早分类机制诊断'

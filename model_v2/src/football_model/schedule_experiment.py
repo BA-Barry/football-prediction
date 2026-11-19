@@ -209,7 +209,7 @@ def report(result):
         "真实有效大比分保留；精确比分NLL在log域计算，胜平负／总进球／让球由同一比分分布派生。客让二球三项的让胜要求净胜至少3球；净胜2是让平，不是亚洲盘走盘。",
         "实验设计技能限定两臂与固定时序；统计分析技能要求同场损失差、分布描述及条件区间。日期特征系数只是预测关联，不能解释为疲劳／伤停／赛事投入的因果效果。",
         "当前数据仍止于2026年5月；2026/27数据、实时伤停／首发、跨联赛实力桥梁、球员赛前衔接及半全场过程未完成。本研究不能直接支持当前比赛的可靠预测或投注收益结论。",
-        "所有新增源代码、参数、CSV、测试临时文件与缓存均在G盘；本轮不下载数据／依赖，不新增hash、冻结contract或发布门禁。",
+        "所有新增源代码、参数、CSV、测试临时文件与缓存均在项目目录；本轮不下载数据／依赖，不新增hash、冻结contract或发布门禁。",
         "", "方法参考：[scikit-learn PoissonRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PoissonRegressor.html)。", ""]
     return "\n".join(lines)
 

@@ -10,6 +10,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import warnings
 
 import joblib
@@ -17,7 +18,7 @@ import numpy as np
 from scipy.special import softmax
 
 
-ROOT = Path(r'G:\Codex\football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs'/'固定发布日期信息刷新_20261025T071806561562Z'
 CLASS_NAMES = ('home', 'draw', 'away')
 ARMS = {'logistic_performance': ('logistic', 'performance'),

@@ -429,8 +429,7 @@ def test_cli_defaults_point_to_g_project_archive_and_honor_explicit_output(tmp_p
     experiment.main()
     root, parent, output = calls[0]
     assert root == Path(experiment.__file__).resolve().parents[3]
-    assert root.name == "football-prediction-2026-10-22"
-    assert root.drive.upper() == "G:"
+    assert (root / "model_v2" / "pyproject.toml").is_file()
     assert parent == root / "outputs" / "更新频率研究_20261023T073047979805Z"
     assert output == tmp_path / "chosen"
     summary = json.loads(capsys.readouterr().out)

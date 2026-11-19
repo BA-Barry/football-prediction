@@ -12,6 +12,7 @@ import csv
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -27,7 +28,7 @@ from football_model.probability import score_grid, summarize
 from football_model.xg_history import DateTeamXgModel
 from current_rich_model_helpers_20261026 import load_current_rich_sources
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 INPUT = ROOT/'data/epl_personnel_live_20261029'
 SOURCE = INPUT/'stat_sources'
 OUT = ROOT/'outputs/英超人员协作前瞻_20261029'

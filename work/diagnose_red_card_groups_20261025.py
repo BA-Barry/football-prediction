@@ -4,6 +4,7 @@ import csv
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import re
 
 from football_model.football_data import LEAGUES, parse_row
@@ -11,7 +12,7 @@ from football_model.native_experiment import season_directories
 from football_model.probability import score_grid, summarize
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 TARGET = ROOT / 'outputs/红牌事后分组诊断_20261024T161044Z'
 SOURCE = ROOT / 'outputs/统计市场固定融合研究_20261024T120045031283Z/统计市场融合结果.json'
 SHAPES = ROOT / 'outputs/比分形态诊断_20261023T123154423712Z'

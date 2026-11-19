@@ -3,9 +3,10 @@ from datetime import datetime,timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import statistics
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 OUT=ROOT/'outputs/LLM近期信息敏感性_20261026T043949767182Z'
 ORIGINAL=ROOT/'outputs/当前丰富信息预测_20261026T030805654404Z/多线逐场对照.json'
 CN={'Chelsea':'切尔西','Man United':'曼联','Bournemouth':'伯恩茅斯','Leeds':'利兹联',
@@ -110,7 +111,7 @@ def main():
         '', '此前统计候选隐藏最近两场的平均最大单项变化约1.48个百分点，本次LLM约5.6—5.8个百分点；两项试验的资料呈现、拟合通道和提示不同，只能分别说明局部敏感性，不能作为准确率排名或严格算法对比。',
         '', '## 本轮执行决定','',
         '现有统计预测和原独立LLM记录保持不变。LLM概率继续单独列示，不因同向而上调置信度，也不把一次重问后的答案当成更优版本。后续复核时按原发布时间分别评分，保留本次三次响应作为敏感性诊断。',
-        '', '本轮到3次响应为止，停止追加抽样和提示词搜索。全部输入、响应、方法及核验位于G盘。']
+        '', '本轮到3次响应为止，停止追加抽样和提示词搜索。全部输入、响应、方法及核验位于项目目录。']
     report=OUT/'LLM近期信息影响说明.md'
     report.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps({'report':str(report),'summary':summary},ensure_ascii=False))

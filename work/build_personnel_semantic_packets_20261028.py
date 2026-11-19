@@ -6,12 +6,13 @@ historical files contain outcomes; only the explicit fields below are projected.
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import gzip
 import json
 
 from prepare_availability_exposure_20261026 import load_mapping, load_minutes
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT / 'data/personnel_semantics_20261028'
 OUT = ROOT / 'outputs/人员信息语义接入_20261028'
 BASE = ROOT / 'outputs/协作预测与大样本方案_20261028/扩样训练/扩样合并特征.json.gz'

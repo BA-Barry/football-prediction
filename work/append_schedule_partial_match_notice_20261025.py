@@ -2,8 +2,9 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-BASE = Path('G:/Codex/football-prediction-2026-10-22/outputs/全赛事赛程可用性_20261025')
+BASE = REPOSITORY_ROOT / Path('outputs/全赛事赛程可用性_20261025')
 report_path = BASE/'四季全赛事接通与使用限制.md'
 notice_path = BASE/'官方部分比赛补充说明_20261025.json'
 observed_at = datetime.now(timezone.utc).isoformat()

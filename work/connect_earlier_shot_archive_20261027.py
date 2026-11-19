@@ -10,10 +10,11 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import shutil
 import urllib.request
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT / 'data/understat/earlier_shot_archive_20261027'
 OUT = ROOT / 'outputs/较早射门归档接通_20261027'
 RELEASE_API = 'https://api.github.com/repos/JaseZiv/worldfootballR_data/releases/tags/understat_shots'
@@ -251,7 +252,7 @@ def main():
 
 本轮仅下载并读取一个 EPL 包，完成既有分钟资料的同场射门联结与进球记账；没有训练、调参，也没有查当前赛果。
 
-来源为作者 [worldfootballR_data 的 understat_shots 发布页]({RELEASE_PAGE})，确切文件 [{ASSET}]({provenance['asset']['browser_download_url']})，{provenance['local_bytes']:,} 字节，作者更新时间 {provenance['asset']['updated_at']}。读取器 pyreadr {provenance['reader']['version']} 安装在 G 盘项目虚拟环境，缓存和临时目录也在 G 盘，没有安装系统 R。软件许可不等于底层数据许可；本轮未独立确认数据授权条款。
+来源为作者 [worldfootballR_data 的 understat_shots 发布页]({RELEASE_PAGE})，确切文件 [{ASSET}]({provenance['asset']['browser_download_url']})，{provenance['local_bytes']:,} 字节，作者更新时间 {provenance['asset']['updated_at']}。读取器 pyreadr {provenance['reader']['version']} 安装在 项目目录项目虚拟环境，缓存和临时目录也在 项目目录，没有安装系统 R。软件许可不等于底层数据许可；本轮未独立确认数据授权条款。
 
 归档实际含 {len(frame):,} 条射门、{frame['match_id'].nunique():,} 场比赛、{len(source_seasons)} 个赛季。既有 1,099 场通过已可信的 Understat ID 联结，再核对原日期、主客队与赛季；未靠比分选择、模糊匹配或放宽日期。
 
@@ -267,7 +268,7 @@ def main():
 
 已知作者分钟包的 2022-09-03 Newcastle—Crystal Palace 进球累计异常继续保留；即使本归档该场记账通过，也不能据此宣布原分钟状态可靠。此次接通不意味着完整事件顺序已经恢复，也不构成状态修正效果证据。
 
-复现：在项目目录使用 G 盘虚拟环境运行 `python -B work/connect_earlier_shot_archive_20261027.py`。已下载文件存在时不重复下载。原始 RDS、来源记录及原字段压缩导出均在 `data/understat/earlier_shot_archive_20261027`；输出汇总与逐场记账在本报告同目录。
+复现：在项目目录使用 项目目录虚拟环境运行 `python -B work/connect_earlier_shot_archive_20261027.py`。已下载文件存在时不重复下载。原始 RDS、来源记录及原字段压缩导出均在 `data/understat/earlier_shot_archive_20261027`；输出汇总与逐场记账在本报告同目录。
 '''
     (OUT / '较早射门归档接通说明.md').write_text(report, encoding='utf-8')
     print(json.dumps({key: summary[key] for key in ['requested_matches', 'id_linked_matches', 'identity_agree_matches', 'selected_shot_rows', 'by_season', 'goal_counts', 'shot_goal_count_agree_matches', 'source_final_totals_agree_matches', 'selected_duplicate_shot_ids', 'missing_state_fields']}, ensure_ascii=False), flush=True)

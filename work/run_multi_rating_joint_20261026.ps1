@@ -3,7 +3,11 @@ param(
     [switch]$ReusePrepared
 )
 $ErrorActionPreference = 'Stop'
-$projectRoot = 'G:\Codex\football-prediction-2026-10-22'
+$projectRoot = if ([string]::IsNullOrWhiteSpace($env:FOOTBALL_MODEL_ROOT)) {
+    Split-Path -Parent $PSScriptRoot
+} else {
+    [System.IO.Path]::GetFullPath($env:FOOTBALL_MODEL_ROOT)
+}
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:PYTHONIOENCODING = 'utf-8'
 $env:PYTHONPATH = "$projectRoot\model_v2\src;$projectRoot\work"

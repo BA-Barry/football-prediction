@@ -8,12 +8,13 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import sys
 
 from attach_live_fpl_participation_20261029 import (
     OTHER_CATEGORIES, fetch, fixture_side, now, player_record, read, utc, write)
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / 'data/epl_personnel_live_20261029'
 OUT = ROOT / 'data/epl_remaining_personnel_20261029'
 OLD = ROOT / 'data/current_rich_inputs/run_20261026T025507813598Z'

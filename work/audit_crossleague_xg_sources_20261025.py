@@ -2,12 +2,13 @@
 from datetime import datetime,timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.native_experiment import load_seasons,season_directories
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 from run_shot_increment_20261025 import write
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 SOURCE=ROOT/'data/understat/history_20261024T172015108538Z'
 SLUGS={'D1':'Bundesliga','SP1':'La_Liga','I1':'Serie_A','F1':'Ligue_1'}
 

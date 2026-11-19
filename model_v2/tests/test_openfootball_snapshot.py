@@ -1,6 +1,5 @@
 from datetime import date, datetime, timezone
 import json
-import os
 from pathlib import Path
 from urllib.error import HTTPError
 
@@ -137,12 +136,13 @@ def test_datetime_is_not_a_source_calendar_date(tmp_path):
         run_snapshot(tmp_path, calendar_date=datetime.now(timezone.utc), fetch=fake_fetcher([]))
 
 
-@pytest.mark.skipif(os.name != "nt", reason="Windows G-drive requirement")
-def test_c_drive_rejected_without_network_or_file_creation():
+def test_arbitrary_project_directory_is_supported(tmp_path):
     calls = []
-    with pytest.raises(ValueError, match="on G:"):
-        run_snapshot(Path("C:/not-created-football-snapshot"), fetch=fake_fetcher([], calls))
-    assert calls == []
+    root = tmp_path / "portable-checkout"
+    result, report = run_snapshot(root, fetch=fake_fetcher([], calls))
+    assert len(calls) == 7
+    assert Path(result["raw_directory"]).is_relative_to(root)
+    assert report.is_relative_to(root)
 
 
 def test_cli_exposes_reference_date_and_exits_on_partial(monkeypatch, tmp_path, capsys):

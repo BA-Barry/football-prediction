@@ -11,11 +11,12 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 from football_model.all_competition_features import AllCompetitionFeatures, WINDOWS
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'outputs/协作预测与大样本方案_20261028/扩样训练/扩样合并特征.json.gz'
 SCHEDULE = ROOT/'outputs/全赛事赛程可用性_20261025'
 OUT = ROOT/'data/historical_context_20261028/schedule_sources'
@@ -226,7 +227,7 @@ def main():
 
 实例见`实例.json`：无覆盖早季、可见非联赛负荷，以及已知部分／未决比赛导致窗口不可用。若后来补2021/22真实资料，可经同一适配器产生该季分量；在此之前保持缺失，不靠联赛赛程冒充全赛事。
 
-原来源和采集说明见[四季全赛事接通与限制](G:/Codex/football-prediction-2026-10-22/outputs/全赛事赛程可用性_20261025/四季全赛事接通与使用限制.md)。实际来源例：[ESPN历史参赛身份](https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/seasons/2024/teams?limit=1000)。所有原始请求地址、取得时间与逐队赛事保留在原目录，本轮未重新下载。
+原来源和采集说明见[四季全赛事接通与限制](../../outputs/全赛事赛程可用性_20261025/四季全赛事接通与使用限制.md)。实际来源例：[ESPN历史参赛身份](https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/seasons/2024/teams?limit=1000)。所有原始请求地址、取得时间与逐队赛事保留在原目录，本轮未重新下载。
 
 停止点：一次覆盖导出和原字段一致性测量完成；新增联网请求0、模型训练0、当前预测更改0。
 '''

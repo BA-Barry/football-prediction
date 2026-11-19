@@ -5,6 +5,7 @@ from datetime import date, datetime
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -225,7 +226,7 @@ def model_audit(out,rows,record_map):
 
 
 def previous_failure_replay(out,rows):
-    old_path=Path('G:/Codex/football-prediction-2026-10-22/outputs/多信息多算法前推_20261025T060704977450Z/丰富线性外推失误诊断.json')
+    old_path=REPOSITORY_ROOT / Path('outputs/多信息多算法前推_20261025T060704977450Z/丰富线性外推失误诊断.json')
     old=read(old_path)
     predictions=read(out/'逐场完整预测.json')
     result=read(out/'完整方案结果汇总.json')

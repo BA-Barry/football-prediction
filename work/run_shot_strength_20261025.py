@@ -3,6 +3,7 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 
@@ -11,7 +12,7 @@ from football_model.probability import score_grid, summarize
 from football_model.shot_strength import DateTeamShotModel, ShotRateGoalIncrement
 from run_shot_increment_20261025 import sources, score_details, write
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CORE = ROOT / 'outputs/核心参数训练_20261023T115640092598Z'
 
 

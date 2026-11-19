@@ -2,8 +2,9 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/当前人员历史代表性_20261025'
 OLD = ROOT/'outputs/历史代表性与证据联合_20261025/current/逐场证据与分歧.json'
 ALIASES = {

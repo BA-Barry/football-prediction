@@ -11,13 +11,14 @@ import gzip
 import io
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import zipfile
 
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 from run_npxg_comparison_20261025 import load_source
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/平局条件信息定位_20261027'
 ARCHIVE = ROOT / 'work/research/game_context_20261027/PremierLeague_Sami_minute_by_minute_df_w_red_cards_WITH_BOOKING_ODDS.zip'
 YEARS = {'2021': '2020/21', '2022': '2021/22', '2023': '2022/23'}
@@ -245,7 +246,7 @@ def main():
         f"{summary['games_with_multiple_states_same_team_half_minute']}场存在同队、同半场、同分钟的多种比分差／红牌差状态，共{summary['multiple_state_groups']}个键；相对唯一队伍半场分钟键，多出{summary['extra_repeated_minute_rows']}行。因此不能一行按1分钟累计暴露，也没有把状态行顺序解释成秒级顺序。", '',
         '分钟包不含xG，止于2022/23，与已有760场逐射门的2023/24及2024/25没有赛季重叠。它可以补较早聚合记录的比分／红牌状态线索，却不能据此给较新760场补时间线，也不能把全场xG摊到每分钟。', '',
         '身份及进球总数匹配只确认可联结与事件计数相容，不证明半场时钟、每个状态转移或真实场上人数准确。源half_id由作者清洗产生、缺秒与独立终场标志；当前保留研究资料身份，不接入正式预测。', '',
-        '[汇总与全部异常](G:/Codex/football-prediction-2026-10-22/outputs/平局条件信息定位_20261027/EPL分钟资料精确联结.json) · [逐场联结与多状态明细](G:/Codex/football-prediction-2026-10-22/outputs/平局条件信息定位_20261027/EPL分钟资料精确联结明细.json.gz)', '',
+        '[汇总与全部异常](../../outputs/平局条件信息定位_20261027/EPL分钟资料精确联结.json) · [逐场联结与多状态明细](../../outputs/平局条件信息定位_20261027/EPL分钟资料精确联结明细.json.gz)', '',
         '到此停止本轮数据接入，不下载其余联赛包、不拟合状态修正系数。',
     ]
     (OUT / 'EPL分钟资料精确联结说明.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')

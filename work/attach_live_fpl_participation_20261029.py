@@ -9,11 +9,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'data/epl_personnel_live_20261029'
 OLD_DIR = ROOT / 'data/current_rich_inputs/run_20261026T025507813598Z'
 WANTED_TEAM_CODES = (8, 1, 91, 2, 94, 17)

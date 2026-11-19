@@ -11,6 +11,7 @@ import gzip
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 import numpy as np
@@ -19,7 +20,7 @@ from football_model.xg_residual_patterns import FEATURE_NAMES, summarize_residua
 from football_model.probability import score_grid
 from football_model.draw_branch import replace_draw_probability
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT / 'outputs/对手校正攻防模式整合_20261027'
 OUT = ROOT / 'outputs/新增攻防分支近期影响_20261027'
 SCENARIOS = tuple((role, k) for k in (1, 2) for role in ('home', 'away', 'both'))

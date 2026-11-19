@@ -2,6 +2,7 @@
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import numpy as np
 from scipy.stats import poisson
@@ -14,7 +15,7 @@ from football_model.probability import score_grid, summarize
 from run_shot_increment_20261025 import score_details, write
 from decompose_xg_replication_20261025 import losses as partition_losses
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 EARLY = ROOT/'outputs/进球xG更早年份复现_20261024T180238377843Z/更早年份复现结果.json'
 LATER = ROOT/'outputs/进球xG共同训练记录_20261024T174247963857Z/共同训练记录融合结果.json'
 MARKET = ROOT/'outputs/进球xG历史市场对照_20261024T181414691003Z/历史市场对照结果.json'

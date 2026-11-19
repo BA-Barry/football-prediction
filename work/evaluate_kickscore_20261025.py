@@ -2,7 +2,7 @@
 
 Input: forecasts.json with tracks dynamic/static/dynamic_mean_only and
 data/references.json prepared from the previous saved direct-outcome study.
-Only evaluation.json and the Chinese report are written, under the G: project.
+Only evaluation.json and the Chinese report are written below the project root.
 """
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ import argparse
 from datetime import date, datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from typing import Any
 
 import numpy as np
@@ -18,7 +19,7 @@ from football_model.evaluation import calibration_bins, probability_scores
 from football_model.forecast_diagnostics import moving_block_means
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OLD_STUDY = ROOT/'outputs/直接胜平负分类研究_20261025T091329913808Z'
 PERIODS = ('2024-25', '2025-26')
 LEADS = (1, 3)

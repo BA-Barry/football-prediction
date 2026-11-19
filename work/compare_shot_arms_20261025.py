@@ -1,11 +1,12 @@
 """Describe already-fitted shot arms on identical fixtures; no new selection."""
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 import numpy as np
 
 from run_shot_increment_20261025 import score_details, write
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 TARGET = ROOT / 'outputs/射正攻防校正研究_20261024T163823918831Z'
 
 

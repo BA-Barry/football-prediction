@@ -8,7 +8,6 @@ league coverage is retained and reported rather than completed by imputation.
 import argparse
 from datetime import date, datetime, timezone
 import json
-import os
 from pathlib import Path
 
 from .date_model import DateTeamGoalModel
@@ -86,9 +85,7 @@ def team_descriptive(records, team, season):
 
 
 def run_projection(root, context_dir):
-    root, context_dir = Path(root).resolve(), Path(context_dir).resolve()
-    if os.name == "nt" and (root.drive.upper() != "G:" or context_dir.drive.upper() != "G:"):
-        raise ValueError("Projection inputs and outputs must stay on G:")
+    root, context_dir = Path(root).expanduser().resolve(), Path(context_dir).expanduser().resolve()
     cutoff = datetime.now(timezone.utc)
     if cutoff >= datetime(2026, 10, 25, 14, tzinfo=timezone.utc):
         raise ValueError("Cannot generate this prematch research projection after kickoff")

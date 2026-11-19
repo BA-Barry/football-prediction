@@ -2,12 +2,13 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from urllib.request import Request, urlopen
 
 from football_model.openfootball import inspect_payload
 from football_model.openfootball_snapshot import _calendar_coverage
 
-ROOT = Path(r"G:\Codex\football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 URL = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json"
 
 

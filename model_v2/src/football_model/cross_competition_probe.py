@@ -17,6 +17,7 @@ from typing import Mapping
 from .domain import aware
 from .football_data import LEAGUES, load_directory
 from .openfootball_snapshot import Fetch, _download, _read
+from .project_paths import project_root
 
 
 BASE = "https://raw.githubusercontent.com/openfootball/champions-league/master"
@@ -357,7 +358,7 @@ def run_probe(task_root: Path, domestic_directories: Mapping[str, Path], *, fetc
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--task-root", type=Path, default=Path("G:/Codex/football-prediction-2026-10-22"))
+    parser.add_argument("--task-root", type=Path, default=project_root())
     parser.add_argument("--domestic", nargs=2, action="append", metavar=("YYYY-YY", "CSV_DIRECTORY"), required=True)
     args = parser.parse_args()
     if len({season for season, _ in args.domestic}) != len(args.domestic):

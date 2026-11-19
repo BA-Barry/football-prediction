@@ -11,6 +11,7 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 import joblib
 
@@ -18,7 +19,7 @@ from football_model.football_data import HistoricalMatch, load_directory
 from football_model.xg_history import DateTeamXgModel
 from current_rich_model_helpers_20261026 import load_current_rich_sources
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 SOURCE = ROOT/'data/serie_a_today_20261028'
 OUT = ROOT/'data/serie_a_adjusted_context_20261028'
 CUTOFF = date(2026, 10, 28)

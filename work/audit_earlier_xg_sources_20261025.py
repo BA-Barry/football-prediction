@@ -2,11 +2,12 @@
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.native_experiment import load_seasons
 from football_model.xg_history import COMPETITION_TEAM_NAMES
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 FD_DIRS = {
     f'{year}/{str(year+1)[-2:]}': ROOT/f'data/football-data/{year}-{str(year+1)[-2:]}/{stamp}'
     for year, stamp in [(2020, '20261024T175549025471Z'), (2021, '20261024T175549025471Z'),

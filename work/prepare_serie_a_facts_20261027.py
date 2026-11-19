@@ -1,9 +1,10 @@
 """Build a compact facts-only packet for tonight's three Serie A fixtures."""
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import json
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 DATA = ROOT/'data/serie_a_today_20261027'
 PREVIOUS = ROOT/'data/understat/history_20261024T172015108538Z/Serie_A_2025.json'
 CHINESE = {'Sassuolo':'萨索洛','Lazio':'拉齐奥','Roma':'罗马','AS Roma':'罗马',

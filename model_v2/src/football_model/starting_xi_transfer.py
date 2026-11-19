@@ -29,11 +29,8 @@ ARMS = ("team_laplace", "players_laplace")
 BLOCKS, REPEATS, SEED = (2, 4, 8), 2000, 20261024
 
 
-def _on_g(path):
-    result = Path(path).resolve()
-    if result.drive and result.drive.upper() != "G:":
-        raise ValueError("Project, sources and outputs must remain on G:")
-    return result
+def _resolved(path):
+    return Path(path).expanduser().resolve()
 
 
 def _read(path):
@@ -149,7 +146,7 @@ def _descriptives(targets):
 
 
 def run(root, source, inspection):
-    root, source, inspection = map(_on_g, (root, source, inspection))
+    root, source, inspection = map(_resolved, (root, source, inspection))
     matches, receipt = _read(source), _read(inspection)
     windows = list(weekly_windows(matches))
     if receipt.get("included_matches") != len(matches):
@@ -256,7 +253,7 @@ def make_report(result, weeks):
     lines += ["", "复用2／4／8周非环形共同日历区块重采样，2000次、固定seed20261024，全部指标与区块长度均保留。探索区间以已拟合预测为条件，不包含重训、结构选择、赛季漂移或单场真实概率误差，也没有多指标同时覆盖保证；不作IID显著性／等效结论。非环形区块端点非均匀加权，尤其8周相对16周跨度很长，不能读作稳定跨季外推证据。", "",
               "15与25阶积分仅测数值误差，不证明Laplace是真实后验。各场分布、未知身份、精度矩阵与较早训练ID均保存，原始缺失不靠事后比分或红牌删去。", "",
               "该赛季已被旧研究查看，且固定尺度的旧锚点也来自此来源较早的在场研究，因此不是新的盲测或纯外部参数验证。历史首发／开场角色公布时间未知；初始事件的00:00是比赛时钟，不是公开时间。这是首发及角色已知的条件研究，不是T−24、真实首发发布回放或当前2026球员验证。", "",
-              "原近期预测、市场与LLM设置不变，不自动上线，不继续围绕本期改先验。实验设计技能使同场／同历史／固定结构分开，统计分析技能使分母、效应幅度、条件区间及负结果完整保留。所有代码、模型、临时与报告在G盘。", ""]
+              "原近期预测、市场与LLM设置不变，不自动上线，不继续围绕本期改先验。实验设计技能使同场／同历史／固定结构分开，统计分析技能使分母、效应幅度、条件区间及负结果完整保留。所有代码、模型、临时与报告在项目目录。", ""]
     return "\n".join(lines)
 
 

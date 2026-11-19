@@ -8,11 +8,12 @@ from datetime import date, datetime, timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.native_experiment import load_seasons, season_directories
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT / 'outputs/动态胜平负接入_20261025/data'
 OLD = ROOT / 'outputs/直接胜平负分类研究_20261025T091329913808Z'
 EARLY_AUDIT = ROOT / 'outputs/更早年份xG源核对_20261024T180024700032Z/逐季源差异.json'

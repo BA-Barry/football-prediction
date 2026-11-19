@@ -6,12 +6,13 @@ from collections import Counter
 from datetime import date
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.date_model import DateTeamGoalModel
 from football_model.football_data import HistoricalMatch
 from football_model.probability import score_grid, summarize
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CUTOFF = date(2026, 10, 25)
 SNAPSHOT = ROOT / 'data/openfootball/2026-27/20261023T105013041188Z'
 OUTPUT = ROOT / 'outputs/用户六串一分析_20261025/欧洲统计线路.json'

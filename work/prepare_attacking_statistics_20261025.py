@@ -8,11 +8,12 @@ import csv
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.attacking_statistics import parse_attacking_counts
 from football_model.football_data import _date
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 CANONICAL = ROOT/'outputs/动态胜平负接入_20261025/data/canonical.json'
 OUT = ROOT/'outputs/多项进攻统计接入_20261025'
 REQUIRED = ('shots_on_target', 'non_target_shots', 'corners')
@@ -33,8 +34,8 @@ def main():
     for season, leagues in sorted(canonical['metadata']['sources'].items()):
         for competition, metadata in sorted(leagues.items()):
             path = Path(metadata['path'])
-            if path.drive.casefold() != 'g:':
-                raise ValueError('Read the G-drive source archive')
+            if not path.resolve().is_relative_to(REPOSITORY_ROOT):
+                raise ValueError('Read the source archive below the project root')
             counts = Counter()
             with path.open(encoding='utf-8-sig', newline='') as handle:
                 reader = csv.DictReader(handle)

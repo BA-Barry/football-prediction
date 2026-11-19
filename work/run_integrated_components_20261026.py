@@ -9,6 +9,7 @@ from datetime import date, datetime, timedelta, timezone
 import gzip
 import json
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 import time
 
 import joblib
@@ -22,7 +23,7 @@ from football_model.probability import score_grid, summarize
 from football_model.score_reconciliation import reconcile_score_probabilities
 
 
-ROOT = Path('G:/Codex/football-prediction-2026-10-22')
+ROOT = REPOSITORY_ROOT
 OUT = ROOT/'outputs/现有组件整合_20261026'
 FINAL_DATE = date(2025, 8, 1)
 EARLY, LATE = '2024-25', '2025-26'

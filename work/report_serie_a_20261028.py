@@ -3,11 +3,12 @@ from datetime import datetime,timedelta,timezone
 import json
 import math
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 
 from football_model.domain import Fixture
 from football_model.multiline import multi_record,score_multi
 
-ROOT=Path('G:/Codex/football-prediction-2026-10-22')
+ROOT=REPOSITORY_ROOT
 DATA=ROOT/'data/serie_a_today_20261028';OUT=ROOT/'outputs/今日意甲预测_20261028'
 BJ=timezone(timedelta(hours=8))
 ZH={'AC Milan':'AC米兰','Bologna':'博洛尼亚','Parma':'帕尔马','Udinese':'乌迪内斯','Venezia':'威尼斯','Internazionale':'国际米兰','Genoa':'热那亚','Juventus':'尤文图斯','Monza':'蒙扎','Napoli':'那不勒斯'}
@@ -133,7 +134,7 @@ def main():
         '', '进球主线和独立xG使用截止10月28日前资料，各固定拟合一次；83场本季比分由原Football-Data80场及真实ESPN昨日3场补充，与Understat精确连接。原始CSV与昨日预测未改。',
         '', '丰富列直接复用原121项树，训练6,967场、其中意甲1,493场；训练快照提前3日，当前提前0日，外推表现未验证。独立LLM仅读事实包，概率为主观未校准估计；未知模型身份保留unknown。',
         '', '本报告训练0次、LLM重采0次，三组前瞻记录各5场而非15场独立比赛；初始评分已结算0场，准确率为空。各线完整三概率、比分网格与原始来源保留用于以后同场复核。半全场尚无完整模型，不填造。',
-        '', '[多线概率与价格JSON](G:/Codex/football-prediction-2026-10-22/outputs/今日意甲预测_20261028/多线概率与价值对照.json)；[进球主线前瞻记录](G:/Codex/football-prediction-2026-10-22/outputs/今日意甲预测_20261028/前瞻记录_goal_simple.json)。']
+        '', '[多线概率与价格JSON](../../outputs/今日意甲预测_20261028/多线概率与价值对照.json)；[进球主线前瞻记录](../../outputs/今日意甲预测_20261028/前瞻记录_goal_simple.json)。']
     (OUT/'今晚意甲预测.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps({'report':str(OUT/'今晚意甲预测.md'),'fixtures':5,'settled':0,'new_report_fits':0,
         'market_favorite_main_fair_odds':[(r['fixture']['home'],r['fixture']['away'],r['market_favorite_index'],r['quote']['decimal_odds'][r['market_favorite_index']],r['unbuffered_fair_decimal_odds_by_route']['goal_simple'][r['market_favorite_index']]) for r in rows]},ensure_ascii=False))

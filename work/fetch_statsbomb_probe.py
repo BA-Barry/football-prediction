@@ -9,9 +9,10 @@ from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
+from project_paths import PROJECT_ROOT as REPOSITORY_ROOT
 from urllib.request import Request, urlopen
 
-ROOT = Path("G:/Codex/football-prediction-2026-10-22")
+ROOT = REPOSITORY_ROOT
 DEST = ROOT / "data/statsbomb/20261022_player_probe"
 BASE = "https://raw.githubusercontent.com/hudl/open-data/master/"
 
